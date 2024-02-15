@@ -1,0 +1,91 @@
+[33mcommit 1a8f037cd0cf78f63b5b088f75a28a50a8a35a96[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m
+Author: Krejcza <155578815+Krejcza@users.noreply.github.com>
+Date:   Thu Feb 15 08:42:24 2024 +0100
+
+    Udělána základní struktura stránky
+
+[1mdiff --git a/fonts/Roboto-Black.ttf b/fonts/Roboto-Black.ttf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..0112e7d[m
+Binary files /dev/null and b/fonts/Roboto-Black.ttf differ
+[1mdiff --git a/fonts/Roboto-BlackItalic.ttf b/fonts/Roboto-BlackItalic.ttf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..b2c6aca[m
+Binary files /dev/null and b/fonts/Roboto-BlackItalic.ttf differ
+[1mdiff --git a/fonts/Roboto-Bold.ttf b/fonts/Roboto-Bold.ttf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..43da14d[m
+Binary files /dev/null and b/fonts/Roboto-Bold.ttf differ
+[1mdiff --git a/fonts/Roboto-BoldItalic.ttf b/fonts/Roboto-BoldItalic.ttf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..bcfdab4[m
+Binary files /dev/null and b/fonts/Roboto-BoldItalic.ttf differ
+[1mdiff --git a/fonts/Roboto-Italic.ttf b/fonts/Roboto-Italic.ttf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..1b5eaa3[m
+Binary files /dev/null and b/fonts/Roboto-Italic.ttf differ
+[1mdiff --git a/fonts/Roboto-Light.ttf b/fonts/Roboto-Light.ttf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..e7307e7[m
+Binary files /dev/null and b/fonts/Roboto-Light.ttf differ
+[1mdiff --git a/fonts/Roboto-LightItalic.ttf b/fonts/Roboto-LightItalic.ttf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2d277af[m
+Binary files /dev/null and b/fonts/Roboto-LightItalic.ttf differ
+[1mdiff --git a/fonts/Roboto-Medium.ttf b/fonts/Roboto-Medium.ttf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ac0f908[m
+Binary files /dev/null and b/fonts/Roboto-Medium.ttf differ
+[1mdiff --git a/fonts/Roboto-MediumItalic.ttf b/fonts/Roboto-MediumItalic.ttf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..fc36a47[m
+Binary files /dev/null and b/fonts/Roboto-MediumItalic.ttf differ
+[1mdiff --git a/fonts/Roboto-Regular.ttf b/fonts/Roboto-Regular.ttf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..ddf4bfa[m
+Binary files /dev/null and b/fonts/Roboto-Regular.ttf differ
+[1mdiff --git a/fonts/Roboto-Thin.ttf b/fonts/Roboto-Thin.ttf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..2e0dee6[m
+Binary files /dev/null and b/fonts/Roboto-Thin.ttf differ
+[1mdiff --git a/fonts/Roboto-ThinItalic.ttf b/fonts/Roboto-ThinItalic.ttf[m
+[1mnew file mode 100644[m
+[1mindex 0000000..084f9c0[m
+Binary files /dev/null and b/fonts/Roboto-ThinItalic.ttf differ
+[1mdiff --git a/images/facebook.png b/images/facebook.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..beac8cc[m
+Binary files /dev/null and b/images/facebook.png differ
+[1mdiff --git a/images/favicon.png b/images/favicon.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..57be273[m
+Binary files /dev/null and b/images/favicon.png differ
+[1mdiff --git a/images/foto1.jpg b/images/foto1.jpg[m
+[1mnew file mode 100644[m
+[1mindex 0000000..131975f[m
+Binary files /dev/null and b/images/foto1.jpg differ
+[1mdiff --git a/images/map.png b/images/map.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..3b173d2[m
+Binary files /dev/null and b/images/map.png differ
+[1mdiff --git a/images/menu-burger.png b/images/menu-burger.png[m
+[1mnew file mode 100644[m
+[1mindex 0000000..a728c9d[m
+Binary files /dev/null and b/images/menu-burger.png differ
+[1mdiff --git a/index.html b/index.html[m
+[1mnew file mode 100644[m
+[1mindex 0000000..7c11680[m
+[1m--- /dev/null[m
+[1m+++ b/index.html[m
+[36m@@ -0,0 +1,106 @@[m
+[32m+[m[32m<!DOCTYPE html>[m
+[32m+[m[32m<html lang="cs">[m
+[32m+[m[32m<head>[m
+[32m+[m[32m   <meta charset="UTF-8">[m
+[32m+[m[32m   <meta name="viewport" content="width=device-width, initial-scale=1.0">[m
+[32m+[m[32m   <link rel="shortcut icon" href="images/favicon.png" type="image/png">[m
+[32m+[m[32m   <link rel="stylesheet" href="style.css">[m
+[32m+[m[32m   <title>Modelpark pod hradem</title>[m
+[32m+[m[32m</head>[m
+[32m+[m
+[32m+[m[32m<bod
