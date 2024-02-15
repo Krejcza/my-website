@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+
+.row{
+   max-width: 1240px;
+   margin: 0 auto;
+}
+
+header{
+   min-height: 95vh;
+   background: url(images/foto1.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+}
+
+.logos a img{
+   position: absolute;
+   top: 0.5%;
+   transition: 0.2s ease-in-out;
+}
+
+.logos a img:hover{
+   transform: scale(1.5);
+}
+
+
+.navbar {
+   top:0;
+   left: 0;
+   width: 100%;
+   padding: 25px 75px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   z-index: 100;
+}
+
+.navbar-container {
+   width: 100%;
+   margin: 0 auto;
+   background: rgba(255, 255, 255, 0.85);
+}
+
+nav a{
+   position: relative;
+   font-size: 1.5rem;
+   color:rgb(12, 12, 159);
+   font-weight: 600;
+   text-decoration: none;
+   margin-left: 15px;
+}
+
+nav a::before{
+   content: '';
+   height: 2px;
+   width: 0%;
+   background-color: #fff;
+   position: absolute;
+   transition: 0.5s;
+   bottom: -8px;
+}
+
+nav a:hover::before{
+   content: '';
+   height: 2px;
+   width: 100%;
+   position: absolute;
+   background-color: rgb(12, 12, 159);
+}
+
+.hlavni-text{
+   position: absolute;
+   top: 50vh;
+   left:5%;
+   width: 50%;
+   font-size: 4rem;
+   color: #fff;
+
+}
+
+.about-us{
+   display: flex;
+   flex-direction: row;
+}
+
+.about-us-text{
+   background: linear-gradient(rgb(25, 59, 181),rgba(11, 110, 87, 0.875));
+   position: relative;
+   top: -5rem;
+   color: black;
+   font-size: 25px;
+   margin: 5px;
+   padding: 20px;
+   border-radius: 5px 15px 55px 15px;
+   text-align: left;
+   color: #fff;
+   box-shadow: 20px 20px 20px #0000004c;
+   transition: 0.5s ease-in-out;
+}
+
+.about-us-text:hover{
+   transform: scale(1.1);
+}
+
+
+.obecny-nadpis{
+   display: flex;
+   justify-content: center;
+}
+
+.nadpis h2{
+   display: block;
+   font-size: 2rem;
+   color:rgb(12, 12, 159);
+   font-weight: 600;
+   border-bottom: 5px solid red;
+}
+
+.kecanicko{
+   display: flex;
+   justify-content: center;
+}
+
+.kecani-o-letisti p{
+   margin-top: 4%;
+   margin-bottom: 4%;
+   color: 000;
+   font-size: 1.5rem;
+   font-weight: 300;
+   text-align:justify
+}
+
+
+.obrazek-mapky img{
+   width: 50%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-radius: 25px;
+   box-shadow: 20px 20px 20px #0000007c;
+   margin-bottom: 100px;
+   transition: 0.5s ease-in-out;
+}
+
+.obrazek-mapky img:hover{
+   border: 5px solid #ffffff6e;
+   transform: scale(1.5);
+}
+
+.club-modelpark{
+   display: flex;
+   flex-direction: row;
+}
+
+.letistnikecani{
+   margin: 4% 8% 4% 8%;
+   color: 000;
+   font-size: 1.5rem;
+   font-weight: 200;
+   text-align: justify;
+}
+
+.photo-one{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+ 
+
+.club-photos img{
+   width: 25%;
+   margin: 1%;
+   border-radius: 25px;
+   transform: rotate(-0.25turn);
+   transition: 1s ease-out;
+   margin-top: 5rem;
+}
+
+.club-photos img:hover{
+   transform: scale(2);
+   z-index: 1;
+   border: 5px solid #ffffff6e;
+}
