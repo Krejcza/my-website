@@ -7,11 +7,15 @@
    font-family: 'Poppins', sans-serif;
 }
 
+
+/* REUSABLE */
 .row{
    max-width: 1240px;
    margin: 0 auto;
 }
 
+
+/* HEADER */
 header{
    min-height: 95vh;
    background: url(images/foto1.jpg);
@@ -21,13 +25,13 @@ header{
    background-attachment: fixed;
 }
 
-.logos a img{
+.logo a img{
    position: absolute;
    top: 0.5%;
    transition: 0.2s ease-in-out;
 }
 
-.logos a img:hover{
+.logo a img:hover{
    transform: scale(1.5);
 }
 
@@ -43,7 +47,7 @@ header{
    z-index: 100;
 }
 
-.navbar-container {
+.navbar-wrap {
    width: 100%;
    margin: 0 auto;
    background: rgba(255, 255, 255, 0.85);
@@ -76,19 +80,23 @@ nav a:hover::before{
    background-color: rgb(12, 12, 159);
 }
 
-main{
-   background: linear-gradient(rgb(255, 255, 255),rgba(0, 0, 0, 0.27),rgb(255, 255, 255));
-}
-
-.hlavni-text{
+.welcome-text h1{
    position: absolute;
    top: 50vh;
    left:5%;
    width: 50%;
    font-size: 4rem;
    color: #fff;
-
 }
+
+/* MAIN */
+
+main{
+   background: linear-gradient(rgb(255, 255, 255),rgba(0, 0, 0, 0.27),rgb(255, 255, 255));
+   margin-bottom: 15vh;
+}
+
+
 
 .about-us{
    display: flex;
@@ -115,12 +123,12 @@ main{
 }
 
 
-.obecny-nadpis{
+.major-title{
    display: flex;
    justify-content: center;
 }
 
-.nadpis h2{
+.title-header2 h2{
    display: block;
    font-size: 2rem;
    color:rgb(12, 12, 159);
@@ -128,12 +136,12 @@ main{
    border-bottom: 5px solid red;
 }
 
-.kecanicko{
+.filler-text-wrap{
    display: flex;
    justify-content: center;
 }
 
-.kecani-o-letisti p{
+.filler-text p{
    margin-top: 4%;
    margin-bottom: 4%;
    color: 000;
@@ -143,7 +151,7 @@ main{
 }
 
 
-.obrazek-mapky img{
+.photo-map img{
    width: 50%;
    display: block;
    margin-left: auto;
@@ -154,25 +162,25 @@ main{
    transition: 0.5s ease-in-out;
 }
 
-.obrazek-mapky img:hover{
+.photo-map img:hover{
    border: 5px solid #ffffff6e;
    transform: scale(1.5);
 }
 
-.club-modelpark{
+.about-club{
    display: flex;
    flex-direction: row;
 }
 
-.letistnikecani{
+/* .letistnikecani{
    margin: 4% 8% 4% 8%;
    color: 000;
    font-size: 1.5rem;
    font-weight: 200;
    text-align: justify;
-}
+} */
 
-.photo-one{
+.photogallery-ind{
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -181,7 +189,7 @@ main{
 
  
 
-.club-photos img{
+.photogallery-small img{
    width: 25%;
    margin: 1%;
    border-radius: 25px;
@@ -191,19 +199,19 @@ main{
    margin-bottom: 10em;
 }
 
-.club-photos img:hover{
+.photogallery-small img:hover{
    transform: scale(2);
    z-index: 1;
    border: 5px solid #ffffff6e;
 }
 
-.contact-phone{
+/* .contact-phone{
    margin: 4% 8% 4% 8%;
    color: 000;
    font-size: 1.5rem;
    font-weight: 200;
    text-align: justify;
-}
+} */
 
 .form-wrapper{
    display: grid;
@@ -276,17 +284,11 @@ label{
    line-height: 40px;
 }
 
-footer{
-   margin-top: 20vh;
-}
+/* Footer */
 
-.foot-middle{
-   background-color: #ff000028;
-}
-
-.foot-all{
-   display: flex;
-   justify-content: space-between;
+/* TOP */
+.wrap-social{
+   background-color: #00000067;
 }
 
 .social-media{
@@ -301,32 +303,41 @@ footer{
    transition: 0.5s;
 }
 
-.social-media img:hover{
-   transform: scale(1.1);
-}
-
 .social-media p{
    margin: auto 0;
    font-weight: 500;
 }
 
+.social-media img:hover{
+   transform: scale(1.1);
+}
 
+/* MIDDLE */
 
-.foot-page-one,
-.foot-page-two,
-.foot-page-three {
+.footer-middle{
+   background-color: #00ff0828;
+}
+
+.footer-middle-all{
+   display: flex;
+   justify-content: space-between;
+}
+
+.footer-one,
+.footer-two,
+.footer-three {
   flex: 1;
   padding: 2rem 0.25rem;
 }
 
-.foot-page-one{
+.footer-one{
    display: flex;
    flex-direction: column;
    align-items: flex-start;
    padding-left: 1rem;
 }
 
-.foot-page-one a{
+.footer-one a{
    color: #000;
    text-decoration: none;
    font-size: 1.15rem;
@@ -334,18 +345,18 @@ footer{
    transition: 0.4s;
 }
 
-.foot-page-one a:hover{
+.footer-one a:hover{
   transform: scale(1.1) translateX(1rem);
 }
 
-.foot-page-two{
+.footer-two{
    padding: 1rem;
    font-size: 1.15rem;
    color: #000;
 
 }
 
-.foot-page-two h2{
+.footer-two h2{
    font-size: 1.5rem;
    margin-bottom: 2rem;
 }
@@ -357,41 +368,38 @@ footer{
    flex-direction: column;
 }
 
-.contact-small-first{
+.contact-small-one{
    font-size: 1rem;
    color: #000;
    line-height: 2rem;
    padding-bottom: 20px;
 }
 
-.contact-small-first p{
+.contact-small-one p{
    line-height: 1.5rem;
    text-align: end;
 }
 
-.contact-small-first h3{
+.contact-small-one h3{
    text-align: end;
 }
 
 
-.contact-small-second{
+.contact-small-two{
    font-size: 1rem;
    color: #000;
    line-height: 2rem;
 }
 
-.contact-small-second p{
+.contact-small-two p{
    line-height: 1.5rem;
    text-align: end;
 }
 
-.contact-small-second h3{
+.contact-small-two h3{
    text-align: end;
 }
 
-.wrap-social{
-   background-color: #00000067;
-}
 
 .wrap-madeby{
    background-color: #00000067;
