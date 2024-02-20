@@ -27,11 +27,51 @@
          </nav>
 
       </div>
-      
-      <div class="welcome-text row">
-         <h1>Vítají Vás stránky Modelparku pod Hradem</h1>
+      <div class="welcome-text-wrapper row">
+         <div class="welcome-text ">
+            <h1>Vítají Vás stránky Modelparku pod Hradem</h1>
+         </div>
       </div>
       
+
+      <section class="slider-wrapper">
+         <div class="slider">
+            <div class="slides">
+               <input type="radio" name="radio-btn" id="radio1">
+               <input type="radio" name="radio-btn" id="radio2">
+               <input type="radio" name="radio-btn" id="radio3">
+               <input type="radio" name="radio-btn" id="radio4">
+               <input type="radio" name="radio-btn" id="radio5">
+            
+
+               <div class="slide first">
+                  <img src="images/foto1.jpg" alt="">
+               </div>
+               <div class="slide">
+                  <img src="images/foto1.jpg" alt="">
+               </div>
+               <div class="slide">
+                  <img src="images/foto1.jpg" alt="">
+               </div>
+               <div class="slide">
+                  <img src="images/foto1.jpg" alt="">
+               </div>
+               <div class="slide">
+                  <img src="images/foto1.jpg" alt="">
+               </div>
+
+            </div>
+            <div class="radio-manual row">
+               <div class="navigation-manual">
+                  <label for="radio1" class="manual-btn"></label>
+                  <label for="radio2" class="manual-btn"></label>
+                  <label for="radio3" class="manual-btn"></label>
+                  <label for="radio4" class="manual-btn"></label>
+                  <label for="radio5" class="manual-btn"></label>
+               </div>
+            </div>
+         </div>
+      </section>
    </header>
 
    <main>
@@ -65,10 +105,16 @@
          </div>
       </section>
 
-         <div class="photo-map row">
-            <img src="images/foto1.jpg" alt="">
-         </div>
-
+         <section class="our-airport">
+            <div class="our-airport-photo row">
+               <div class="photo-map-one">
+                  <iframe title="Norinco QSZ-92G 9mm Handgun" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9552035434514828b7f57b6738f5fb7a/embed"> </iframe>
+               </div>
+               <div class="photo-map-two row">
+                  <img src="images/foto1.jpg" alt="">
+               </div>
+            </div>   
+      </section>
 
       <section class="major-title row">
          <div class="title-header2"> 
@@ -184,6 +230,17 @@
       </section>
 
    </footer>
+
+   <script type="text/javascript">
+      let counter = 1;
+      setInterval(function(){
+         document.querySelector('#radio' + counter).checked = true;
+         counter ++;
+         if(counter >5){
+            counter = 1
+         }
+      }, 7500);
+   </script>
 
 </body>
 </html>
