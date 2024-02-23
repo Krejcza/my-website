@@ -1,0 +1,43 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+main{
+   height: 95vh;
+}
+
+.rules-wrapper{
+   margin-top: 10vh;
+}  
+
+.rules{
+   display: flex;
+   align-items: center;
+}
+
+.rules-image img{
+   width: 80%;
+}
+
+.rules-text{
+   display: flex;
+   flex-direction:column;
+   row-gap: 2rem;
+}
+
+.only-rules-text p{
+   color: #fff;
+}
+
+.disclaimer-text p{
+   padding-top: 10vh;
+   color: #fff;
+   font-weight: 800;
+   letter-spacing: 3px;
+   font-size: 1.5rem;
+   text-align: center;
+}
+
+
