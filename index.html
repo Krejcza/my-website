@@ -3,8 +3,10 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="query.css">
    <title>Modelpark pod hradem</title>
 </head>
 
@@ -19,11 +21,11 @@
       <div class="navbar-wrap">
 
          <nav class="navbar row">
-            <a href="#">Naše letiště</a>
-            <a href="#">Klub MPH</a>
+            <a href="#our-airport-click">Naše letiště</a>
+            <a href="#klub-mph-click">Klub MPH</a>
             <a href="Calendar.html">Kalendář akcí</a>
             <a href="Photogallery.html">Fotogalerie</a>
-            <a href="#">Kontakt</a>
+            <a href="#kontakt-click">Kontakt</a>
          </nav>
 
       </div>
@@ -105,8 +107,11 @@
          <div class="filler-text">
             <div class="weather-card">
                <div class="weather">
-                  <p>Němčice</p>
-                  <img src="images/clear.png" alt="" class="weather-icon">
+                  <div class="main-details-nemcice">
+                     <img src="images/clear.png" alt="" class="weather-icon">
+                     <p>Němčice</p>
+                  </div>
+               
                   <div class="col">
                      <!-- temp -->
                      <img src="images/humidity.png">
@@ -202,19 +207,29 @@
       </section>
 
       <section class="form-wrapper row">
-         <form class="form-area">
-             <div class="details-area">
-               <!-- <label for="name">Jméno a příjmení</label> -->
-               <input type="text" placeholder="Jméno a příjmení">
+         <form class="form-area" action="mailer.php" method="post">
 
-               <!-- <label for="email">E-mail</label> -->
-               <input type="email" placeholder="E-mail">
+             <div class="details-area">
+               <input type="text" name="name" placeholder="Jméno a příjmení">
+               <input type="email" name="email" placeholder="E-mail">
 
                <input type="submit" value="Odeslat">
             </div>
             <div class="message-area">
-               <!-- <label for="message">Zpráva</label> -->
-               <textarea name="" id="" placeholder="Vaše zpráva"></textarea>
+               <textarea name="message" id="" placeholder="Vaše zpráva"></textarea>
+            </div>
+            <div class="success-or-error">
+
+         <!-- <?php
+            if ($_GET['success'] == 1) {
+               echo "<div class=\"form-result success\">Odeslání proběhlo v pořádku.</div>";
+            }
+       
+            if ($_GET['success'] == -1) {
+               echo "<div class=\"form-result error\">Chyba při odeslání. Zkuste znovu.</div>";
+           }
+            ?> -->
+            
             </div>
          </form>
       </section>
@@ -235,8 +250,8 @@
       <section class="footer-middle ">
          <div class="footer-middle-all row">
             <div class="footer-one">
-               <a href="#">Naše letiště</a>
-               <a href="#">Klub MPH</a>
+               <a href="#our-airport-click">Naše letiště</a>
+               <a href="#klub-mph-click">Klub MPH</a>
                <a href="Calendar.html">Kalendář akcí</a>
                <a href="Photogallery.html">Fotogalerie</a>
             </div>
@@ -285,7 +300,7 @@
          }
       }, 5000);
    </script>
-
+<script src="script-scrolling.js"></script>
 <script src="script-wea.js"></script>
 </body>
 </html>
