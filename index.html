@@ -94,8 +94,10 @@
       </section>
 
       <section class="major-title row">
-         <div class="title-header2">
-            <h2>Naše letiště</h2>
+         <div id="our-airport-click">
+            <div class="title-header2">
+               <h2>Naše letiště</h2>
+            </div>
          </div>
       </section>
 
@@ -104,7 +106,7 @@
             <div class="weather-card">
                <div class="weather">
                   <p>Němčice</p>
-                  <img src="images/clear.png" alt="">
+                  <img src="images/clear.png" alt="" class="weather-icon">
                   <div class="col">
                      <!-- temp -->
                      <img src="images/humidity.png">
@@ -157,8 +159,10 @@
       </section>
 
       <section class="major-title row">
-         <div class="title-header2"> 
-            <h2>Klub Modelpark pod Hradem</h2>
+         <div id="klub-mph-click">
+            <div class="title-header2"> 
+               <h2>Klub Modelpark pod Hradem</h2>
+            </div>
          </div>
       </section>
 
@@ -182,8 +186,10 @@
       </section>
 
       <section class="major-title row">
-         <div class="title-header2"> 
-            <h2>Kontakt</h2>
+         <div id="kontakt-click">
+            <div class="title-header2"> 
+               <h2>Kontakt</h2>
+            </div>
          </div>
       </section>
 
@@ -197,19 +203,18 @@
 
       <section class="form-wrapper row">
          <form class="form-area">
-            <div class="message-area">
-               <label for="message">Zpráva</label>
-               <textarea name="" id="" placeholder="Vaše zpráva"></textarea>
-            </div>
-
-            <div class="details-area">
-               <label for="name">Jméno a příjmení</label>
+             <div class="details-area">
+               <!-- <label for="name">Jméno a příjmení</label> -->
                <input type="text" placeholder="Jméno a příjmení">
 
-               <label for="email">E-mail</label>
+               <!-- <label for="email">E-mail</label> -->
                <input type="email" placeholder="E-mail">
 
                <input type="submit" value="Odeslat">
+            </div>
+            <div class="message-area">
+               <!-- <label for="message">Zpráva</label> -->
+               <textarea name="" id="" placeholder="Vaše zpráva"></textarea>
             </div>
          </form>
       </section>
@@ -232,8 +237,8 @@
             <div class="footer-one">
                <a href="#">Naše letiště</a>
                <a href="#">Klub MPH</a>
-               <a href="#">Kalendář akcí</a>
-               <a href="#">Fotogalerie</a>
+               <a href="Calendar.html">Kalendář akcí</a>
+               <a href="Photogallery.html">Fotogalerie</a>
             </div>
 
                <div class="footer-two">
@@ -278,8 +283,9 @@
          if(counter >5){
             counter = 1
          }
-      }, 7500);
+      }, 5000);
    </script>
 
+<script src="script-wea.js"></script>
 </body>
 </html>

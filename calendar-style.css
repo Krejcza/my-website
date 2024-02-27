@@ -1,0 +1,71 @@
+*{
+   margin: 0;
+   padding: 00;
+   box-sizing: border-box;
+}
+
+.main-text{
+   margin-top: 10vh;
+}
+
+.main-text p{
+   color: #fff;
+   font-size: 2rem;
+   font-weight: 600;
+}
+
+.events-bar{
+   display: flex;
+   flex-direction: column;
+   row-gap: 10vh;
+   min-height: 10vh;
+   margin-top: 5vh;
+   padding: 1.5rem;
+   background-color: rgb(171, 158, 9);
+   border-radius: 25px;
+   border: 2px inset #fff;
+}
+
+
+.event-bar-in{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.event-bar-in img{
+   width: 200px;
+   border-radius: 25px;
+   box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+.event-details{
+   margin-left: 2rem;
+}
+
+.event-details-date{
+   top: 25px;
+   left: 200px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-bottom: 2.5vh;
+}
+
+.name-event{
+   color: #fff;
+   font-size: 1.75rem;
+   font-weight: 500;
+}
+
+.date-of-action{
+   color: #fff;
+   font-size: 1.75rem;
+   font-weight: 500;
+}
+
+.name-of-action{
+   color:#fff;
+   font-size: 1.15rem;
+}
