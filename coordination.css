@@ -1,0 +1,15 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+#map{
+   margin-top: 10vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 40px;
+   background: goldenrod;
+   border-radius: 25px;
+}

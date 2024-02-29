@@ -17,18 +17,28 @@
          <a href='#'><img src="images/logo-of-modelpark-white-small.png" alt=""></a>
       </div>
 
-
       <div class="navbar-wrap">
 
          <nav class="navbar row">
-            <a href="#our-airport-click">Naše letiště</a>
-            <a href="#klub-mph-click">Klub MPH</a>
-            <a href="Calendar.html">Kalendář akcí</a>
-            <a href="Photogallery.html">Fotogalerie</a>
-            <a href="#kontakt-click">Kontakt</a>
+            <a href="#our-airport-click" class="ease-a">Naše letiště</a>
+            <a href="#klub-mph-click"  class="ease-a">Klub MPH</a>
+            <a href="Calendar.html"  class="ease-a">Kalendář akcí</a>
+            <a href="Photogallery.html"  class="ease-a">Fotogalerie</a>
+            <a href="#kontakt-click"  class="ease-a">Kontakt</a>
          </nav>
-
+         <div class="ham-bar-men row">
+            <button class="hamburger">
+               <div class="bar"></div>
+            </button>
+         </div>
       </div>
+      <nav class="mobile-nav">
+         <a href="#our-airport-click">Naše letiště</a>
+         <a href="#klub-mph-click">Klub MPH</a>
+         <a href="Calendar.html">Kalendář akcí</a>
+         <a href="Photogallery.html">Fotogalerie</a>
+         <a href="#kontakt-click">Kontakt</a>
+      </nav>
       <div class="welcome-text-wrapper row">
          <div class="welcome-text ">
             <h1>Vítají Vás stránky Modelparku pod Hradem</h1>
@@ -149,7 +159,9 @@
 
             </div>
             <p>Vítejte na našem modelářském letišti v Pardubickém kraji, které se nachází u obce Němčice s krásným výhledem na Kunětickou horu. S rozlohou XXXm2 poskytuje ideální prostor pro létání s RC modely. Naše letiště je vybaveno přistávací drahou, přístřeškem, tribunou a nově i malou vyhlídkovou věží. Můžete zde potkat nadšené modeláře, kteří sdílejí svou vášeň pro létání a kreativitu při stavbě modelů. Nejenže si zde můžete vychutnat své létání, ale také se zapojit do společných akcí a soutěží, které se tu běžně pořádají. </p>
-            <a href="operating-rules.html" class="operating-rules">Provozní řád letiště</a>
+            <div class="operating-rules-wrapper">
+               <a href="operating-rules.html" class="operating-rules">Provozní řád letiště</a>
+            </div>
          </div>
       </section>
          <section class="our-airport">
@@ -162,6 +174,9 @@
                </div>
             </div>   
       </section>
+      <div class="coordination-wrapper">
+         <a href="coordination-map.html" class="coordination">Souřadnice letiště</a>
+      </div>
 
       <section class="major-title row">
          <div id="klub-mph-click">
@@ -200,7 +215,7 @@
 
 
       <section class="contact row">
-         <div class="filler-text">
+         <div class="filler-text addition">
             <p>Chcete se k nám přidat, pokecat o létání se stejně posedlými lidmi nebo se domluvit na předváděcí akci? Kontaktujte nás zde na e-mail nebo sledujte naše aktivity na sociálních sítích! Rádi uvítáme nové tváře i zkušené letce! </p>
          </div>
 
@@ -212,12 +227,12 @@
              <div class="details-area">
                <input type="text" name="name" placeholder="Jméno a příjmení">
                <input type="email" name="email" placeholder="E-mail">
-
+               <div class="message-area">
+                  <textarea name="message" id="" placeholder="Vaše zpráva"></textarea>
+               </div>
                <input type="submit" value="Odeslat">
             </div>
-            <div class="message-area">
-               <textarea name="message" id="" placeholder="Vaše zpráva"></textarea>
-            </div>
+            
             <div class="success-or-error">
 
          <!-- <?php
@@ -258,7 +273,7 @@
 
                <div class="footer-two">
                   <h2>Kdo jsme?</h2>
-                  <p>Jsme parta chlapů všeho věku, ale v srdci se všichni cítíme jako čerství dvacátníci. Stavíme, lítáme a poznáváme nový věci ve světě RC modelů, ať už to je doma nebo na našem modelářském letišti. Dohromady zažíváme kouzlo létání a štěstí z těch našich RC miláčků.<br><span class="letu-zdar">Letu zdar!</span></p>
+                  <p>Jsme parta chlapů všeho věku, ale v srdci se všichni cítíme jako čerství dvacátníci. Stavíme, lítáme a poznáváme nový věci ve světě RC modelů, ať už to je doma nebo na našem modelářském letišti. Dohromady zažíváme kouzlo létání a štěstí z těch našich RC miláčků.<br><br><span class="letu-zdar">Letu zdar!</span></p>
                </div>
 
             <div class="footer-three"> 
@@ -290,16 +305,16 @@
 
    </footer>
 
-   <script type="text/javascript">
-      let counter = 1;
-      setInterval(function(){
-         document.querySelector('#radio' + counter).checked = true;
-         counter ++;
-         if(counter >5){
-            counter = 1
-         }
-      }, 5000);
-   </script>
+<script type="text/javascript">
+   let counter = 1;
+   setInterval(function(){
+      document.querySelector('#radio' + counter).checked = true;
+      counter ++;
+      if(counter >5){
+         counter = 1
+      }
+   }, 5000);
+</script>
 <script src="script-scrolling.js"></script>
 <script src="script-wea.js"></script>
 </body>

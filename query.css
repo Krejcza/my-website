@@ -1,26 +1,135 @@
-@media only screen and (max-width: 905px){
-
-
-   .welcome-text h1{
-      margin-left: 2rem;
+@media only screen and (max-width: 1400px){
+   .logo a img{
+      margin-left: 50px;
    }
 
+   .welcome-text h1{
+      margin-left: 50px;
+   }
+
+   .about-us{
+      margin: 0 50px;
+   }
+
+   .filler-text{
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+
+   .weather-card{
+      margin-bottom: 50px;
+   }
+
+   .photo-map-two img{
+      margin-left: 50px;
+      margin-right:  50px;
+   }
+
+   .photo-map-two img:hover{
+      transform: scale(1.1);
+   }
+
+   .our-airport-photo{
+      display: flex;
+   }
+
+   .social-media{
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+
+    .footer-middle-all{
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+
+}
+
+
+
+@media only screen and (max-width: 1000px){
    .about-us{
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
-      
    }
-    
+
    .about-us-text{
       margin: 15px;
    }
 
+   
    .about-us-text:nth-child(2),
    .about-us-text:nth-child(3){
       display: none;
    }
 
+   .logo{
+      display: none;
+   }
+   
+   .navbar{
+      display: none;
+   }
+
+   .navigation-manual{
+      display: flex;
+      justify-content: flex-start;
+      margin-top: -80vh;
+      margin-right: 125px;
+      background-color: goldenrod;
+      padding: 20px 10px 20px 25px;
+      border-radius: 15px;
+   }
+
+}
+
+@media only screen and (min-width: 1000px){
+   
+   .mobile-nav{
+      display: none;
+   }
+
+   .hamburger{
+      display: none;
+   }
+
+}
+
+@media only screen and (max-width: 900px){
+   
+   .footer-middle-all{
+      flex-direction: column;
+   }
+
+   .footer-one{
+      align-items: center;
+   }
+
+   .footer-one a{
+      font-size: 1.5rem;
+      line-height: 4rem;  
+   }
+
+   .contact-small{
+      flex-direction: row;
+      column-gap: 2rem;
+      justify-content: space-around;
+   }
+
+   .contact-small-one p,
+   .contact-small-two p{
+      text-align: center;
+   }
+
+   .contact-small-one h3,
+   .contact-small-two h3{
+      text-align: center;
+   }
+}
+
+@media only screen and (max-width: 800px){
+   
    .weather-card{
       margin-left: 1rem;
       margin-right: 1rem;
@@ -47,10 +156,121 @@
       text-align: center;
       font-size: 2.5rem;
    }
+}
+
+
+
+
+@media only screen and (max-width: 650px){
+
+
 
    .filler-text{
-      margin-left: 2rem;
-      margin-right: 2rem;
+      width: 80vw;
    }
+
+   .operating-rules{
+      margin-top: 40px;
+      margin-bottom: 50px;
+      font-size: 1.5rem;
+   }
+
+   .operating-rules:hover{
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      font-size: 1.5rem;
+      background: rgb(171, 158, 9);
+      width:400px;
+      border: 2px inset #fff;
+      border-radius: 15px;
+   }
+
+   .coordination{
+      font-size: 1.5rem;
+   }
+
+   .coordination:hover{
+      text-decoration: none;
+      color: #fff;
+      text-align: center;
+      font-size: 1.5rem;
+      background: rgb(171, 158, 9);
+      width:400px;
+      border: 2px inset #fff;
+      border-radius: 15px;
+   }
+
+   .our-airport-photo{
+      flex-direction: column;
+   }
+
+   .photo-map-one iframe{
+      display: none;
+   }
+
+   .photo-map-two{
+      margin-top: -200px;
+      margin-bottom: 180px;
+      display: flex;
+      justify-content: center;
+   }
+
+   .photo-map-two img:hover{
+      border: 5px inset #fff;
+      transform: scale(1.1);
+   }
+
+   .about-club{
+      flex-direction: column;
+   }
+
+   .title-header2{
+      display: flex;
+      justify-content: center;
+   }
+
+   .title-header2 h2{
+      border-bottom: 2px solid rgb(254,95,0);
+      width: 75vw;
+   }
+
+   .addition p{
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
+
+   .form-area{
+      width: 80vw;
+   }
+
+   .details-area input[type=submit],
+   .details-area input[type=text],
+   .details-area input[type=email],
+   .message-area textarea{
+      width: 60vw;
+   }
+
+   .details-area input[type=submit]:focus,
+   .details-area input[type=text]:focus,
+   .details-area input[type=email]:focus,
+   .message-area textarea:focus{
+      width: 70vw;
+   }
+
+   .photogallery-ind img:nth-child(2),
+   .photogallery-ind img:nth-child(3){
+      display: none;
+   }
+
+   .photogallery-ind img:nth-child(1){
+      transform: rotate(0);
+      width: 80vw;
+   }
+
+   .photogallery-ind img:hover{
+      transform: scale(1.05)
+   }
+
 
 }

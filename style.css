@@ -28,13 +28,12 @@ html{
    position: absolute;
    top: 0.25%;
    transition: 0.4s ease;
-   width: 5vh;
+   width: 80px;
 }
 
 .logo a img:hover{
    transform: rotate(10deg) scale(1.25);
 }
-
 
 .navbar {
    top:0;
@@ -52,7 +51,7 @@ html{
    border-bottom: 2px inset #fff;
 }
 
-nav a{
+nav .ease-a{
    font-size: 1.5rem;
    color:rgb(171, 158, 9);
    font-weight: 600;
@@ -61,11 +60,11 @@ nav a{
    transition: 0.5s;
 }
 
-nav a:hover{
+nav .ease-a:hover{
    transform: translateY(0.15rem)
 }
 
-nav a::before{
+nav .ease-a::before{
    content: '';
    height: 2px;
    width: 0%;
@@ -75,13 +74,88 @@ nav a::before{
    bottom: -8px;
 }
 
-nav a:hover::before{
+nav .ease-a:hover::before{
    content: '';
    height: 2px;
    width: 100%;
    position: absolute;
    background-color: rgb(254,95,0);
 }
+
+.ham-bar-men{
+   position: absolute;
+   right: 50px;
+   top: 50px;
+   display: flex;
+   justify-content: end;
+}
+
+.hamburger{
+   position: relative;
+   display:block;
+   width: 55px;
+   cursor: pointer;
+   appearance: none;
+   background: none;
+   outline: none;
+   border: none;
+   z-index: 101;
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before{
+   content: '';
+   display: block;
+   width: 100%;
+   height: 10px;
+   background-color: #ffffff;
+   margin: 6px 0px;
+   transition: 0.4s;
+}
+
+.hamburger.is-active::before{
+   transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active::after{
+   transform: rotate(45deg) translate(-12px, -16px);
+}
+
+.hamburger.is-active .bar{
+   opacity: 0;
+}
+
+
+
+.mobile-nav{
+   display: block;
+   position: fixed;
+   top:0;
+   left: 100%;
+   width: 100%;
+   min-height: 100vh;
+   z-index: 98;
+   background-color: aqua;
+   padding-top: 120px;
+   transition: 0.4s;
+}
+
+.mobile-nav.is-active{
+  left: 0;
+}
+
+.mobile-nav a{
+   display: block;
+   width: 100%;
+   max-width: 300px;
+   margin: 0 auto 16px;
+   text-align: center;
+   margin-bottom: 16px;
+   padding: 12px 16px;
+   background-color: #1f003F;
+   color: #fff;
+   text-decoration: none;
+}
+
 
 .welcome-text-wrapper{
    position: relative;
@@ -93,13 +167,12 @@ nav a:hover::before{
    width: 75%;
    font-size: clamp(35px, 5vh, 100px);
    color: #fff;
-   z-index: 100;
+   z-index: 95;
 }
 
 .slider{
    width:100%;
    overflow: hidden;
-
 }
 
 .slides{
@@ -135,6 +208,7 @@ nav a:hover::before{
    position: absolute;
    margin-top: -80vh;
    display: flex;
+
 }
 
 .manual-btn{
@@ -142,7 +216,8 @@ nav a:hover::before{
    padding: 0.5rem;
    border-radius: 1rem;
    cursor: pointer;
-   transition:1s;
+   transition:0.5s;
+   margin-left: -15px;
 }
 
 .manual-btn:not(:last-child){
@@ -150,7 +225,9 @@ nav a:hover::before{
 }
 
 .manual-btn:hover{
-   background: #fff;
+   background: goldenrod;
+   border: 2px solid goldenrod;
+   border-radius: 5px;
 }
 
 #radio1:checked ~ .first{
@@ -212,9 +289,9 @@ border-top: 2px inset #fff;
    transition: 0.5s ease-out;
 }
 
-/* .about-us-text:hover{
+.about-us-text:hover{
    transform: scale(1.05);
-} */
+}
 
 
 .major-title{
@@ -227,6 +304,7 @@ border-top: 2px inset #fff;
    color:rgb(171, 158, 9);
    font-weight: 600;
    border-bottom: 2px solid rgb(254,95,0);
+   text-align: center;
 }
 
 .filler-text-wrap{
@@ -281,12 +359,66 @@ border-top: 2px inset #fff;
    margin-right: 2rem;
 }
 
+.operating-rules-wrapper{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   padding: 10px;
+}
+
 .operating-rules{
-   display: block;
    text-decoration: none;
    color: #fff;
    text-align: center;
    font-size: 2rem;
+   background: transparent;
+   width: 400px;
+   border: 2px solid transparent;
+   border-radius: 50px;
+   transition: 0.5s ease-out;
+}
+
+.operating-rules:hover{
+   text-decoration: none;
+   color: #fff;
+   text-align: center;
+   font-size: 2rem;
+   background: rgb(171, 158, 9);
+   width: 500px;
+   border: 2px inset #fff;
+   border-radius: 5px;
+}
+
+.coordination-wrapper{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   padding: 10px;
+   margin-top: -10vh;
+   margin-bottom: 5vh;
+}
+
+.coordination{
+   text-decoration: none;
+   color: #fff;
+   text-align: center;
+   font-size: 2rem;
+   background: transparent;
+   width: 400px;
+   border: 2px solid transparent;
+   border-radius: 50px;
+   transition: 0.5s ease-out;
+}
+
+.coordination:hover{
+   text-decoration: none;
+   color: #fff;
+   text-align: center;
+   font-size: 2rem;
+   background: rgb(171, 158, 9);
+   width: 500px;
+   border: 2px inset #fff;
+   border-radius: 5px;
 }
 
 .our-airport-photo{
@@ -303,10 +435,18 @@ border-top: 2px inset #fff;
    display: flex;
 }
 
+.photo-map-one iframe{
+   width: 75%;
+   margin: 0 auto;
+   object-fit: cover;
+   border-radius: 25px;
+   box-shadow: 20px 20px 20px #0000007c;
+   transition: 0.5s ease-out;
+}
 
-.photo-map-one iframe,
+
 .photo-map-two img{
-   max-width: 75%;
+   width: 75%;
    margin: 0 auto;
    object-fit: cover;
    border-radius: 25px;
@@ -316,7 +456,7 @@ border-top: 2px inset #fff;
 
 .photo-map-two img:hover{
    border: 5px inset #fff;
-   transform: scale(1.5);
+   transform: scale(1.25);
 }
 
 .about-club{
@@ -342,21 +482,13 @@ border-top: 2px inset #fff;
 }
 
  
-
 .photogallery-ind img{
    width: 25%;
    margin: 1%;
    border-radius: 25px;
-   transform: rotate(-0.25turn);
    transition: 1s ease-out;
    margin-top: 5em;
    margin-bottom: 10em;
-}
-
-.photogallery-ind img:hover{
-   transform: scale(2);
-   z-index: 1;
-   border: 2px inset #fff;
 }
 
 .form-wrapper{
@@ -368,8 +500,8 @@ border-top: 2px inset #fff;
    display: flex;
    align-items: center;
    justify-content: center;
-   width: 1000px;
-   min-height: 400px;
+   width: 500px;
+   height: 500px;
    background-color:rgb(171, 158, 9);
    border-radius: 25px;
    flex-wrap: wrap;
@@ -380,26 +512,37 @@ border-top: 2px inset #fff;
    display: flex;
    flex-direction: column;
    row-gap: 2rem;
-   padding: 30px;
+   padding-top: 20px;
+   padding-bottom: 20px;
    height: 100%;
-   justify-content: space-between;
+   justify-content: space-evenly;
+   align-items: center;
 }
 
 .details-area input[type=text],
 .details-area input[type=email]{
    width: 350px;
-   height: 75px;
+   height: 50px;
    border-radius: 25px;
    padding: 20px;
    border: 0;
    outline: 0;
    font-size: 1.15rem;
    text-align: left;
+   transition: 0.5s ease-out;
 }
+
+.details-area input[type=text]:focus,
+.details-area input[type=email]:focus{
+   height: 75px;
+   width: 400px;
+   box-shadow: 0px 5px 15px #4f4f4f;
+}
+
 
 .details-area input[type=submit]{
    width: 350px;
-   height: 50px;
+   height: 150px;
    text-align: center;
    border-radius: 25px;
    border: 0;
@@ -414,20 +557,30 @@ border-top: 2px inset #fff;
 }
 
 .message-area{
-   flex: 1;
+   text-align: center;
+   justify-content: center;
    height: 100%;
-   padding: 30px;
+   width: 100%;
 }
 
 .message-area textarea{
-   width: 100%;
-   height: 100%;
+   width: 350px;
+   height: 175px;
    border-radius: 25px;
-   padding: 20px;
+   padding: 15px;
    border: 0;
    outline: 0;
    text-align: left;
    font-size: 1.15rem;
+   overflow: hidden;
+   transition: 0.5s ease-out;
+   resize: none;
+}
+
+.message-area textarea:focus{
+   box-shadow: 0px 5px 15px #4f4f4f;
+   height: 200px;
+   width: 400px;
 }
 
 .success-or-error{
@@ -455,78 +608,6 @@ border-top: 2px inset #fff;
    padding: 5px;
 }
 
-
-
-/* .form-wrapper{
-   display: grid;
-   place-items: center;
-   min-height: 20vh;
-}
-
-.form-area{
-   max-width: 800px;
-   height: auto;
-   display: flex;
-   background-color: rgb(197, 163, 9);
-   border-radius: 25px;
-   padding: 1.8rem;
-}
-
-.message-area{
-   display: flex;
-   flex-direction: column;
-   order: 2;
-}
-
-.message-area textarea{
-   flex: 1;
-   min-width: 18rem;
-   background: #ffffff9c ;
-   color: #fff;
-   padding: 15px;
-   border: 0;
-   border-radius: 25px;
-}
-
-.details-area{
-   flex: 1;
-   order: 1;
-   margin-right: 1rem;
-   text-align: center;
-}
-
-.details-area input{
-   width: 450px;
-   color: #fff;
-   border-radius:50px;
-   height: 50px;
-   background: #ffffff9c;
-   border: 0;
-   padding: 1rem;
-   margin-bottom: 1rem;
-}
-
-.details-area input[type=submit]{
-   background: blue;
-   color: #fff;
-   border: 0;
-   padding: 15px 50px;
-   border-radius: 25px;
-   text-transform: uppercase;
-   margin-top: 30px;
-   transition: 0.3s ease-in-out;
-}
-
-.details-area input[type=submit]:hover{
-   transform: scale(1.025);
-}
-
-
-label{
-   color: #fff;
-   text-transform: uppercase;
-   line-height: 40px;
-} */
 
 /* Footer */
 

@@ -4,8 +4,11 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+   <link rel="stylesheet" href="coordination.css">
+   <link rel="stylesheet" href="photo-img-indiv.css">
    <link rel="stylesheet" href="calendar-style.css">
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="query.css">
    <title>Kalendář akcí | Modelpark pod hradem</title>
 </head>
 
@@ -25,74 +28,39 @@
             <a href="Calendar.html" class="ease-a">Kalendář akcí</a>
             <a href="Photogallery.html" class="ease-a">Fotogalerie</a>
             <a href="index.html#kontakt-click" class="ease-a">Kontakt</a>
-
+         </nav>
+         <div class="ham-bar-men row">
+            <button class="hamburger">
+               <div class="bar"></div>
+            </button>
+         </div>
+      </div>
+      <nav class="mobile-nav">
+         <a href="#our-airport-click">Naše letiště</a>
+         <a href="#klub-mph-click">Klub MPH</a>
+         <a href="Calendar.html">Kalendář akcí</a>
+         <a href="Photogallery.html">Fotogalerie</a>
+         <a href="#kontakt-click">Kontakt</a>
+      </nav>
       </div>
    </header>
 
    <main>
+   <section class="back-button row">
+      <div class="back-btn">
+         <a href="index.html">&#8682; Zpět na hlavní stránku</a>
+      </div>
+   </section>
    <section class="events-main-text row">
       <div class="main-text">
-         <p>Kalendář akcí</p>
+         <p>Mapa letiště</p>
       </div>
-
-   </section>
-
-   <section class="events-cal row">
-      <div class="events-all">
-         <div class="events-bar fresh">
-            <div class="event-bar-in">
-               <img src="images/guys-controlling-rc-aircraft-in-competition.jpg" alt="">
-               <div class="event-details">
-                  <div class="event-details-date">
-                     <p class="name-event">Název akce</p>
-                     <p class="date-of-action">12.9.2023</p>
-                  </div>
-                  <p class="name-of-action">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat vitae aliquid placeat, fuga obcaecati modi ipsam non iusto omnis. Mollitia quisquam sunt atque, reprehenderit repellat illo soluta dicta dolor error?</p>
-               </div>
-            </div>
-            
-         </div>
-         <div class="events-bar fresh">
-            <div class="event-bar-in">
-               <img src="images/guys-controlling-rc-aircraft-in-competition.jpg" alt="">
-               <div class="event-details">
-                  <div class="event-details-date">
-                     <p class="name-event">Název akce</p>
-                     <p class="date-of-action">12.9.2023</p>
-                  </div>
-                  <p class="name-of-action">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat vitae aliquid placeat, fuga obcaecati modi ipsam non iusto omnis. Mollitia quisquam sunt atque, reprehenderit repellat illo soluta dicta dolor error?</p>
-               </div>
-            </div>
-            
-         </div>
-         <div class="events-bar fresh">
-            <div class="event-bar-in">
-               <img src="images/guys-controlling-rc-aircraft-in-competition.jpg" alt="">
-               <div class="event-details">
-                  <div class="event-details-date">
-                     <p class="name-event">Název akce</p>
-                     <p class="date-of-action">12.9.2023</p>
-                  </div>
-                  <p class="name-of-action">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat vitae aliquid placeat, fuga obcaecati modi ipsam non iusto omnis. Mollitia quisquam sunt atque, reprehenderit repellat illo soluta dicta dolor error?</p>
-               </div>
-            </div>
-            
-         </div>
-         <div class="events-bar fresh">
-            <div class="event-bar-in">
-               <img src="images/guys-controlling-rc-aircraft-in-competition.jpg" alt="">
-               <div class="event-details">
-                  <div class="event-details-date">
-                     <p class="name-event">Název akce</p>
-                     <p class="date-of-action">12.9.2023</p>
-                  </div>
-                  <p class="name-of-action">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat vitae aliquid placeat, fuga obcaecati modi ipsam non iusto omnis. Mollitia quisquam sunt atque, reprehenderit repellat illo soluta dicta dolor error?</p>
-               </div>
-            </div>
-            
-         </div>
+      <div id="map">
+         <iframe width="1400" height="800" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=720&amp;height=1200&amp;hl=en&amp;q=50.094369,%2015.792821+(Leti%C5%A1t%C4%9B%20Modelpark%20pod%20Hradem)&amp;t=k&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe>
       </div>
    </section>
+
+   
       
    </main>
 
@@ -149,6 +117,6 @@
       </section>
 
    </footer>
-
+   <script src="script-scrolling.js"></script>
 </body>
 </html>
