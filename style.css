@@ -47,13 +47,13 @@ html{
 
 .navbar-wrap {
    width: 100%;
-   background: radial-gradient(circle, rgba(50,47,32,1) 14%, rgba(35,35,26,1) 46%, rgba(29,29,27,1) 100%);
-   border-bottom: 2px inset #fff;
+   background: radial-gradient(circle, rgb(45, 35, 17) 0%, rgb(0, 0, 0) 100%);
 }
 
 nav .ease-a{
    font-size: 1.5rem;
-   color:rgb(171, 158, 9);
+   color:#bba411;
+   text-shadow: 2px 2px 8px black;
    font-weight: 600;
    text-decoration: none;
    margin-left: 15px;
@@ -68,7 +68,7 @@ nav .ease-a::before{
    content: '';
    height: 2px;
    width: 0%;
-   background-color: rgb(35,35,26);
+   background-color: rgb(45, 35, 17);
    position: absolute;
    transition: 0.5s;
    bottom: -8px;
@@ -79,7 +79,7 @@ nav .ease-a:hover::before{
    height: 2px;
    width: 100%;
    position: absolute;
-   background-color: rgb(254,95,0);
+   background-color: #fff;
 }
 
 .ham-bar-men{
@@ -194,8 +194,8 @@ nav .ease-a:hover::before{
 .slide img{
    min-width: 100%;
    min-height: 100%; 
-   object-fit: cover; 
    z-index: 1;
+   filter: saturate(75%) blur(1px) sepia(50%);
 }
 
 .radio-manual{
@@ -225,8 +225,8 @@ nav .ease-a:hover::before{
 }
 
 .manual-btn:hover{
-   background: goldenrod;
-   border: 2px solid goldenrod;
+   background: #bba411;
+   border: 2px solid #bba411;
    border-radius: 5px;
 }
 
@@ -251,22 +251,10 @@ nav .ease-a:hover::before{
 
 main{
    padding-bottom: 15vh;
-   background-image: linear-gradient(
-  185deg,
-  hsl(50deg 22% 16%) 0%,
-  hsl(50deg 20% 15%) 17%,
-  hsl(50deg 17% 14%) 28%,
-  hsl(50deg 15% 13%) 37%,
-  hsl(50deg 13% 12%) 45%,
-  hsl(50deg 11% 10%) 53%,
-  hsl(50deg 9% 9%) 60%,
-  hsl(50deg 7% 8%) 67%,
-  hsl(50deg 5% 6%) 75%,
-  hsl(50deg 3% 5%) 83%,
-  hsl(50deg 2% 4%) 91%,
-  hsl(0deg 0% 2%) 100%
-);
-border-top: 2px inset #fff;
+   background-image: url(images/images.jpg);
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center;
 }
 
 .about-us{
@@ -276,16 +264,15 @@ border-top: 2px inset #fff;
 
 .about-us-text{
    position: relative;
-   background: radial-gradient(circle, rgba(50,47,32,1) 14%, rgba(35,35,26,1) 46%, rgba(29,29,27,1) 100%);
+   background: linear-gradient(0deg, rgb(23, 15, 4) 0%, rgb(40,33,21) 100%);
    top: -5rem;
    font-size: 1.25rem;
    margin: 5px;
    padding: 25px;
-   border-radius: 5px 15px 5px 15px;
-   border: 2px inset #fff;
+   border-radius: 50px 50px 50px 5px;
    text-align: left;
    color: #fff;
-   box-shadow: 20px 20px 20px #00000035;
+   box-shadow: 20px 20px 20px #0000005a;
    transition: 0.5s ease-out;
 }
 
@@ -301,9 +288,10 @@ border-top: 2px inset #fff;
 
 .title-header2 h2{
    font-size: 2rem;
-   color:rgb(171, 158, 9);
+   color:#bba411;
+   text-shadow: 2px 2px 8px black;
    font-weight: 600;
-   border-bottom: 2px solid rgb(254,95,0);
+   border-bottom: 2px solid #fff;
    text-align: center;
 }
 
@@ -322,14 +310,14 @@ border-top: 2px inset #fff;
    color: #fff;
    font-size: 1.5rem;
    font-weight: 300;
-   text-align:justify;
+   text-align:start;
 }
 
 .weather-card{
    margin-top: 50px;
-   background-color: rgb(171, 158, 9);
+   background: linear-gradient(0deg, rgb(23, 15, 4) 0%, rgb(40,33,21) 100%);
    border-radius: 25px;
-   border: 3px inset #fff;
+   box-shadow: 20px 20px 20px #0000005a;
 }
 
 .weather{
@@ -371,11 +359,10 @@ border-top: 2px inset #fff;
    color: #fff;
    text-align: center;
    font-size: 2rem;
-   background: transparent;
-   width: 400px;
-   border: 2px solid transparent;
-   border-radius: 50px;
-   transition: 0.5s ease-out;
+   background: linear-gradient(0deg, rgb(23, 15, 4) 0%, transparent 0%);
+   width: 300px;
+   border-radius: 15px;
+   transition: 0.5s ease;
 }
 
 .operating-rules:hover{
@@ -383,10 +370,9 @@ border-top: 2px inset #fff;
    color: #fff;
    text-align: center;
    font-size: 2rem;
-   background: rgb(171, 158, 9);
-   width: 500px;
-   border: 2px inset #fff;
-   border-radius: 5px;
+   background: linear-gradient(0deg, rgb(23, 15, 4) 0%, transparent 100%);
+   width: 400px;
+   border-radius: 15px;
 }
 
 .coordination-wrapper{
@@ -403,11 +389,10 @@ border-top: 2px inset #fff;
    color: #fff;
    text-align: center;
    font-size: 2rem;
-   background: transparent;
-   width: 400px;
-   border: 2px solid transparent;
-   border-radius: 50px;
-   transition: 0.5s ease-out;
+   background: linear-gradient(0deg, rgb(23, 15, 4) 0%, transparent 0%);
+   width: 300px;
+   border-radius: 15px;
+   transition: 0.5s ease;
 }
 
 .coordination:hover{
@@ -415,10 +400,9 @@ border-top: 2px inset #fff;
    color: #fff;
    text-align: center;
    font-size: 2rem;
-   background: rgb(171, 158, 9);
-   width: 500px;
-   border: 2px inset #fff;
-   border-radius: 5px;
+   background: linear-gradient(0deg, rgb(23, 15, 4) 0%, transparent 100%);
+   width: 400px;
+   border-radius: 15px;
 }
 
 .our-airport-photo{
@@ -438,10 +422,9 @@ border-top: 2px inset #fff;
 .photo-map-one iframe{
    width: 75%;
    margin: 0 auto;
-   object-fit: cover;
    border-radius: 25px;
-   box-shadow: 20px 20px 20px #0000007c;
-   transition: 0.5s ease-out;
+   box-shadow: 20px 20px 20px #0000005a;
+   filter: sepia(50%);
 }
 
 
@@ -450,14 +433,11 @@ border-top: 2px inset #fff;
    margin: 0 auto;
    object-fit: cover;
    border-radius: 25px;
-   box-shadow: 20px 20px 20px #0000007c;
+   box-shadow: 20px 20px 20px #0000005a;
    transition: 0.5s ease-out;
+   filter: sepia(50%);
 }
 
-.photo-map-two img:hover{
-   border: 5px inset #fff;
-   transform: scale(1.25);
-}
 
 .about-club{
    display: flex;
@@ -489,6 +469,7 @@ border-top: 2px inset #fff;
    transition: 1s ease-out;
    margin-top: 5em;
    margin-bottom: 10em;
+   filter: sepia(50%);
 }
 
 .form-wrapper{
@@ -502,10 +483,10 @@ border-top: 2px inset #fff;
    justify-content: center;
    width: 500px;
    height: 500px;
-   background-color:rgb(171, 158, 9);
+   background:linear-gradient(0deg, rgb(23, 15, 4) 0%, rgb(40,33,21) 100%);;
    border-radius: 25px;
    flex-wrap: wrap;
-   border: 3px inset #fff;
+   box-shadow: 20px 20px 20px #0000005a;
 }
 
 .details-area{
@@ -530,13 +511,14 @@ border-top: 2px inset #fff;
    font-size: 1.15rem;
    text-align: left;
    transition: 0.5s ease-out;
+   background: rgb(23, 15, 4);
 }
 
 .details-area input[type=text]:focus,
 .details-area input[type=email]:focus{
    height: 75px;
    width: 400px;
-   box-shadow: 0px 5px 15px #4f4f4f;
+   box-shadow: 0px 5px 15px #bba411;
 }
 
 
@@ -549,11 +531,14 @@ border-top: 2px inset #fff;
    outline: 0;
    font-size: 1.15rem;
    transition: 0.5s ease;
+   background: #bba411;
+   color: #fff;
 }
 
 .details-area input[type=submit]:hover{
-   background-color: #000000;
+   background-color: rgb(23, 15, 4);
    color: #fff;
+   box-shadow: 0px 5px 15px #bba411;
 }
 
 .message-area{
@@ -575,10 +560,11 @@ border-top: 2px inset #fff;
    overflow: hidden;
    transition: 0.5s ease-out;
    resize: none;
+   background: rgb(23, 15, 4);
 }
 
 .message-area textarea:focus{
-   box-shadow: 0px 5px 15px #4f4f4f;
+   box-shadow: 0px 5px 15px #bba411;
    height: 200px;
    width: 400px;
 }
@@ -597,13 +583,13 @@ border-top: 2px inset #fff;
 }
 
 .success{
-   background-color: green;
+   background-color: rgb(7, 85, 7);
    border-radius: 5px;
    padding: 5px;
 }
 
 .error{
-   background-color: red;
+   background-color: rgb(174, 0, 0);
    border-radius: 5px;
    padding: 5px;
 }
@@ -613,7 +599,7 @@ border-top: 2px inset #fff;
 
 /* TOP */
 .wrap-social{
-   background: radial-gradient(circle, rgba(50,47,32,1) 14%, rgba(35,35,26,1) 46%, rgba(29,29,27,1) 100%);
+   background: radial-gradient(circle, rgb(45, 35, 17) 0%, rgb(0, 0, 0) 100%);
 }
 
 .social-media{
@@ -641,7 +627,7 @@ border-top: 2px inset #fff;
 /* MIDDLE */
 
 .footer-middle{
-   background-color: rgb(171, 158, 9);
+   background:radial-gradient(circle, rgb(187, 164, 17) 0%, rgb(45, 35, 17) 100%);
 }
 
 .footer-middle-all{
@@ -733,7 +719,6 @@ border-top: 2px inset #fff;
 
 .wrap-madeby{
    background-color: #000000;
-
 }
 
 .made-by p{

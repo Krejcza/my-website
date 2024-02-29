@@ -5,7 +5,7 @@
 }
 
 .back-btn{
-   margin-top: 5vh;
+   padding-top: 5vh;
    margin-bottom: -7.5vh;
    transition: 0.5s ease-out;
 }
