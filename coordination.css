@@ -9,7 +9,22 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   padding: 40px;
-   background: goldenrod;
    border-radius: 25px;
+   padding: 40px;
+   background: linear-gradient(0deg, rgb(205,205,205), rgb(205,205,205));;
+   box-shadow:  20px 20px 50px #adacac,
+               -20px -20px 50px #f3f3f3;
+}
+
+main{
+   padding-bottom: 15vh;
+   padding-top: 5vh;
+}
+
+#id-of-map{
+   color:#1b09a7;
+   font-weight: 600;
+   padding-left: 30px;
+   padding-top: 5vh;
+   text-align: center;
 }

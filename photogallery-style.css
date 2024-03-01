@@ -4,13 +4,27 @@
    box-sizing: border-box;
 }
 
+
+main{
+   padding-bottom: 15vh;
+}
+
+.main-text p{
+   color: #1b09a7;
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 600;
+   padding-top: 10vh;
+}
+
+
 .our-photos{
    margin-top: 10vh;
 
 }
 
 .our-photos p{
-   color: #fff;
+   color: #1b09a7;
    text-align: justify;
    font-size: 1.5rem;
 }
@@ -25,29 +39,32 @@
 }
 
 .event-cards{
-   background-color:rgba(255, 255, 255, 0.25);
    padding: 1rem;
-   border-radius: 25px;
    transition: 1s ease;
-}
-
-.event-cards:hover{
-   transform: scale(1.05);
+   background: rgb(205,205,205);
+   box-shadow:  20px 20px 45px #adacac,
+               -20px -20px 45px #f3f3f3;
+   border-radius: 25px;
 }
 
 .photo-photo img{
    width: 250px;
-   border-radius: 10px;
+   border-radius: 15px;
+   filter: grayscale(100%);
+   transition: 0.5s ease-in;
+}
+
+.photo-photo img:hover{
+   filter: grayscale(0%);
 }
 
 .photo-text p{
-   color:#fff;
+   color:#1b09a7;
    font-weight: 600;
    font-size: 1.15rem;
-   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .photo-date p{
-   color: rgb(197, 163, 9);
+   color: rgb(142, 144, 255);
    font-size: 1rem;
 }

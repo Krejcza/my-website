@@ -14,7 +14,7 @@
 
    <header>
       <div class="logo row">
-         <a href='#'><img src="images/logo-of-modelpark-white-small.png" alt=""></a>
+         <a href='#'><img src="images/logo-of-modelpark-blue-small.png" alt=""></a>
       </div>
 
       <div class="navbar-wrap">
@@ -108,7 +108,7 @@
       <section class="major-title row">
          <div id="our-airport-click">
             <div class="title-header2">
-               <h2>Naše letiště</h2>
+               <h2 id="title-blue-part3">Naše letiště</h2>
             </div>
          </div>
       </section>
@@ -158,6 +158,9 @@
                </div>
 
             </div>
+            <div class="coordination-wrapper">
+               <a href="coordination-map.html" class="coordination">Souřadnice letiště</a>
+            </div>
             <p>Vítejte na našem modelářském letišti v Pardubickém kraji, které se nachází u obce Němčice s krásným výhledem na Kunětickou horu. S rozlohou XXXm2 poskytuje ideální prostor pro létání s RC modely. Naše letiště je vybaveno přistávací drahou, přístřeškem, tribunou a nově i malou vyhlídkovou věží. Můžete zde potkat nadšené modeláře, kteří sdílejí svou vášeň pro létání a kreativitu při stavbě modelů. Nejenže si zde můžete vychutnat své létání, ale také se zapojit do společných akcí a soutěží, které se tu běžně pořádají. </p>
             <div class="operating-rules-wrapper">
                <a href="operating-rules.html" class="operating-rules">Provozní řád letiště</a>
@@ -165,6 +168,15 @@
          </div>
       </section>
          <section class="our-airport">
+            <div class="our-airport-names row">
+               <div class="threed-model">
+                  <p>3d model letiště</p>
+               </div>
+               <div class="photo-of-airport">
+                  <p>Takto vypadá naše letiště</p>
+               </div>
+               
+            </div>
             <div class="our-airport-photo row">
                <div class="photo-map-one">
                   <iframe title="Norinco QSZ-92G 9mm Handgun" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9552035434514828b7f57b6738f5fb7a/embed"> </iframe>
@@ -174,14 +186,11 @@
                </div>
             </div>   
       </section>
-      <div class="coordination-wrapper">
-         <a href="coordination-map.html" class="coordination">Souřadnice letiště</a>
-      </div>
-
+   <section class="blue-part">
       <section class="major-title row">
          <div id="klub-mph-click">
             <div class="title-header2"> 
-               <h2>Klub Modelpark pod Hradem</h2>
+               <h2 id="title-blue-part1">Klub Modelpark pod Hradem</h2>
             </div>
          </div>
       </section>
@@ -198,25 +207,43 @@
 
       <section class="photogallery-small row">
          <div class="photogallery-ind">
-            <img src="images/bunch-of-guys-who-like-rc-models.jpg" alt="">
-            <img src="images/people-discussing-at-the-model-airfield.jpg" alt="">
-            <img src="images/world-war-II-aircraft-models.jpg" alt="">
+            <div class="card">
+               <img src="images/bunch-of-guys-who-like-rc-models.jpg"></img>
+               <div class="card__content">
+                 <p class="card__title">Combat letadla</p>
+                 <p class="card__description">Soutěž v combatech jednoho krásného dne</p>
+               </div>
+             </div>
+            <div class="card">
+               <img src="images/guys-controlling-rc-aircraft-in-competition.jpg"></img>
+               <div class="card__content">
+                 <p class="card__title">Piloti</p>
+                 <p class="card__description">Piloti bojují v combat letadlech</p>
+               </div>
+             </div>
+            <div class="card">
+               <img src="images/people-discussing-at-the-model-airfield.jpg"></img>
+               <div class="card__content">
+                 <p class="card__title">Sešlost</p>
+                 <p class="card__description">Posoutěžní sešlost na letišti</p>
+               </div>
+             </div>
          </div>
-
+   </section>      
       </section>
-
+   <section class="white-part">
       <section class="major-title row">
          <div id="kontakt-click">
             <div class="title-header2"> 
-               <h2>Kontakt</h2>
+               <h2 id="title-blue-part2">Kontakt</h2>
             </div>
          </div>
       </section>
 
 
       <section class="contact row">
-         <div class="filler-text addition">
-            <p>Chcete se k nám přidat, pokecat o létání se stejně posedlými lidmi nebo se domluvit na předváděcí akci? Kontaktujte nás zde na e-mail nebo sledujte naše aktivity na sociálních sítích! Rádi uvítáme nové tváře i zkušené letce! </p>
+         <div class="filler-text">
+            <p id="white-part-contact">Chcete se k nám přidat, pokecat o létání se stejně posedlými lidmi nebo se domluvit na předváděcí akci? Kontaktujte nás zde na e-mail nebo sledujte naše aktivity na sociálních sítích! Rádi uvítáme nové tváře i zkušené letce! </p>
          </div>
 
       </section>
@@ -224,14 +251,14 @@
       <section class="form-wrapper row">
          <form class="form-area" action="mailer.php" method="post">
 
-             <div class="details-area">
-               <input type="text" name="name" placeholder="Jméno a příjmení">
-               <input type="email" name="email" placeholder="E-mail">
-               <div class="message-area">
-                  <textarea name="message" id="" placeholder="Vaše zpráva"></textarea>
+               <div class="details-area">
+                  <input type="text" name="name" id="input-text" placeholder="Jméno a příjmení">
+                  <input type="email" name="email" id="input-email" placeholder="E-mail">
+                  <div class="message-area">
+                     <textarea name="message" id="" placeholder="Vaše zpráva"></textarea>
+                  </div>
+                  <input type="submit" value="Odeslat">
                </div>
-               <input type="submit" value="Odeslat">
-            </div>
             
             <div class="success-or-error">
 
@@ -248,7 +275,7 @@
             </div>
          </form>
       </section>
-      
+   </section>
    </main>
 
    <footer>

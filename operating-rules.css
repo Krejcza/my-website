@@ -5,33 +5,43 @@
 }
 
 
+main{
+   padding-bottom: 15vh;
+   padding-top: 5vh;
+}
+
 .rules-wrapper{
    padding-top: 10vh;
 }  
 
 .rules{
    display: flex;
-   align-items: center;
+   align-items: flex-start;
+   margin-top: 5vh;
+
 }
 
 .rules-image img{
-   width: 80%;
+   width: 100%;
+   border-radius: 25px;
 }
 
 .rules-text{
    display: flex;
    flex-direction:column;
    row-gap: 2rem;
+   padding-left: 5vh;
 }
 
 .only-rules-text p{
-   color: #fff;
+   color: #1b09a7;
+   font-size: 1.25rem;
 }
 
 .disclaimer-text p{
    padding-top: 10vh;
-   color: #fff;
-   font-weight: 800;
+   color: #1b09a7;
+   font-weight: 600;
    letter-spacing: 3px;
    font-size: 1.5rem;
    text-align: center;
