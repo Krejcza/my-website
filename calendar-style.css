@@ -49,10 +49,13 @@ main{
    border-radius: 12px;
    box-shadow:  5px 5px 10px rgb(78, 81, 255),
                -5px -5px 10px rgb(193, 194, 255);
+   height: 125px;
+   object-fit: cover;
 }
 
 .event-details{
    margin-left: 2rem;
+   width: 100%;
 }
 
 .event-details-date{
@@ -79,4 +82,20 @@ main{
 .name-of-action{
    color:#fff;
    font-size: 1.15rem;
+}
+
+
+.done-for{
+   background: #1b09a7;
+}
+
+
+.done-for img{
+   width: 200px;
+   height: 125px;
+   border-radius: 12px;
+   box-shadow:  5px 5px 10px rgb(16, 17, 91),
+               -5px -5px 10px rgb(141, 143, 255);
+   object-fit: cover;
+   filter: grayscale(100%);
 }
