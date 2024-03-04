@@ -24,6 +24,8 @@ main{
 .rules-image img{
    width: 100%;
    border-radius: 25px;
+   box-shadow:  35px 35px 60px #adacac,
+               -35px -35px 60px #f3f3f3;
 }
 
 .rules-text{
@@ -36,6 +38,12 @@ main{
 .only-rules-text p{
    color: #1b09a7;
    font-size: 1.25rem;
+   font-style: italic;
+}
+
+.disclaimer-one{
+   font-weight: 500;
+   font-size: 1.25rem;
 }
 
 .disclaimer-text p{
@@ -43,7 +51,7 @@ main{
    color: #1b09a7;
    font-weight: 600;
    letter-spacing: 3px;
-   font-size: 1.5rem;
+   font-size: 2rem;
    text-align: center;
 }
 

@@ -57,6 +57,27 @@
       margin-right: 50px;
    }
 
+   .back-btn{
+      margin-left: 50px;
+      margin-top: 5px;
+   }
+
+   #map{
+      margin-left: 50px;
+      margin-right: 50px;
+      padding: 25px;
+      
+   }
+
+   #map iframe{
+      height: 800px;
+   }
+
+   .rules-wrapper{
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+
 }
 
 @media only screen and (max-width: 1200px){
@@ -85,6 +106,32 @@
    .col img{
       margin-left: 0rem;
    }
+
+   #map iframe{
+      height: 650px;
+   }
+
+   .rules{
+      display: flex;
+      flex-direction: column;
+   }
+   #id-of-rules{
+      padding-top: 5vh;
+   }  
+
+   .rules-wrapper{
+      padding-top: 5vh;
+   }  
+
+   .rules-text{
+      margin-top: 5rem;
+      width: 100%;
+      align-items: center;
+      row-gap: 2rem;
+      padding-left: 0vh;
+   }
+   
+
 }
 
 @media only screen and (max-width: 1000px){
@@ -176,6 +223,18 @@
       text-align: center;
    }
 
+   #map iframe{
+      height: 500px;
+   }
+
+   .rules-text{
+      margin-top: 5rem;
+      width: 100%;
+      align-items: flex-start;
+      row-gap: 2rem;
+      padding-left: 0vh;
+   }
+
 }
 
 @media only screen and (min-width: 1000px){
@@ -230,6 +289,13 @@
    }
 }
 
+@media only screen and (max-width: 800px){
+   #map iframe{
+      height: 400px;
+   }
+}
+
+
 @media only screen and (max-width: 750px){
    .about-club{
       display: flex;
@@ -279,6 +345,12 @@
    }
 }
 
+@media only screen and (max-width:600px){
+   #map iframe{
+      height: 300px;
+   }
+}
+
 
 @media only screen and (max-width: 550px){
    .photo-map-one{
@@ -295,6 +367,10 @@
       justify-content: center;
       width: 100%;
       min-height: 200px;
+   }
+
+   #map iframe{
+      height: 250px;
    }
 }
 
