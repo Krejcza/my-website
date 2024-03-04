@@ -1,3 +1,5 @@
+//MOBILE NAVIGATION//
+
 window.onload = function(){
    
 const menu_btn = document.querySelector('.hamburger')
@@ -18,6 +20,19 @@ menu_btn.addEventListener('click', function(){
 
 }
 
+// SCROLL TO TOP//
+
+
+
+const toTop = document.querySelector('.scroll-to-top-style')
+
+window.addEventListener('scroll', function(){
+    if(window.scrollY>window.innerHeight * 1.5){
+        toTop.classList.add('active-to-top')
+    } else{
+        toTop.classList.remove("active-to-top")
+    }
+})
 
 
 

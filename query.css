@@ -16,10 +16,6 @@
       margin-right: 50px;
    }
 
-   .weather-card{
-      margin-bottom: 50px;
-   }
-
    .photo-map-two img{
       margin-left: 50px;
       margin-right:  50px;
@@ -29,8 +25,26 @@
       transform: scale(1.1);
    }
 
+   .our-airport-names{
+      margin-left: 50px;
+      margin-right:  50px;
+   }
+
    .our-airport-photo{
       display: flex;
+      margin-left: 50px;
+      margin-right:  50px;
+   }
+
+   #title-blue-part1{
+      margin-left: 50px;
+      margin-right:  50px;
+      font-size: 3rem;
+   }
+
+   .photogallery-ind{
+      margin-left: 50px;
+      margin-right:  50px;
    }
 
    .social-media{
@@ -45,7 +59,33 @@
 
 }
 
+@media only screen and (max-width: 1200px){
+   .weather{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
 
+   .main-details-nemcice{
+      margin-bottom: 2rem;
+      
+   }
+
+   .main-details-nemcice p{
+      font-weight: 600;
+      font-size: 3rem;
+   }
+
+   .col{
+      justify-content: space-between;
+      min-width: 250px;
+ 
+   }
+
+   .col img{
+      margin-left: 0rem;
+   }
+}
 
 @media only screen and (max-width: 1000px){
 
@@ -57,15 +97,85 @@
       display: none;
    }
 
-   .navigation-manual{
+   .radio-manual{
       display: flex;
       justify-content: flex-start;
+      margin-left: 50px;
+   }
+
+   .navigation-manual{
+      display: flex;
+      justify-content: center;
       margin-top: -80vh;
-      margin-right: 125px;
-      background-color: goldenrod;
-      padding: 20px 10px 20px 25px;
+      margin-right: 150px;
+      background-color: #1b09a7;
+      padding: 10px 10px 10px 25px;
       border-radius: 15px;
    }
+
+   .about-us{
+      flex-direction: column;
+   }
+
+   .about-us-text:nth-child(1){
+      min-height: 25vh;
+      text-align: center;
+      display: flex;
+      align-items: center;
+   }
+
+
+   .about-us-text:nth-child(2),
+   .about-us-text:nth-child(3){
+      display: none;
+   }
+   
+   .our-airport-names{
+      display: none;
+   }
+
+   .our-airport-photo{
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .photo-map-one{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      min-height: 500px;
+   }
+
+   .photo-map-two{
+      display: flex;
+      justify-content: center;
+   }
+
+   .about-club{
+      column-gap: 0px;
+   }
+
+   #filler-one,
+   #filler-two{
+   text-align: center;
+   }
+
+   .photogallery-ind{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .card{
+      width: 80%;
+   }
+
+   .filler-text p{
+      text-align: center;
+   }
+
 }
 
 @media only screen and (min-width: 1000px){
@@ -78,4 +188,159 @@
       display: none;
    }
 
+}
+
+@media only screen and (max-width: 900px){
+   .photo-map-one{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      min-height: 400px;
+   }
+
+   .footer-one{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   
+   .footer-middle-all{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .footer-two{
+      text-align: center;
+      background-image: url(images/background-blue-part.jpg);
+      background-attachment:fixed;
+      width: 100vw;
+      padding: 50px;
+   }
+
+   .contact-small-one p,
+   .contact-small-two p{
+      text-align: center;
+   }
+
+   .contact-small-one h3,
+   .contact-small-two h3{
+      text-align:center;
+   }
+}
+
+@media only screen and (max-width: 750px){
+   .about-club{
+      display: flex;
+      flex-direction:column;
+   }
+
+   #filler-one,
+   #filler-two{
+   text-align: center;
+   }
+}
+
+@media only screen and (max-width: 700px){
+   .photo-map-one{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      min-height: 300px;
+   }
+
+   .form-area{
+      width: 350px;
+   }
+
+   #input-text:focus,
+   #input-email:focus{
+      height: 60px;
+      width: 300px;
+   }
+   
+   .details-area{
+      row-gap: 3rem;
+   }
+
+   .message-area textarea:focus{
+      width: 300px;
+      height: 200px;
+   }
+
+   .details-area input[type=submit]{
+      width: 300px;
+   }
+
+   .details-area input[type=submit]:hover{
+      width: 275px;
+      height: 150px
+   }
+}
+
+
+@media only screen and (max-width: 550px){
+   .photo-map-one{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      min-height: 250px;
+   }
+}
+
+@media only screen and (max-width: 500px){
+   .photo-map-one{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      min-height: 200px;
+   }
+}
+
+@media only screen and (max-width: 450px){
+   .weather-card{
+      margin-right: 25px;
+      margin-left: 25px;
+   }
+   
+   .weather-icon{
+      width: 75px;
+      height: 75px;
+   }
+
+   
+   .weather p{
+      font-size: 1.25rem;
+   }
+
+   .col{
+      justify-content: space-around;
+   }
+
+   .coordination{
+      max-width: 300px;
+      font-size: 1.5rem;
+   }
+
+   .operating-rules{
+      max-width: 300px;
+      font-size: 1.5rem;
+   }
+
+   .our-airport-photo{
+      margin-bottom: 0.5vh;
+   }
+
+   .photo-map-one,
+   .photo-map-two{
+      margin: 3rem 0 5rem 0;
+   }
+
+   .scroll-to-top-style.active-to-top img{
+      bottom: 25vh;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+   }
 }
