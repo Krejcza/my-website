@@ -40,6 +40,7 @@ main{
    row-gap: 2rem;
    flex-wrap: wrap;
    margin-top: 5vh;
+   padding-top: 5vh;
 }
 
 .ind-jpg{
@@ -63,4 +64,8 @@ main{
 .ind-jpg img:hover{
    transform: scale(1.25);
    filter:brightness(100%)
+}
+
+.header-for-ind-pics{
+   padding-top: 5vh;
 }

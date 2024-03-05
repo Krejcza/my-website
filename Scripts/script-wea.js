@@ -17,30 +17,30 @@ async function weatherCall() {
       document.querySelector('.wind-speed').textContent = Math.round(data.wind.speed * 10) / 10 + ' km/h'
 
       if(data.weather[0].main === 'Thunderstorm'){
-         weatherIcon.src = 'images/thunderstorm.png'
+         weatherIcon.src = '../images/thunderstorm.png'
       } else if(data.weather[0].main === 'Drizzle'){
-         weatherIcon.src = 'images/drizzle.png'
+         weatherIcon.src = '../images/drizzle.png'
       } else if(data.weather[0].main === 'Snow'){
-         weatherIcon.src = 'images/snow.png'
+         weatherIcon.src = '../images/snow.png'
       } else if(data.weather[0].main === 'Clear'){
-         weatherIcon.src = 'images/clear.png'
+         weatherIcon.src = '../images/clear.png'
       } else if(data.weather[0].description === 'few clouds'){
-         weatherIcon.src = 'images/few-clouds.png'
+         weatherIcon.src = '../images/few-clouds.png'
       } else if (data.weather[0].description === 'scattered clouds' || 
          data.weather[0].description === 'broken clouds' || 
          data.weather[0].description === 'overcast clouds') {
-         weatherIcon.src = 'images/scattered-clouds.png'
+         weatherIcon.src = '../images/scattered-clouds.png'
       } else if (data.weather[0].description === 'light rain' || data.weather[0].description === 'shower rain' || data.weather[0].description === 'light intensity shower rain' || data.weather[0].description === 'moderate rain'){
-         weatherIcon.src = 'images/light-rain.png'
+         weatherIcon.src = '../images/light-rain.png'
       } else if (data.weather[0].description === 'heavy intensity rain' || data.weather[0].description === 'very heavy rain' || data.weather[0].description === 'extreme rain' || data.weather[0].description === 'freezing rain' || data.weather[0].description === 'heavy intensity shower rain' || data.weather[0].description === 'ragged shower rain'){
-         weatherIcon.src = 'images/very-heavy-rain.png'
-      } else if (data.weather[0].description === 'mist'){weatherIcon.src = 'images/mist.png'
+         weatherIcon.src = '../images/very-heavy-rain.png'
+      } else if (data.weather[0].description === 'mist'){weatherIcon.src = '../images/mist.png'
       } else if (data.weather[0].description === 'haze'){
-         weatherIcon.src = 'images/haze.png'
+         weatherIcon.src = '../images/haze.png'
       } else if (data.weather[0].description === 'tornado'){
-         weatherIcon.src = 'images/tornado.png'
+         weatherIcon.src = '../images/tornado.png'
       } else if(data.weather[0].description === 'smoke' || data.weather[0].description === 'sand/dust whirls' || data.weather[0].description === 'fog' || data.weather[0].description === 'sand' || data.weather[0].description === 'dust' || data.weather[0].description === 'volcanic ash' || data.weather[0].description === 'squalls'){
-         weatherIcon.src = 'images/fog.png'
+         weatherIcon.src = '../images/fog.png'
       }
       
       }

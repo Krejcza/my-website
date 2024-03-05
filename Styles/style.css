@@ -486,7 +486,7 @@ main{
 
 
 .blue-part{
-   background-image: url(images/background-blue-part.jpg);
+   background-image: url(../images/background-blue-part.jpg);
    background-attachment:fixed;
    /* background-repeat:repeat-x; */
 }
@@ -764,13 +764,18 @@ main{
    right: 50px;
    opacity: 0;
    transition: 0.5s ease-out;
+   cursor:default;
 }
 
 .scroll-to-top-style.active-to-top img{
    bottom: 35vh;
    opacity: 1;
+   cursor: pointer;
 }
 
+.no-scroll{
+   overflow: hidden;
+} 
 
 /* Footer */
 

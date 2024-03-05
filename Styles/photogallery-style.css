@@ -9,14 +9,6 @@ main{
    padding-bottom: 15vh;
 }
 
-.main-text p{
-   color: #1b09a7;
-   text-align: center;
-   font-size: 2rem;
-   font-weight: 600;
-   padding-top: 10vh;
-}
-
 
 .our-photos{
    margin-top: 10vh;
@@ -25,7 +17,7 @@ main{
 
 .our-photos p{
    color: #1b09a7;
-   text-align: justify;
+   text-align: left;
    font-size: 1.5rem;
 }
 
