@@ -87,7 +87,7 @@ nav .ease-a:hover::before{
 .ham-bar-men{
    position: absolute;
    right: 50px;
-   top: 50px;
+   top: 5vh;
    display: flex;
    justify-content: end;
 }
@@ -119,14 +119,12 @@ nav .ease-a:hover::before{
 }
 
 .hamburger.is-active::after{
-   transform: rotate(45deg) translate(-12px, -16px);
+   transform: rotate(45deg) translate(-15px, -16px);
 }
 
 .hamburger.is-active .bar{
    opacity: 0;
 }
-
-
 
 .mobile-nav{
    display: block;
@@ -136,7 +134,7 @@ nav .ease-a:hover::before{
    width: 100%;
    min-height: 100vh;
    z-index: 98;
-   background-color: aqua;
+   background-image: url(../images/background-blue-part.jpg);
    padding-top: 120px;
    transition: 0.4s;
 }
@@ -149,13 +147,18 @@ nav .ease-a:hover::before{
    display: block;
    width: 100%;
    max-width: 300px;
-   margin: 0 auto 16px;
+   margin: 2rem auto 1rem;
    text-align: center;
    margin-bottom: 16px;
    padding: 12px 16px;
-   background-color: #1f003F;
-   color: #fff;
+   background-color: #cdcdcd;
+   color: #1b09a7;
+   border-radius: 12px;
    text-decoration: none;
+   font-size: 1.5rem;
+   font-weight: 600;
+   box-shadow:  10px 10px 35px #0e045a,
+               -10px -10px 35px #321dd1;
 }
 
 
@@ -687,7 +690,7 @@ main{
    border-radius: 25px;
    border: 0;
    outline: 0;
-   color: #333;
+   color: #1b09a7;
    font-size: 1.15rem;
    transition: 0.5s ease;
    background: linear-gradient(0deg, rgb(205,205,205), rgb(205,205,205));;

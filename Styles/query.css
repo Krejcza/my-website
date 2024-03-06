@@ -211,11 +211,24 @@
       font-size: 1.15rem;
       text-align: center;
    }
+
+   .disclaimer-one{
+      display: block;
+      letter-spacing: normal;
+   }
+
+   .disclaimer-text p{
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+   }
+
+
 }
 
 @media only screen and (max-width: 1000px){
 
-   .logo{
+   .logo a img{
       display: none;
    }
    
@@ -226,17 +239,17 @@
    .radio-manual{
       display: flex;
       justify-content: flex-start;
-      margin-left: 50px;
+      margin-left: 25px;
+      
    }
 
    .navigation-manual{
-      display: flex;
-      justify-content: center;
-      margin-top: -80vh;
-      margin-right: 150px;
-      background-color: #1b09a7;
-      padding: 10px 10px 10px 25px;
-      border-radius: 15px;
+      display: none;
+   }
+
+   .manual-btn{
+      border: 2px solid #1b09a7;
+      padding: 0.5rem;
    }
 
    .about-us{
@@ -356,7 +369,7 @@
 
    .footer-two{
       text-align: center;
-      background-image: url(images/background-blue-part.jpg);
+      background-image: url(../images/background-blue-part.jpg);
       background-attachment:fixed;
       width: 100vw;
       padding: 50px;
@@ -421,6 +434,7 @@
 
    .details-area input[type=submit]{
       width: 300px;
+      font-weight: 400;
    }
 
    .details-area input[type=submit]:hover{
@@ -459,6 +473,63 @@
 }
 
 @media only screen and (max-width: 450px){
+   .about-us{
+      padding-bottom: 0vh;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .about-us-text{
+      width: 90vw;
+   }
+   
+   
+   #title-blue-part3,
+   #title-blue-part2,
+   #title-blue-part1{
+      margin-left: 25px;
+      margin-right: 25px;
+      font-size: 3rem;
+   }
+   
+   #title-blue-part3{
+      padding-bottom: 0vh;
+   }
+
+   #title-blue-part1{
+      padding-bottom: 0vh;
+      padding-top: 10vh;
+   }
+
+   #title-blue-part2{
+      padding-top: 10vh;
+      padding-bottom: 5vh;
+   }
+
+
+   #our-airport-text,
+   #filler-one, #filler-two,
+   #white-part-contact{
+      font-size: 1.25rem;
+      width: 90vw;
+      text-align: justify;
+   }
+
+   #our-airport-text{
+      width: 90vw;
+   }
+
+   .contact{
+      display: flex;
+      justify-content: center;
+   }
+
+   .about-club{
+      width: 90vw;
+      justify-content: center;
+      align-items: center;
+   }
+
    .weather-card{
       margin-right: 25px;
       margin-left: 25px;
@@ -492,10 +563,26 @@
       margin-bottom: 0.5vh;
    }
 
-   .photo-map-one,
    .photo-map-two{
-      margin: 3rem 0 5rem 0;
+      margin: 3rem 0 9rem 0; 
    }
+
+   .photo-map-two img{
+      width: 80vw;
+   }
+
+   .photo-map-one{
+      display: none;
+   }
+
+   .photogallery-ind{
+      margin: 0;
+   }
+
+   .card {
+      width: 80vw;
+   }
+   
 
    .scroll-to-top-style.active-to-top img{
       bottom: 25vh;
@@ -503,4 +590,33 @@
       width: 60px;
       height: 60px;
    }
+
+   .back-button{
+      margin-top: -0.5vh;
+   }
+
+   .back-btn{
+      width: 150px;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .back-btn a{
+      font-size: 0.75rem;
+      text-align: center;
+   }
+
+   .footer-one{
+      padding: 2rem 0rem;
+   }
+
+   .rules-wrapper{
+      margin-left: 25px;
+      margin-right: 25px;
+   }
+
+   .only-rules-text p{
+      font-size: 1rem;
+   }
+
 }

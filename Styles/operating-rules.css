@@ -18,7 +18,6 @@ main{
    display: flex;
    align-items: flex-start;
    margin-top: 5vh;
-
 }
 
 .rules-image img{
@@ -50,7 +49,7 @@ main{
    padding-top: 10vh;
    color: #1b09a7;
    font-weight: 600;
-   letter-spacing: 3px;
+   letter-spacing: 2px;
    font-size: 2rem;
    text-align: center;
 }
