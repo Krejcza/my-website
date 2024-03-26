@@ -66,7 +66,7 @@
             <div class="event-details">
                <div class="event-details-date">
                   <p class="name-event">Setkání RC modelů z období 2.světové války</p>
-                  <p class="date-of-action">18.5.2024</p>
+                  <p class="date-of-action">27.3.2024</p>
                </div>
                <p class="name-of-action">Srdečně Vás zveme na přátelské setkání a polétání s modely 2.WW. Přijďte strávit příjemné odpoledne s těmito ikonickými stroji. 18.5.2024 od 14:00.</p>
             </div>
@@ -122,7 +122,7 @@
       </section>
 
 
-
+   <section class="evnts-done-sec">
       <!-- Tady začínají eventy, které už proběhly -->
       <div class="events-passed">
          <div class="events-bar done-for">
@@ -202,7 +202,7 @@
             </div>
          </div>
       </div>
-
+   </section>   
    </section>
    <a href="#" class="scroll-to-top-style"><img src="../images/scroll-to-top-icon.png" alt=""></a>
    </main>
@@ -260,6 +260,38 @@
       </section>
 
    </footer>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+    function checkEvents() {
+        let eventsBars = document.querySelectorAll('.events-bar');
+        let currentDate = new Date();
+        let destinationElement = document.querySelector('.evnts-done-sec .events-passed');
+
+        eventsBars.forEach(function(eventBar) {
+            let dateOfActionText = eventBar.querySelector('.date-of-action').textContent;
+
+           
+            let parts = dateOfActionText.split(".");
+            let reformattedDate = parts[2] + "-" + parts[1] + "-" + parts[0];
+
+            
+            let dateOfAction = new Date(reformattedDate);
+
+            if (dateOfAction < currentDate) {
+                destinationElement.appendChild(eventBar);
+                eventBar.classList.add('done-for');
+            }
+        });
+    }
+
+    
+});
+
+setInterval(checkEvents, 12 * 60 * 60 * 1000); 
+
+</script>
 <script src="../Scripts/script-scrolling.js"></script>
 <script src="../lightbox/lightbox-plus-jquery.min.js"></script>
 </body>
