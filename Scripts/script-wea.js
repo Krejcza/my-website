@@ -44,7 +44,7 @@ async function weatherCall() {
       }
       
       }
-      catch (error) {
+   catch (error) {
       console.error('Chyba při získávání dat:', error);
    }
 }

@@ -6,15 +6,15 @@
     $message = trim($_POST["message"]);
 
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: https://www.dopln.cz/index.php?success=-1#form");
+        header("Location: https://www.#.cz/index.php?success=-1#form");
         exit;
     }
 
     // Nastavení emailu - odeslání
-    $recipient = "tvuj email, kam se má formulář zaslat";
+    $recipient = "modelarinemcice@seznam.cz";
 
     // Předmět emailu
-    $subject = "Máte nový kontakt od: $name";
+    $subject = "Máte novou zprávu od: $name";
 
     // Obsah emailu, který se odešle
     $email_content = "Jméno: $name\n";
@@ -28,6 +28,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Přesměrování na stránku, pokud bylo vše OK
-    header("Location:https://www.dopln.cz/index.php?success=1#form");
+    header("Location:https://www.#.cz/index.php?success=1#form");
 
 ?>

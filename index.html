@@ -8,8 +8,11 @@
 
    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
    <link rel="stylesheet" href="Styles/cookie-consent.css">
+   <link rel="stylesheet" href="lightbox/lightbox.min.css">
+   <link rel="stylesheet" href="Styles/odometer.css">
    <link rel="stylesheet" href="Styles/style.css">
    <link rel="stylesheet" href="Styles/query.css">
+   <script src="https://unpkg.com/scrollreveal"></script>
    <title>Modelpark pod hradem</title>
 </head>
 
@@ -19,7 +22,7 @@
 
 
       <div class="logo row">
-         <a href='#'><img src="images/logo-of-modelpark-blue-small.png" alt=""></a>
+         <a href='#' id="myLogo"><img src="images/logo-of-modelpark-blue-small.png" alt=""></a>
       </div>
 
       <div class="navbar-wrap">
@@ -54,11 +57,11 @@
       <section class="slider-wrapper">
          <div class="slider">
             <div class="slides">
-               <input type="radio" name="radio-btn" id="radio1">
-               <input type="radio" name="radio-btn" id="radio2">
-               <input type="radio" name="radio-btn" id="radio3">
-               <input type="radio" name="radio-btn" id="radio4">
-               <input type="radio" name="radio-btn" id="radio5">
+                  <input type="radio" name="radio-btn" id="radio1">
+                  <input type="radio" name="radio-btn" id="radio2">
+                  <input type="radio" name="radio-btn" id="radio3">
+                  <input type="radio" name="radio-btn" id="radio4">
+                  <input type="radio" name="radio-btn" id="radio5">
             
 
                <div class="slide first">
@@ -94,17 +97,31 @@
    <main>
       <section class="about-us row">
          <div class="about-us-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptatibus quos iusto similique, voluptatem dolorem, reiciendis nihil, est ipsa sapiente unde explicabo distinctio ad tenetur autem consequatur alias doloremque id.</p>
+            <div class="about-us-section">
+               <h3>Největší akce sezóny - 22.6.2024</h3>
+               <p>Bohatý letový i doprovodný program, zábava pro celou rodinu!!!</p>
+            </div>
+            <!-- MUSÍ BÝT 320*240PX -->
+            <a href="images/pozvanka velka aviaticka kopie - www.jpg" data-lightbox="mygallery"><img src="images/modelářkská akce small www.jpg" alt="" ></a>
             
          </div>
 
          <div class="about-us-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, distinctio rerum! Quis necessitatibus ipsam neque voluptatem, eligendi hic aspernatur accusamus rem cum ad itaque iste possimus totam adipisci repellat voluptate.</p>
+            <div class="about-us-section">
+               <h3>Pozvánka na Aviatickou pouť</h3>
+               <p>Podívejte se na videopozvánku k naší největší letošní akci!</p>
+            </div>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/SIS3usr03Mw" title="NATO Days - Ostrava 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             
          </div>
 
          <div class="about-us-text">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus libero soluta ex eius suscipit, placeat fugiat accusantium sunt fugit vitae natus porro molestiae beatae ea perspiciatis voluptatibus autem cum. Facere?</p>
+            <div class="about-us-section">
+               <h3>Nejbližší akce - <br> 18.5.2024</h3>
+               <p>Setkání letadel z období druhé světové války všech druhů a velikostí. Přijďte k nám polítat!</p>
+            </div>
+            <!-- MUSÍ BÝT 320*240PX -->
+            <a href="Calendar photos/18.5.2024-ww2-airplanes.jpg" data-lightbox="mygallery"><img src="Calendar photos/small-18.5.2024-ww2-airplanes.jpg" alt="" ></a>
             
          </div>
 
@@ -164,7 +181,8 @@
             <div class="coordination-wrapper">
                <a href="Main-pages/coordination-map.html" class="coordination">Souřadnice letiště</a>
             </div>
-            <p id="our-airport-text">Vítejte na našem modelářském letišti v Pardubickém kraji, které se nachází u obce Němčice s krásným výhledem na Kunětickou horu. S rozlohou XXXm2 poskytuje ideální prostor pro létání s RC modely. Naše letiště je vybaveno přistávací drahou, přístřeškem, tribunou a nově i malou vyhlídkovou věží. Můžete zde potkat nadšené modeláře, kteří sdílejí svou vášeň pro létání a kreativitu při stavbě modelů. Nejenže si zde můžete vychutnat své létání, ale také se zapojit do společných akcí a soutěží, které se tu běžně pořádají. </p>
+            <p id="our-airport-text">Vítejte na našem modelářském letišti Modelpark pod hradem. Náš modelářský klub sahá daleko do historie. V průběhu let prošel klub vývojem, kdy v posledních 8 letech následuje jasně vytyčený cíl a to je být jedním z nejlepších modelářských letišť ve Východních Čechách! Letiště je nyní vybaveno zázemím s pergolou, WC, tribunou a nově i řídící věží. Vzletová a přistávací dráha má rozměry 100x20 m a je orientována severo-jižním směrem. Dráhu pravidelně sekáme a válcujeme, přičemž je také opatřena bezpečnostními sítěmi, což umožňuje veřejnosti klidné a nerušené sledování provozu. Díky dispozici elektrické energie je celý areál napojen na pult centrální ochrany. </p>
+            <p id="our-airport-text3">Na letišti se setkávají letadla a vrtulníky různých typů a velikostí, což poskytuje široké možnosti pro každého nadšence. Jeho atraktivní poloha s výhledem na Kunětickou horu přidává k jeho kouzlu.</p>
             <div class="operating-rules-wrapper">
                <a href="Main-pages/operating-rules.html" class="operating-rules">Provozní řád letiště</a>
             </div>
@@ -173,12 +191,11 @@
          <section class="our-airport">
             <div class="our-airport-names row">
                <div class="threed-model">
-                  <p>3d Model letiště</p>
+                  <p>3D Model letiště</p>
                </div>
                <div class="photo-of-airport">
                   <p>Přistávací plocha</p>
                </div>
-               
             </div>
             <div class="our-airport-photo row">
                <div class="photo-map-one">
@@ -198,6 +215,17 @@
          </div>
       </section>
 
+      <section class="odometer-rolling row">
+         <div class="filler-text">
+            <p id="filler-three">V současné době má spolek 34 členů a počet členů každý rok roste.  Pořádáme akce pro veřejnost a vrcholem sezony je Modelářská aviatická pouť, kde máme každoročně připravený bohatý letový i doprovodný program pro celou rodinu.</p>
+         </div>
+         <div class="odometer-wrapper">
+            <div class="subs-odometer">0</div>
+            <div class="odometer-text">
+               <p>Aktivních členů</p>
+            </div>
+         </div>
+      </section>
       <section class="about-club row">
          <div class="filler-text">
             <p id="filler-one">V našem modelparku neexistuje stereotyp. Jsme rozmanitou skupinou lidí, kteří spojují různorodé zkušenosti a zájmy v jedinečnou komunitu. </p>
@@ -312,16 +340,16 @@
             <div class="footer-three"> 
                <div class="contact-small">
                   <div class="contact-small-one">
-                     <h3>Velitel</h3>
-                     <p>Martin Krejčí</p>
-                     <p>123 456 789</p>
-                     <p>martin@martin.cz</p>
+                     <h3>Předseda Výboru</h3>
+                     <p>Michal Krejčí</p>
+                     <p>605 714 864</p>
+                     <p>modelarinemcice@seznam.cz</p>
                   </div>
                   <div class="contact-small-two">
-                     <h3>Major</h3>
-                     <p>Michal Krejčí</p>
-                     <p>123 456 789</p>
-                     <p>michal@michal.cz</p>
+                     <h3>Člen Výboru</h3>
+                     <p>Jan Klepal</p>
+                     <p>723 551 513</p>
+                     <p>modelarinemcice@seznam.cz</p>
                   </div>
                </div>
             </div>
@@ -338,18 +366,93 @@
 
    </footer>
 
+<script src="Scripts/odometer.js"></script>
 <script type="text/javascript">
    let counter = 1;
-   setInterval(function(){
+   let intervalId = setInterval(updateRadio, 4000);
+
+   function updateRadio() {
       document.querySelector('#radio' + counter).checked = true;
-      counter ++;
-      if(counter >5){
-         counter = 1
+      counter++;
+      if (counter > 5) {
+         counter = 1;
       }
-   }, 5000);
+   }
+
+   document.querySelectorAll('input[name="radio-btn"]').forEach(function(radio) {
+      radio.addEventListener('click', function() {
+         clearInterval(intervalId);
+         intervalId = setInterval(updateRadio, 5000);
+      });
+   });
 </script>
+
+<script>
+   function checkVisibility() {
+      const odometerSection = document.querySelector('.odometer-rolling');
+      const rect = odometerSection.getBoundingClientRect();
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+      if (rect.top <= windowHeight * 0.8) {
+         initializeOdometer();
+         
+         window.removeEventListener('scroll', checkVisibility);
+      }
+   }
+
+   function initializeOdometer() {
+      const subsOdometer = document.querySelector('.subs-odometer');
+
+      const odometer = new Odometer({
+         el: subsOdometer,
+         duration: 500
+      });
+
+      odometer.update(34);
+   }
+   window.addEventListener('scroll', checkVisibility);
+
+</script>
+
+<script>
+   ScrollReveal({ 
+      reset: false, 
+      distance: '60px',
+      duration:2500,
+      delay:400
+      });
+
+   ScrollReveal().reveal('.welcome-text h1', {delay: 100, origin:'left'});
+   ScrollReveal().reveal('.navbar a', {delay:100, origin:'top', interval: 100});
+   ScrollReveal().reveal('.logo a img', {delay:100, origin:'left', reset:true});
+   ScrollReveal().reveal('.about-us-text', {delay:100, origin:'left', interval:100, distance:'250px'});
+   ScrollReveal().reveal('#title-blue-part1, #title-blue-part2, #title-blue-part3', {delay:100, origin:'left'});
+   ScrollReveal().reveal('.weather-card', {delay:100, origin:'right'});
+   ScrollReveal().reveal('.coordination-wrapper, .operating-rules-wrapper', {delay:100, origin:'bottom', distance:'200px'});
+   ScrollReveal().reveal('#our-airport-text,#our-airport-text2,#our-airport-text3', {delay:100, origin:'bottom', distance:'250px', interval:100});
+   ScrollReveal().reveal('.threed-model p, .photo-map-one', {delay:100, origin:'right',distance:'500px'});
+   ScrollReveal().reveal('.photo-of-airport p, .photo-map-two', {delay:100, origin:'left',distance:'500px'});
+   ScrollReveal().reveal('.our-airport-names', {delay:100, origin:'bottom',distance:'500px'});
+   ScrollReveal().reveal('#filler-one, #filler-two', {delay:100, origin:'bottom',distance:'250px'});
+   ScrollReveal().reveal('.photogallery-ind .card', {delay:100, origin:'left',distance:'500px', interval:200});
+   ScrollReveal().reveal('#white-part-contact', {delay:100, origin:'bottom',distance:'250px'});
+   ScrollReveal().reveal('.form-area', {delay:100, origin:'bottom',distance:'100px'});
+   ScrollReveal().reveal('.details-area input, .message-area', {delay:100, origin:'bottom', distance:'150px', interval:200});
+   ScrollReveal().reveal('.social-media p', {delay:100, origin:'left'});
+   ScrollReveal().reveal('.social-media a', {delay:100, origin:'right'});
+   ScrollReveal().reveal('.footer-one', {delay:100, origin:'left'});
+   ScrollReveal().reveal('.footer-two', {delay:100, origin:'bottom'});
+   ScrollReveal().reveal('.footer-three', {delay:100, origin:'right'});
+   ScrollReveal().reveal('.made-by p', {delay:100, origin:'top'});
+   ScrollReveal().reveal('.subs-odometer', {delay:100, origin:'top'});
+   
+   
+
+</script>
+
 <script src="Scripts/cookie-consent.js"></script>
 <script src="Scripts/script-scrolling.js"></script>
 <script src="Scripts/script-wea.js"></script>
+<script src="lightbox/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>

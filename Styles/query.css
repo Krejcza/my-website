@@ -22,7 +22,8 @@
    }
 
    .photo-map-two img:hover{
-      transform: scale(1.1);
+      transform: skewY(-1deg) scale(1) rotateY(165deg); 
+      filter: grayscale(0);
    }
 
    .our-airport-names{
@@ -515,9 +516,9 @@
       text-align: justify;
    }
 
-   #our-airport-text{
+   /* #our-airport-text{
       width: 90vw;
-   }
+   } */
 
    .contact{
       display: flex;
@@ -617,6 +618,75 @@
 
    .only-rules-text p{
       font-size: 1rem;
+   }
+
+   #map{
+      margin-left: 25px;
+      margin-right: 25px;
+   }
+
+   .events-bar{
+      margin-left: 25px;
+      margin-right: 25px;
+   }
+
+   .event-bar-in img{
+      margin-top: 3vh;
+      width: 250px;
+      height: 150px;
+   }
+
+   .our-photos p{
+      text-align: justify;
+      width: 80vw;
+      font-size: 1rem;
+   }
+
+   .our-photos-wrapper{
+      display: flex;
+      justify-content: center;
+   }
+
+   .events{
+      margin-left: 0px;
+      margin-right: 0px;
+   }
+
+   .event-cards{
+      width: 90vw;
+   }
+
+   .photo-photo img{
+      width: 100%;
+   }
+
+   .photo-text{
+      text-align: center;
+      padding: 10px;
+   }
+
+   .photo-text p{
+      font-size: 1.25rem;
+   }
+
+   .photo-date{
+      text-align: center;
+   }
+
+   .main-text p{
+      font-size: 1.75rem;
+   }
+
+   .photos{
+      column-gap: 1rem;
+      row-gap: 1rem;
+      margin-left: 25px;
+      margin-right: 25px;
+   }
+
+   .ind-jpg img{
+      width: 135px;
+      height: 85px;
    }
 
 }
