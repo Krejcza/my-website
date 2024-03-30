@@ -6,13 +6,15 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
    <link rel="stylesheet" href="Styles/cookie-consent.css">
    <link rel="stylesheet" href="lightbox/lightbox.min.css">
    <link rel="stylesheet" href="Styles/odometer.css">
    <link rel="stylesheet" href="Styles/style.css">
    <link rel="stylesheet" href="Styles/query.css">
+   <script src="https://kit.fontawesome.com/04daac4ce0.js" crossorigin="anonymous"></script>
    <script src="https://unpkg.com/scrollreveal"></script>
+   
    <title>Modelpark pod hradem</title>
 </head>
 
@@ -41,17 +43,35 @@
          </div>
       </div>
       <nav class="mobile-nav">
-         <a href="#our-airport-click">Naše letiště</a>
-         <a href="#klub-mph-click">Klub MPH</a>
-         <a href="Main-pages/Calendar.html">Kalendář akcí</a>
-         <a href="Main-pages/Photogallery.html">Fotogalerie</a>
-         <a href="#kontakt-click">Kontakt</a>
+         <a href="#our-airport-click"><i class="fa-solid fa-plane"></i>Naše letiště</a>
+         <a href="#klub-mph-click"><i class="fa-solid fa-people-group"></i>Klub MPH</a>
+         <a href="Main-pages/Calendar.html"><i class="fa-solid fa-calendar"></i>Kalendář akcí</a>
+         <a href="Main-pages/Photogallery.html"><i class="fa-solid fa-photo-film"></i>Fotogalerie</a>
+         <a href="#kontakt-click"><i class="fa-solid fa-address-book"></i>Kontakt</a>
+         <div class="mobile-nav-text">
+            <p>Modelpark pod Hradem z.s.</p>
+            <p><i class="fa-solid fa-envelope"></i>modelarinemcice@seznam.cz</p>
+         </div>
       </nav>
+
+      <div class="pop-up-event-wrapper row">
+         <div class="pop-up-event">
+            <button id="close-pop">&times;</button>
+               <h2>III. Aviatická modelářská pouť je tady!</h2>
+            <p>Přijďte se podívat na největší akci letošního roku! Již <span>3. ročník</span> pořádáme velkou aviatickou pouť, kterou si užijí jak děti tak dospělí.</p>
+            <p> <span>22.6.2024</span> - To je datum které tě zajímá, tak určitě doraž! Budeme se na tebe těšit!</p>
+            <a href="Main-pages/event.html">Kouknu se na to!</a>
+         </div>
+      </div>
+      <div id="overlay"></div>
+
       <div class="welcome-text-wrapper row">
          <div class="welcome-text">
             <h1>Vítají Vás stránky Modelparku pod Hradem</h1>
          </div>
       </div>
+
+      
       
 
       <section class="slider-wrapper">
@@ -65,19 +85,20 @@
             
 
                <div class="slide first">
-                  <img src="images/guys-controlling-rc-aircraft-in-competition.jpg" alt="">
+                  <img src="images/guys-controlling-rc-aircraft-in-competition.webp" alt="">
                </div>
                <div class="slide">
-                  <img src="images/profi-guy-controlling-a-big-rc-plane.jpg" alt="">
+                  <img src="images/profi-guy-controlling-a-big-rc-plane.webp" alt="">
                </div>
                <div class="slide">
-                  <img src="images/model-of-fighter-jet-with-seated-pilot.jpg" alt="">
+                  
+                  <img src="images/two-guys-moderating-show-rc-exhibition.webp" alt="">
                </div>
                <div class="slide">
-                  <img src="images/two-guys-looking-at-rc-plane.jpg" alt="">
+                  <img src="images/glider-rc-plane-flying-in-the-air.webp" alt="">
                </div>
                <div class="slide">
-                  <img src="images/rc-planes-fighting-in-competition.jpg" alt="">
+                  <img src="images/bunch-of-guys-who-like-rc-models-competition.webp" alt="">
                </div>
 
             </div>
@@ -95,38 +116,39 @@
    </header>
 
    <main>
-      <section class="about-us row">
-         <div class="about-us-text">
-            <div class="about-us-section">
-               <h3>Největší akce sezóny - 22.6.2024</h3>
-               <p>Bohatý letový i doprovodný program, zábava pro celou rodinu!!!</p>
+      <section class="main-about-us">
+         <section class="about-us row">
+            <div class="about-us-text">
+               <div class="about-us-section">
+                  <h3>Největší akce sezóny - 22.6.2024</h3>
+                  <p>Bohatý letový i doprovodný program, zábava pro celou rodinu!!! <br><a href="Main-pages/event.html">Více zde</a></p>
+               </div>
+               <!-- MUSÍ BÝT 320*240PX -->
+               <a href="images/pozvanka velka aviaticka kopie - www.jpg" data-lightbox="mygallery"><img src="images/modelářkská akce small www.jpg" alt="" ></a>
+               
             </div>
-            <!-- MUSÍ BÝT 320*240PX -->
-            <a href="images/pozvanka velka aviaticka kopie - www.jpg" data-lightbox="mygallery"><img src="images/modelářkská akce small www.jpg" alt="" ></a>
-            
-         </div>
 
-         <div class="about-us-text">
-            <div class="about-us-section">
-               <h3>Pozvánka na Aviatickou pouť</h3>
-               <p>Podívejte se na videopozvánku k naší největší letošní akci!</p>
+            <div class="about-us-text">
+               <div class="about-us-section">
+                  <h3>Pozvánka na Aviatickou pouť</h3>
+                  <p>Podívejte se na videopozvánku k naší největší letošní akci!</p>
+               </div>
+               <iframe width="500" height="300" src="https://www.youtube.com/embed/Fqrf9gLsUT8" title="III. Modelářská AVIATICKÁ pouť" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+               
             </div>
-            <iframe width="500" height="300" src="https://www.youtube.com/embed/SIS3usr03Mw" title="NATO Days - Ostrava 2021" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            
-         </div>
 
-         <div class="about-us-text">
-            <div class="about-us-section">
-               <h3>Nejbližší akce - <br> 18.5.2024</h3>
-               <p>Setkání letadel z období druhé světové války všech druhů a velikostí. Přijďte k nám polítat!</p>
+            <div class="about-us-text">
+               <div class="about-us-section">
+                  <h3>Nejbližší akce - <br> 18.5.2024</h3>
+                  <p>Setkání letadel z období druhé světové války všech druhů a velikostí. Přijďte k nám polítat!</p>
+               </div>
+               <!-- MUSÍ BÝT 320*240PX -->
+               <a href="Calendar photos/18.5.2024-ww2-airplanes.jpg" data-lightbox="mygallery"><img src="Calendar photos/small-18.5.2024-ww2-airplanes.jpg" alt="" ></a>
+               
             </div>
-            <!-- MUSÍ BÝT 320*240PX -->
-            <a href="Calendar photos/18.5.2024-ww2-airplanes.jpg" data-lightbox="mygallery"><img src="Calendar photos/small-18.5.2024-ww2-airplanes.jpg" alt="" ></a>
-            
-         </div>
 
-      </section>
-
+         </section>
+       </section>
       <section class="major-title row">
          <div id="our-airport-click">
             <div class="title-header2">
@@ -179,32 +201,63 @@
 
             </div>
             <div class="coordination-wrapper">
-               <a href="Main-pages/coordination-map.html" class="coordination">Souřadnice letiště</a>
+               <a href="Main-pages/coordination-map.html" class="coordination"><i class="fa-solid fa-globe"></i>Souřadnice letiště</a>
             </div>
-            <p id="our-airport-text">Vítejte na našem modelářském letišti Modelpark pod hradem. Náš modelářský klub sahá daleko do historie. V průběhu let prošel klub vývojem, kdy v posledních 8 letech následuje jasně vytyčený cíl a to je být jedním z nejlepších modelářských letišť ve Východních Čechách! Letiště je nyní vybaveno zázemím s pergolou, WC, tribunou a nově i řídící věží. Vzletová a přistávací dráha má rozměry 100x20 m a je orientována severo-jižním směrem. Dráhu pravidelně sekáme a válcujeme, přičemž je také opatřena bezpečnostními sítěmi, což umožňuje veřejnosti klidné a nerušené sledování provozu. Díky dispozici elektrické energie je celý areál napojen na pult centrální ochrany. </p>
+            <p id="our-airport-text">Vítejte na našem modelářském letišti Modelpark pod Hradem. Náš modelářský klub sahá daleko do historie. V průběhu let prošel klub vývojem, kdy v posledních <span>8 letech</span> následuje jasně vytyčený cíl a to je být jedním z nejlepších modelářských letišť ve Východních Čechách! Letiště je nyní vybaveno zázemím s pergolou, WC, tribunou a nově i řídící věží.</p>
             <p id="our-airport-text3">Na letišti se setkávají letadla a vrtulníky různých typů a velikostí, což poskytuje široké možnosti pro každého nadšence. Jeho atraktivní poloha s výhledem na Kunětickou horu přidává k jeho kouzlu.</p>
-            <div class="operating-rules-wrapper">
-               <a href="Main-pages/operating-rules.html" class="operating-rules">Provozní řád letiště</a>
-            </div>
+            
          </div>
       </section>
          <section class="our-airport">
-            <div class="our-airport-names row">
-               <div class="threed-model">
-                  <p>3D Model letiště</p>
+            
+            <div class="tractor-wrapper row">
+               <div class="tractor">
+                  <img src="images/lawnmover.png" alt="" id="tractorImg">
                </div>
-               <div class="photo-of-airport">
-                  <p>Přistávací plocha</p>
+            </div>
+            <div class="mountain-wrapper row">
+               <div class="mountain">
+                  <img src="images/kuneticka-hora-mountain-airfield-kunetice.png" alt="">
+               </div>
+            </div>
+            <div class="airfield-wrapper row">
+               <div class="airfield">
+                  <img src="images/airport-field-kunetice-rc-planes-flat-icon.png" alt="">
+               </div>
+            </div>
+
+            
+            
+            <div class="our-airport-z-in row">
+               <div class="our-airport-names">
+                  <div class="threed-model">
+                     <p>3D Model letiště</p>
+                  </div>
+                  <div class="connection">
+                     <p>&</p>
+                  </div>
+                  <div class="photo-of-airport">
+                     <p>Přistávací plocha</p>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="text-lawnmover row">
+               <div class="text-lawnmover-wrap">
+                  <p>Vzletová a přistávací dráha má rozměry <span>100x20 m</span> a je orientována severo-jižním směrem. Dráhu pravidelně <span>sekáme</span> a <span>válcujeme</span>, přičemž je také opatřena bezpečnostními sítěmi, což umožňuje veřejnosti klidné a nerušené sledování provozu. Díky dispozici elektrické energie je celý areál napojen na pult centrální ochrany.</p>
                </div>
             </div>
             <div class="our-airport-photo row">
                <div class="photo-map-one">
-                  <iframe title="Norinco QSZ-92G 9mm Handgun" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9552035434514828b7f57b6738f5fb7a/embed"> </iframe>
+                  <iframe title="Norinco QSZ-92G 9mm Handgun" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9552035434514828b7f57b6738f5fb7a/embed" loading="lazy"></iframe>
                </div>
                <div class="photo-map-two row">
-                  <img src="images/model-aerodrome-with-orange-barrier.jpg" alt="">
+                  <img src="images/model-aerodrome-with-orange-barrier.jpg" alt="" loading="lazy">
                </div>
-            </div>   
+            </div>
+            <div class="operating-rules-wrapper">
+               <a href="Main-pages/operating-rules.html" class="operating-rules"><i class="fa-solid fa-scale-balanced"></i>Provozní řád letiště</a>
+            </div>  
       </section>
    <section class="blue-part">
       <section class="major-title row">
@@ -214,46 +267,92 @@
             </div>
          </div>
       </section>
-
-      <section class="odometer-rolling row">
+      <section class="filler-text-three-wrapper row">
          <div class="filler-text">
             <p id="filler-three">V současné době má spolek 34 členů a počet členů každý rok roste.  Pořádáme akce pro veřejnost a vrcholem sezony je Modelářská aviatická pouť, kde máme každoročně připravený bohatý letový i doprovodný program pro celou rodinu.</p>
          </div>
-         <div class="odometer-wrapper">
-            <div class="subs-odometer">0</div>
-            <div class="odometer-text">
-               <p>Aktivních členů</p>
-            </div>
+      </section>
+      <section class="odometer-rolling row">
+         
+         <div class="odometers">
+            <div class="odometer-wrapper" data-value="200">
+                <div class="odometer-details">
+                     <div class="more-odometer-and-more">
+                        <div class="more-odometer">více než</div>
+                        <div class="subs-odometer odometer1">0</div>
+                     </div>
+                     <div class="odometer-text">
+                           <p>Proběhlých soutěží</p>
+                     </div>
+                </div>
+                <div class="odometer-icon">
+                    <img src="images/star-stairs-podium-of-winner-rc-competition.png" alt="">
+                </div>
+            </div> 
+        
+            <div class="odometer-wrapper" data-value="34">
+                <div class="odometer-details">
+                     <div class="more-odometer-and-more">
+                        <div class="more-odometer">&starf;<span>&starf;</span>&starf;</div>
+                        <div class="subs-odometer odometer2">0</div>
+                     </div>
+                    <div class="odometer-text">
+                        <p>Aktivních členů</p>
+                    </div>
+                </div>
+                <div class="odometer-icon">
+                    <img src="images/person-icon-holding-rc-controller-pilot-rc.png" alt="">
+                </div>
+            </div> 
+            
+            <div class="odometer-wrapper" data-value="500">
+                <div class="odometer-details">
+                     <div class="more-odometer-and-more">
+                        <div class="more-odometer">přes</div>
+                        <div class="subs-odometer odometer3">0</div>
+                     </div>
+                    <div class="odometer-text">
+                        <p>Modelů v klubu</p>
+                    </div>
+                </div>
+                <div class="odometer-icon">
+                    <img src="images/rc-plane-fighter-jet-model.png" alt="">
+                </div>
+            </div> 
          </div>
       </section>
+      <div class="about-club-wrapper">
       <section class="about-club row">
-         <div class="filler-text">
-            <p id="filler-one">V našem modelparku neexistuje stereotyp. Jsme rozmanitou skupinou lidí, kteří spojují různorodé zkušenosti a zájmy v jedinečnou komunitu. </p>
-         </div>
-         <div class="filler-text">
-            <p id="filler-two">Setkávají se zde mladí nadšenci, kteří objevují svět modelářství, stejně jako zkušení veteráni, kteří své zkušenosti rádi sdílejí.</p>
-         </div>
+         
+            <div class="filler-text">
+               <p id="filler-one">V našem modelparku neznáme stereotypy. Jsme rozmanitá skupina lidí, sdílející různorodé zkušenosti a zájmy v jedinečné komunitě. </p>
+            </div>
+            <div class="filler-text">
+               <p id="filler-two">Setkávají se zde mladí nadšenci, kteří objevují svět modelářství, stejně jako zkušení veteráni, kteří své zkušenosti rádi sdílejí.</p>
+            </div>
+         
 
       </section>
+      </div>
 
       <section class="photogallery-small row">
          <div class="photogallery-ind">
             <div class="card">
-               <img src="images/card-slide-combat-plane.jpg"></img>
+               <img src="images/card-slide-combat-plane.jpg" loading="lazy">></img>
                <div class="card__content">
                  <p class="card__title">Combat letadla</p>
-                 <p class="card__description">Pravidelně pořádámě soutěže s Combat letadly, což jsou lehká letadla schopná přežít opravdu hodně ran. Cílem je sejmout praporek jiného letadla. Pilot s nejvíce "sestřely" vyhrává.</p>
+                 <p class="card__description">Pravidelně pořádáme soutěže s bojovými letadly, která jsou odolná a lehká. Cílem je sestřelit praporek z jiného letadla. Pilot s nejvíce sestřely vyhrává.</p>
                </div>
              </div>
             <div class="card">
-               <img src="images/card-slide-lightweight-planes.jpg"></img>
+               <img src="images/card-slide-lightweight-planes.jpg" loading="lazy">></img>
                <div class="card__content">
                  <p class="card__title">Větroně</p>
                  <p class="card__description">Nechybí u nás ani létání s větroni. Vyndáváme je převážně na jaře a na podzim, kde soutěžíme, kdo se déle udrží ve vzduchu.</p>
                </div>
              </div>
             <div class="card">
-               <img src="images/card-slide-jet-fighter.jpg"></img>
+               <img src="images/card-slide-jet-fighter.jpg" loading="lazy">></img>
                <div class="card__content">
                  <p class="card__title">Jety a akrobaty</p>
                  <p class="card__description">Můžete se u nás setkat i s takovými skvosty jako jsou stíhací letouny, modely letadel z druhé světové války nebo s akrobaty.</p>
@@ -262,7 +361,12 @@
          </div>
    </section>      
       </section>
-   <section class="white-part">
+   <section class="white-part row">
+      <div class="form-text-wrapper"></div>
+         <div class="form-text row">
+            <p>E-mail</p>
+         </div>
+      </div>
       <section class="major-title row">
          <div id="kontakt-click">
             <div class="title-header2"> 
@@ -274,42 +378,66 @@
 
       <section class="contact row">
          <div class="filler-text">
-            <p id="white-part-contact">Chcete se k nám přidat, pokecat o létání se stejně posedlými lidmi nebo se domluvit na předváděcí akci? Kontaktujte nás zde na e-mail nebo sledujte naše aktivity na sociálních sítích! Rádi uvítáme nové tváře i zkušené letce! </p>
+            <p id="white-part-contact">Chcete se k nám přidat, pokecat o létání nebo se domluvit na předváděcí akci? Kontaktujte nás zde na e-mail nebo sledujte naše aktivity na sociálních sítích. Rádi uvítáme nové tváře i ostřílené veterány!</p>
          </div>
 
       </section>
+      <section class="profile-pics-ceos row">
+         <div class="profile-wrapper">
+            <div class="profile">
+               <img src='images/jan-ceo-of-rc-airfield kopie.webp' alt=""/>
+               <span class="name">Jan Klepal<br><span class="scnname">Člen Výboru</span></span>
+            </div>
+            <div class="profile profile-reversed">
+               <img src='images/michal-ceo-of-rc-airfield.webp' alt=""/>
+               <span class="name">Michal Krejčí<br><span class="scnname">Předseda Výboru</span></span>
+            </div>
+         </div>
+         
+      </section>
+
+      
 
       <section class="form-wrapper row">
-         <form class="form-area" action="mailer.php" method="post">
-
-               <div class="details-area">
-                  <input type="text" name="name" id="input-text" placeholder="Jméno a příjmení">
-                  <input type="email" name="email" id="input-email" placeholder="E-mail">
-                  <div class="message-area">
-                     <textarea name="message" id="" placeholder="Vaše zpráva"></textarea>
-                  </div>
-                  <input type="submit" value="Odeslat">
+         <div class="form-section-wrapper">
+            <div class="form-container">
+               <div class="form-heading">
+                     <p><i class="fa-solid fa-envelope"></i>Formulář</p>
                </div>
-            
-            <div class="success-or-error">
-
-         <!-- <?php
-            if ($_GET['success'] == 1) {
-               echo "<div class=\"form-result success\">Odeslání proběhlo v pořádku.</div>";
-            }
-       
-            if ($_GET['success'] == -1) {
-               echo "<div class=\"form-result error\">Chyba při odeslání. Zkuste znovu.</div>";
-           }
-            ?> -->
-            
             </div>
-         </form>
+            <form class="form-area" action="mailer.php" method="post">
+                  
+                  <div class="details-area">
+                     <input type="text" name="name" id="input-text" placeholder="Jméno a příjmení">
+                     <input type="email" name="email" id="input-email" placeholder="E-mail">
+                     <div class="message-area">
+                        <textarea name="message" id="" placeholder="Vaše zpráva"></textarea>
+                     </div>
+                     <input type="submit" value="Odeslat">
+                  </div>
+               
+               <div class="success-or-error">
+
+               <!-- <?php
+                  if ($_GET['success'] == 1) {
+                     echo "<div class=\"form-result success\">Odeslání proběhlo v pořádku.</div>";
+                  }
+            
+                  if ($_GET['success'] == -1) {
+                     echo "<div class=\"form-result error\">Chyba při odeslání. Zkuste znovu.</div>";
+               }
+                  ?> -->
+               
+               </div>
+            </form>
+         </div>
+         
       </section>
 
       <a href="#" class="scroll-to-top-style"><img src="images/scroll-to-top-icon.png" alt=""></a>
 
    </section>
+   
    </main>
 
    <footer>
@@ -333,11 +461,11 @@
             </div>
 
                <div class="footer-two">
-                  <h2>Kdo jsme?</h2>
-                  <p>Jsme parta chlapů všeho věku, ale v srdci se všichni cítíme jako čerství dvacátníci. Stavíme, lítáme a poznáváme nový věci ve světě RC modelů, ať už to je doma nebo na našem modelářském letišti.<br><br><span class="letu-zdar">Letu zdar!</span></p>
+                  <h2>Meet the Crew</h2>
+                  <p>Jsme parta chlápků různého věku, ale stále mladí v srdci. Relaxujeme, stavíme, létáme a poznáváme novinky v oblasti RC modelů, buď doma nebo na našem oblíbeném modelářském letišti.<br><br><span class="letu-zdar">Letu zdar!</span></p>
                </div>
 
-            <div class="footer-three"> 
+            <div class="footer-three "> 
                <div class="contact-small">
                   <div class="contact-small-one">
                      <h3>Předseda Výboru</h3>
@@ -366,6 +494,9 @@
 
    </footer>
 
+
+
+<script src="Scripts/pop-up.js"></script>
 <script src="Scripts/odometer.js"></script>
 <script type="text/javascript">
    let counter = 1;
@@ -389,70 +520,51 @@
 
 <script>
    function checkVisibility() {
-      const odometerSection = document.querySelector('.odometer-rolling');
-      const rect = odometerSection.getBoundingClientRect();
+      const odometerSections = document.querySelectorAll('.odometer-wrapper');
       const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-      if (rect.top <= windowHeight * 0.8) {
-         initializeOdometer();
-         
-         window.removeEventListener('scroll', checkVisibility);
-      }
+      odometerSections.forEach(function(section) {
+         const rect = section.getBoundingClientRect();
+         if (rect.top <= windowHeight * 0.8 && !section.classList.contains('initialized')) {
+            initializeOdometer(section);
+            section.classList.add('initialized');
+         }
+      });
    }
 
-   function initializeOdometer() {
-      const subsOdometer = document.querySelector('.subs-odometer');
+   function initializeOdometer(section) {
+      const subsOdometer = section.querySelector('.subs-odometer');
+      const value = parseInt(section.getAttribute('data-value'));
 
       const odometer = new Odometer({
          el: subsOdometer,
          duration: 500
       });
 
-      odometer.update(34);
+      odometer.update(value); 
    }
+
    window.addEventListener('scroll', checkVisibility);
 
 </script>
 
-<script>
-   ScrollReveal({ 
-      reset: false, 
-      distance: '60px',
-      duration:2500,
-      delay:400
-      });
-
-   ScrollReveal().reveal('.welcome-text h1', {delay: 100, origin:'left'});
-   ScrollReveal().reveal('.navbar a', {delay:100, origin:'top', interval: 100});
-   ScrollReveal().reveal('.logo a img', {delay:100, origin:'left', reset:true});
-   ScrollReveal().reveal('.about-us-text', {delay:100, origin:'left', interval:100, distance:'250px'});
-   ScrollReveal().reveal('#title-blue-part1, #title-blue-part2, #title-blue-part3', {delay:100, origin:'left'});
-   ScrollReveal().reveal('.weather-card', {delay:100, origin:'right'});
-   ScrollReveal().reveal('.coordination-wrapper, .operating-rules-wrapper', {delay:100, origin:'bottom', distance:'200px'});
-   ScrollReveal().reveal('#our-airport-text,#our-airport-text2,#our-airport-text3', {delay:100, origin:'bottom', distance:'250px', interval:100});
-   ScrollReveal().reveal('.threed-model p, .photo-map-one', {delay:100, origin:'right',distance:'500px'});
-   ScrollReveal().reveal('.photo-of-airport p, .photo-map-two', {delay:100, origin:'left',distance:'500px'});
-   ScrollReveal().reveal('.our-airport-names', {delay:100, origin:'bottom',distance:'500px'});
-   ScrollReveal().reveal('#filler-one, #filler-two', {delay:100, origin:'bottom',distance:'250px'});
-   ScrollReveal().reveal('.photogallery-ind .card', {delay:100, origin:'left',distance:'500px', interval:200});
-   ScrollReveal().reveal('#white-part-contact', {delay:100, origin:'bottom',distance:'250px'});
-   ScrollReveal().reveal('.form-area', {delay:100, origin:'bottom',distance:'100px'});
-   ScrollReveal().reveal('.details-area input, .message-area', {delay:100, origin:'bottom', distance:'150px', interval:200});
-   ScrollReveal().reveal('.social-media p', {delay:100, origin:'left'});
-   ScrollReveal().reveal('.social-media a', {delay:100, origin:'right'});
-   ScrollReveal().reveal('.footer-one', {delay:100, origin:'left'});
-   ScrollReveal().reveal('.footer-two', {delay:100, origin:'bottom'});
-   ScrollReveal().reveal('.footer-three', {delay:100, origin:'right'});
-   ScrollReveal().reveal('.made-by p', {delay:100, origin:'top'});
-   ScrollReveal().reveal('.subs-odometer', {delay:100, origin:'top'});
-   
-   
-
-</script>
+<script src="Scripts/odometer-values.js"></script>
 
 <script src="Scripts/cookie-consent.js"></script>
 <script src="Scripts/script-scrolling.js"></script>
 <script src="Scripts/script-wea.js"></script>
 <script src="lightbox/lightbox-plus-jquery.min.js"></script>
+<script>
+
+document.getElementById('tractorImg').addEventListener('click', function() {
+   this.style.animation = 'lawnmoving 5s linear 2 alternate';
+   
+   this.addEventListener('animationend', function() {
+        this.style.animation = '';
+    });
+});
+
+</script>
+
 </body>
 </html>

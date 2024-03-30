@@ -66,7 +66,7 @@
             <div class="event-details">
                <div class="event-details-date">
                   <p class="name-event">Setkání RC modelů z období 2.světové války</p>
-                  <p class="date-of-action">27.3.2024</p>
+                  <p class="date-of-action">18.5.2024</p>
                </div>
                <p class="name-of-action">Srdečně Vás zveme na přátelské setkání a polétání s modely 2.WW. Přijďte strávit příjemné odpoledne s těmito ikonickými stroji. 18.5.2024 od 14:00.</p>
             </div>
@@ -286,10 +286,11 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    setInterval(checkEvents, 12 * 60 * 60 * 1000); 
     
 });
 
-setInterval(checkEvents, 12 * 60 * 60 * 1000); 
+
 
 </script>
 <script src="../Scripts/script-scrolling.js"></script>

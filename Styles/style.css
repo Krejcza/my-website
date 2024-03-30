@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-
 *{
    margin: 0;
    padding: 0;
@@ -48,25 +47,8 @@ html{
 
 .navbar-wrap {
    width: 100%;
-   background: linear-gradient(180deg, rgba(230,230,230,1) 0%, rgba(205,205,205,1) 100%);
+   background: #cdcdcd;
 }
-
-/* .navbar-wrap::before{
-   content: ' ';
-   display: block;
-   position: absolute;
-   left: 0;
-   top: 0;
-   border-radius: 50px 50px 50px 5px;
-   width: 100%;
-   height: 100%;
-   z-index: 0;
-   opacity: 0.05;
-   background-image: url(../images/mountain-line-overlay-png-static.png);
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-} */
 
 nav .ease-a{
    font-size: 1.5rem;
@@ -119,7 +101,8 @@ nav .ease-a:hover::before{
    background: none;
    outline: none;
    border: none;
-   z-index: 101;
+   z-index: 99;
+
 }
 
 .hamburger .bar, .hamburger::after, .hamburger::before{
@@ -145,38 +128,66 @@ nav .ease-a:hover::before{
 }
 
 .mobile-nav{
-   display: block;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   column-gap: 20px;
    position: fixed;
    top:0;
    left: 100%;
-   width: 100%;
+   width: 70%;
    min-height: 100vh;
    z-index: 98;
-   background-image: url(../images/background-blue-part.jpg);
+   background-color: rgb(142, 144, 255);
    padding-top: 120px;
    transition: 0.4s;
 }
 
 .mobile-nav.is-active{
-  left: 0;
+  left:30%;
+}
+
+.mobile-nav-text{
+   margin-top: 1rem;
 }
 
 .mobile-nav a{
    display: block;
-   width: 100%;
+   width: 80%;
    max-width: 300px;
-   margin: 2rem auto 1rem;
-   text-align: center;
+   text-align: left;
    margin-bottom: 16px;
+   margin-left: 20px;
+   margin-right: 20px;
    padding: 12px 16px;
-   background-color: #cdcdcd;
+   background-color: #fff;
    color: #1b09a7;
-   border-radius: 12px;
+   border-radius: 25px;
    text-decoration: none;
-   font-size: 1.5rem;
+   font-size: 1.15rem;
    font-weight: 600;
-   box-shadow:  10px 10px 35px #0e045a,
-               -10px -10px 35px #321dd1;
+   box-shadow:  3px 3px 30px #0000009f;
+}
+
+.mobile-nav p{
+   color: #1b09a7;
+   text-align: center;
+   font-size: 0.75rem;
+   margin-left: 30px;
+   margin-right: 30px;
+}
+
+.mobile-nav p i{
+   margin-right: 10px;
+}
+
+.mobile-nav p:nth-child(1){
+   font-size: 0.75rem;
+}
+
+.mobile-nav a i{
+   margin-right: 20px;
+   margin-left: 10px;
 }
 
 
@@ -200,7 +211,7 @@ nav .ease-a:hover::before{
 
 .slides{
    width: 500%;
-   height: 85vh;
+   height: 80vh;
    display: flex;
 }
 
@@ -218,7 +229,7 @@ nav .ease-a:hover::before{
    min-width: 100%;
    min-height: 100%; 
    z-index: 1;
-   filter:blur(1px) grayscale(100%);
+   filter:grayscale(50%) contrast(75%) blur(2px);
 }
 
 .radio-manual{
@@ -229,9 +240,8 @@ nav .ease-a:hover::before{
 
 .navigation-manual{
    position: absolute;
-   margin-top: -80vh;
+   margin-top: -75vh;
    display: flex;
-
 }
 
 .manual-btn{
@@ -249,7 +259,7 @@ nav .ease-a:hover::before{
 
 .manual-btn:hover{
    background: #1b09a7;
-   border: 2px solid #1b09a7;
+   border: 2px solid #fff;
    border-radius: 5px;
    transform: scale(1.5);
 }
@@ -278,29 +288,21 @@ main{
    background: #cdcdcd;
 }
 
-/* main::before{
-   background-image: url(../images/overlay-dots-two-background.png);
-   background-repeat: no-repeat;
-   background-position: top;
-   content: ' ';
-   display: block;
-   position: absolute;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-   opacity: 0.1;
-   z-index: 0;
-} */
-
 .about-us{
    display: flex;
    flex-direction: row;
    padding-bottom: 10vh;
 }
 
+
 .about-us-section{
    z-index: 2;
+}
+
+.about-us-section p a{
+   text-decoration: none;
+   color: #fff;
+   font-weight: 700;
 }
 
 .about-us-text a, .about-us-text iframe{
@@ -313,11 +315,10 @@ main{
 
 .about-us-text:nth-child(1),
 .about-us-text:nth-child(3){
-   top: -2.5rem;
+   top: -3vh;
 }
 
 .about-us-text{
-   position: relative;
    display: flex;
    flex-direction: column;
    align-items:center;
@@ -326,12 +327,10 @@ main{
    position: relative;
    background: #1b09a7;
    top: -5rem;
-   font-size: 1rem;
    margin: 5px;
    padding: 25px;
-   border-radius: 50px 50px 50px 5px;
+   border-radius: 25px 25px 25px 25px;
    color: #fff;
-   transition: transform 3s ease-out;
    text-align: center;
    box-shadow:  0px 10px 15px #575757;
 }
@@ -343,41 +342,44 @@ main{
    position: absolute;
    left: 0;
    top: 0;
-   border-radius: 50px 50px 50px 5px;
+   border-radius: 25px 25px 25px 25px;
    width: 100%;
    height: 100%;
-   opacity: 0.5;
-   background-image: url(../images/mountain-line-overlay-png-static.png);
+   opacity: 1;
+   background-image: url(../images/pngwing.com\ \(30\).png);
    background-size: cover;
+   background-blend-mode:darken;
    background-position: center;
    background-repeat: no-repeat;
 }
 
 .about-us-text p{
-   margin-bottom: 3rem;
+   margin-bottom: 3vh;
+   font-size: 1rem;
 }
 
 
 .about-us-text img {
-   width: 100%;
+   width: 90%;
    aspect-ratio: 4/3;
    cursor: pointer; 
-   border-radius: 50px 50px 50px 5px;
+   border-radius: 25px 25px 25px 25px;
    box-shadow:  3px 3px 30px #0000009f;
    filter: grayscale(100%);
 }
 
 .about-us-text iframe{
-   border-radius: 50px 50px 50px 5px;
+   border-radius: 25px 25px 25px 25px;
    box-shadow:  3px 3px 30px #0000009f;
 }
 
 .about-us-text h3{
-   font-size: 1.3rem;
+   font-size: 1.5rem;
+   font-weight: 600;
 }
 
 .about-us-section p{
-   margin-top: 1rem;
+   margin-top: 1.5rem;
 }
 
 .major-title{
@@ -386,11 +388,11 @@ main{
 }
 
 .title-header2 h2{
-   font-size: 2rem;
    color:#1b09a7;
-   font-weight: 600;
+   font-weight: 700;
    text-align: center;
    margin-bottom: 5vh;
+   letter-spacing: 10px;
 }
 
 .filler-text-wrap{
@@ -401,22 +403,45 @@ main{
 
 .filler-text{
    flex: 1;
+   z-index: 2;
 }
 .filler-text p{
    margin-top: 5%;
    margin-bottom: 5%;
    color: #1b09a7;
    font-size: 1.5rem;
-   font-weight: 300;
-   text-align:start;
+   font-weight: 400;
+   text-align:center;
+}
+
+.filler-text p span{
+   font-weight: 700;
 }
 
 .weather-card{
+   position: relative;
    margin-top: 50px;
    background: rgb(205,205,205);
    box-shadow:  25px 25px 45px #adacac,
                -25px -25px 45px #f3f3f3;
    border-radius: 25px;
+}
+
+.weather-card::before{
+   content: ' ';
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 0;
+   border-radius: 25px;
+   width: 100%;
+   height: 100%;
+   opacity: 0.5;
+   background-image: url(../images/pngwing.com\ \(30\).png);
+   background-size: cover;
+   background-blend-mode:darken;
+   background-position: center;
+   background-repeat: no-repeat;
 }
 
 .weather{
@@ -427,18 +452,21 @@ main{
    min-height: 15vh;
    padding: 20px;
    margin-bottom: 105px;
+   z-index: 10;
 }
 
 .weather-icon{
    width: 100px;
    height: 100px;
    margin-right: 2rem;
+   z-index: 10;
 }
 
 .weather p{
    color: #1b09a7;
    font-size: 1.5rem;
    font-weight: 500;
+   z-index: 10;
 }
 
 .main-details-nemcice{
@@ -468,24 +496,46 @@ main{
 }
 
 .operating-rules{
+   position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
    text-decoration: none;
    color: #1b09a7;
    text-align: center;
-   font-size: 2rem;
-   width: 350px;
+   font-size: 1.75rem;
+   width: 400px;
    height: 75px;
-   border-radius: 12px;
+   border-radius: 25px;
    background: rgb(205,205,205);
    box-shadow:  15px 15px 35px #adacac,
                -15px -15px 35px #f3f3f3;
    transition: 0.5s;
 }
 
+.operating-rules::before{
+   content: ' ';
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 0;
+   border-radius: 25px;
+   width: 100%;
+   height: 100%;
+   opacity: 0.75;
+   background-image: url(../images/pngwing.com\ \(30\).png);
+   background-size: cover;
+   background-blend-mode:darken;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
 .operating-rules:hover{
    color: rgb(142, 144, 255);
+}
+
+.operating-rules i{
+   margin-right: 20px;
 }
 
 .coordination-wrapper{
@@ -496,6 +546,7 @@ main{
 }
 
 .coordination{
+   position: relative;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -503,56 +554,185 @@ main{
    color: #1b09a7;
    text-align: center;
    padding: 10px;
-   font-size: 2rem;
-   width: 350px;
+   font-size: 1.75rem;
+   width: 400px;
    height: 75px;
-   border-radius: 12px;
+   border-radius: 25px;
    background: rgb(205,205,205);
-   background: linear-gradient(0deg, rgb(205,205,205), rgb(205,205,205));;
    box-shadow:  15px 15px 35px #adacac,
                -15px -15px 35px #f3f3f3;
    transition: 0.5s;
+}
+
+.coordination::before{
+   content: ' ';
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 0;
+   border-radius: 25px;
+   width: 100%;
+   height: 100%;
+   opacity: 0.75;
+   background-image: url(../images/pngwing.com\ \(30\).png);
+   background-size: cover;
+   background-blend-mode:darken;
+   background-position: center;
+   background-repeat: no-repeat;
 }
 
 .coordination:hover{
    color: rgb(142, 144, 255);
 }
 
-.our-airport-names{
-   display: flex;
-   justify-content: center;
-   margin-bottom: 2.5vh;
-   margin-top: 10vh;
-   background-color:#1b09a7;
-   box-shadow:  15px 15px 35px #858585,
-               -15px -15px 35px #f8f8f8;
-   border-radius: 12px;
+.coordination i{
+   margin-right:20px;
 }
 
-.our-airport-names p{
+.text-lawnmover{
+   margin-top: 8vh;
+   margin-bottom: 3vh;
+}
+
+.text-lawnmover p{
+   color: #1b09a7;
    font-size: 1.5rem;
-   font-weight: 600;
+   font-weight: 400;
+   text-align:center;
 }
 
-.threed-model{
-   position: relative;
-   text-align: center;
-   flex: 1;
-   color: #fff;
+.text-lawnmover p span{
    font-weight: 700;
 }
 
-.photo-of-airport{
+
+.mountain{
+   position: relative;
+}
+
+.mountain img{
+   max-width: 200px;
+   max-height: 200px;
+   position: absolute;
+   left: 1000px;
+   top:-100px;
+   z-index: 4;
+}
+
+.airfield {
+   position: relative;
+}
+
+.airfield img{
+   max-width: 200px;
+   max-height: 200px;
+   position: absolute;
+   left: 100px;
+   top:-110px;
+   z-index: 4;
+}
+
+.tractor-wrapper{
+   height: 100px;
+}
+
+.tractor {
+   position: relative;
+   max-width: 100%;
+   margin-top: 10vh;
+}
+
+.tractor img {
+   max-width: 75px;
+   max-height: 75px;
+   position: absolute;
+   left: 0;
+   bottom: -100px;
+   z-index: 5;
+   cursor: pointer;
+}
+
+.our-airport-z-in {
+   position: relative;
+}
+
+.our-airport-z-in::before{
+   content: ' ';
+   display: block;
+   position: absolute;
+   left: 0;
+   top: -150px;
+   width: 100%;
+   height: 200px;
+   opacity: 1;
+   background:  linear-gradient(0deg, rgb(142,144,255) 0%, rgba(205,205,205,1) 50%, rgba(205,205,205,1) 100%);
+}
+
+.our-airport-names {
+   display: flex;
+   justify-content:center;
+   margin-bottom: 2.5vh;
+   padding: 0.75rem;
+   background: #1b09a7;
+   box-shadow: 15px 15px 35px #858585;
+   border-radius: 12px;
+   filter: grayscale(25%);
+   z-index: 6;
+   position: relative;
+}
+
+.our-airport-names::before{
+   content: ' ';
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 0;
+   border-radius: 12px;
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   background-image: url(../images/pngwing.com\ \(30\).png);
+   background-size: cover;
+   background-blend-mode:darken;
+   background-position: center;
+   background-repeat: no-repeat;
+   z-index: 3;
+}
+
+
+.our-airport-names p{
+   font-size: 2rem;
+}
+
+.threed-model{
+   text-align: center;
+   flex: 2;
+   color: #fff;
+   font-weight: 500;
+   z-index: 5;
+}
+
+.connection{
    text-align: center;
    flex: 1;
    color: #fff;
-   font-weight: 800;
+   font-weight: 300;
+   z-index: 5;
+}
+
+.photo-of-airport{
+   position: relative;
+   text-align: center;
+   flex: 2;
+   color: #fff;
+   font-weight: 500;
+   z-index: 5;
 }
 
 .our-airport-photo{
    display: flex;
    justify-content: space-around;
-   margin-bottom: 15vh;
+
 }
 
 .photo-map-one,
@@ -560,7 +740,7 @@ main{
    display: flex;
    flex: 1;
    max-width: 100%;
-   margin: 3rem 0 10rem 0;
+   margin: 3rem 0 6rem 0;
    position: relative;
    perspective: 1000px;
 }
@@ -584,16 +764,29 @@ main{
    transform-style: preserve-3d;
 }
 
-.photo-map-two img:hover{
-   transform: skewY(-2deg) scale(1.15) rotateY(160deg); 
-   filter: grayscale(0);
-}
-
 
 .blue-part{
-   background-image: url(../images/background-blue-part.jpg);
+   position: relative;
+   background-image: url(../images/background-blue-part.webp);
    background-attachment:fixed;
-   /* background-repeat:repeat-x; */
+   background-size: contain;
+   z-index: 1;
+}
+
+.blue-part::before{
+   content: ' ';
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   opacity: 0.5;
+   background-image: url(../images/pngwing.com\ \(32\).png);
+   background-size: cover;
+   background-blend-mode:darken;
+   background-position: center;
+   background-repeat: no-repeat;
 }
 
 #title-blue-part1{
@@ -622,18 +815,34 @@ main{
    column-gap: 100px;
 }
 
-#filler-one,
-#filler-two{
+.about-club-wrapper{
+   background-color: #0e045a;
+}
+
+#filler-one{
    text-align: left;
    color: #fff;
-   font-weight: 500;
+   font-weight: 400;
+}
+
+#filler-two{
+   text-align: right;
+   color: #fff;
+   font-weight: 400;
 }
 
 #filler-three{
    text-align: center;
    color: #fff;
    margin-top: 0%;
-   margin-bottom: 5%;
+   margin-bottom: 10%;
+}
+
+.odometers{
+   display: flex;
+   column-gap: 2%;
+   justify-content: end;
+   align-items: end;
 }
 
 .odometer-rolling{
@@ -644,14 +853,22 @@ main{
 }
 
 .odometer-wrapper{
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
    position: relative;
-   width: 50%;
+   max-width: 400px;
+   max-height: 550px;
    color: #1b09a7;
-   border-radius: 0.5rem;
-   background-color: #fff;
+   border-radius: 25px;
+   background-color: rgb(205,205,205);
    padding: 20px;
    text-align: center;
    margin-bottom: 5%;
+   z-index: 2;
+   box-shadow:  3px 3px 30px #0000009f;
 }
 
 .odometer-wrapper::before{
@@ -660,23 +877,70 @@ main{
    position: absolute;
    left: 0;
    top: 0;
+   border-radius: 25px;
    width: 100%;
    height: 100%;
-   opacity: 0.05;
-   background-image: url(../images/mountain-line-overlay-png-static.png);
+   opacity: 0.5;
+   background-image: url(../images/pngwing.com\ \(30\).png);
+   background-size: cover;
+   background-blend-mode:darken;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.odometer-details{
+   display: flex;
+   flex-direction: column;
 }
 
 .subs-odometer{
-   font-size: 7rem;
-   font-weight: 700;
-   letter-spacing: 4px;
+   font-size: 8rem;
+   font-weight: 800;
+   letter-spacing: 1px;
 }
 
+.odometer-icon{
+   padding-top: 10%;
+   z-index: 10;
+}
+
+.odometer-icon img{
+   width: 40%;
+}
+
+.odometer-text{
+   z-index: 10;
+   color: rgb(142, 144, 255);
+}
 
 .odometer-text p{
    font-size: 1.5rem;
-   letter-spacing: normal;
+   font-weight: 600;
 }
+
+.more-odometer{
+   font-size: 1rem;
+   font-weight: 500;
+   color: #fff;
+   z-index: 10;
+}
+
+.more-odometer span{
+   font-size: 1.5rem;
+}
+
+.subs-odometer.odometer1,
+.subs-odometer.odometer3{
+   font-size: 4rem;
+}
+
+.odometers .odometer-wrapper:nth-child(1),
+.odometers .odometer-wrapper:nth-child(3){
+   max-height: 400px;
+   padding: 30px;
+   max-width: 300px;
+}
+
 
 .photogallery-ind{
    display: flex;
@@ -704,15 +968,16 @@ main{
  }
  
  .card img{
-   width: 100%;
-   height: auto;
+   width: 105%;
+   height: 105%;
    fill: #333;
+   filter: grayscale(70%);
    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
  }
  
  .card:hover {
    transform: scale(1.05);
-   box-shadow: 0 16px 24px rgba(255, 255, 255, 0.503);
+   box-shadow: 0 16px 24px #0e045a;
  }
  
  .card__content {
@@ -726,7 +991,7 @@ main{
    height: 100%;
    padding: 20px;
    box-sizing: border-box;
-   background-color: #dfdfdf;
+   background-color: #fff;
    transform: rotateX(-90deg);
    transform-origin: bottom;
    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -738,7 +1003,7 @@ main{
  
  .card__title {
    margin: 0;
-   font-size: 2rem;
+   font-size:2.5rem;
    color: #1b09a7;
    font-weight: 700;
    text-align: center;
@@ -750,32 +1015,199 @@ main{
  
  .card__description {
    margin: 10px 0 0;
-   font-size: 14px;
+   font-size: 1.25rem;
    color: #777;
-   line-height: 1.4;
    text-align: center;
  }
  
  #white-part-contact{
    color: #1b09a7;
    margin-top: -2vh;
-   padding-bottom: 15vh;
+   margin-bottom: 5vh;
    text-align: center;
  }
 
+
 .white-part{
+   position: relative;
    background: #cdcdcd;
 }
 
-
-.form-wrapper{
+.profile-wrapper{
    display: flex;
-   justify-content: center;
-   padding-bottom: 20vh;
-   margin-top: -10vh;
+   margin-top: 5vh;
+   margin-bottom: 5vh;
+   justify-content:space-around;
+   align-items: center;
 }
 
+.profile {
+   transition: all 0.3s;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   filter: grayscale(100%);
+}
+
+.profile:hover {
+   transform: translateY(25px);
+   filter: grayscale(0%);
+}
+
+.profile img {
+   max-width: 70%;
+   border-radius: 50%;
+   border: 5px solid #cdcdcd;
+   box-shadow:  5px 5px 15px #adacac,
+               -5px -5px 15px #f3f3f3;
+   cursor: pointer;
+}
+
+.profile .name {
+   position: absolute;
+   background-color: #1b09a7;
+   color: #fff;
+   padding: 15px 30px;
+   border-radius: 0 20px 20px 0;
+   top: 50%;
+   left: 90%;
+   white-space: nowrap;
+   transform: translate(-50%, -50px);
+   letter-spacing: 1px;
+   font-size: 1rem;
+   font-weight: 600;
+   opacity: 0;
+   transition: all 0.3s;
+   text-align: center;
+}
+
+.profile.profile-reversed .name{
+   position: absolute;
+   background-color: #1b09a7;
+   color: #fff;
+   padding: 15px 30px;
+   border-radius: 20px 0 0 20px;
+   top: 50%;
+   left: -31.5%;
+   font-weight: 600;
+   white-space: nowrap;
+   transform: translate(-50%, -50px);
+   letter-spacing: 1px;
+   font-size: 1rem;
+   opacity: 0;
+   transition: all 0.3s;
+   text-align: center;
+}
+
+.profile .scnname{
+   font-size: 0.75rem;
+   font-weight: 300;
+   color: rgb(142, 144, 255);
+}
+
+.profile .name::before {
+   content: "";
+   position: absolute;
+   width: 15px; height: 15px;
+   background-color: rgb(142, 144, 255);
+   top: 50%; 
+   left: 0;
+   transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.profile.profile-reversed .name::before{
+   content: "";
+   position: absolute;
+   width: 15px; height: 15px;
+   background-color: rgb(142, 144, 255);
+   top: 50%; 
+   left: 100%;
+   transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.profile img:hover + .name {
+   opacity: 1;
+   transform: translateY(-50%);
+   box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+}
+
+
+.form-text p{
+   position: absolute;
+   top: 65%;
+   left: 5%;
+   text-transform: uppercase;
+   font-size: 8rem;
+   color: rgb(255, 255, 255);
+   font-weight: 800;
+   transform: rotate(-90deg);
+   filter: blur(10px) contrast(25%);
+}
+
+.form-section-wrapper{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-bottom: 20vh;
+}
+
+.form-container {
+   position: relative;
+   z-index: 2;
+}
+
+.form-heading {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: #1b09a7;
+   width: 300px;
+   height: 50px;
+   border-radius: 25px 25px 0 0;
+   position: relative;
+   box-shadow:  15px 15px 30px #adacac,
+               -15px -15px 30px #f3f3f3;
+}
+
+.form-heading::before {
+   content: ' ';
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 0;
+   border-radius: 25px 25px 0 0;
+   width: 100%;
+   height: 100%;
+   opacity: 1;
+   background-image: url(../images/pngwing.com\ \(30\).png);
+   background-size: cover;
+   background-blend-mode: darken;
+   background-position: center;
+   background-repeat: no-repeat;
+   z-index: 1; 
+}
+
+.form-heading p {
+   font-size: 1.5rem;
+   text-align: center;
+   color: rgb(142, 144, 255);
+   position: relative;
+   z-index: 2; 
+}
+
+.form-heading i {
+   font-size: 1.5rem;
+   margin-right: 10px;
+   color: #fff;
+}
+
+
+
+
 .form-area{
+   position: relative;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -787,6 +1219,24 @@ main{
    border-radius: 25px;
    flex-wrap: wrap;
 }
+
+.form-area::before{
+   content: ' ';
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 0;
+   border-radius: 25px;
+   width: 100%;
+   height: 100%;
+   opacity: 0.3;
+   background-image: url(../images/pngwing.com\ \(30\).png);
+   background-size: cover;
+   background-blend-mode:darken;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
 
 .details-area{
    display: flex;
@@ -858,7 +1308,6 @@ main{
 .details-area input[type=submit]:hover{
    font-size: 1.5rem;
    color: rgb(142, 144, 255);
-   box-shadow: 0px 5px 15px #e6e6e6;
 }
 
 .message-area{
@@ -915,13 +1364,15 @@ main{
    border-radius: 5px;
    padding: 5px;
 }
+  
 
+  
 .scroll-to-top-style img{
-   width: 80px;
-   height: 80px;
+   width: 40px;
+   height: 40px;
    position: fixed;
-   bottom: 30vh;
-   right: 50px;
+   bottom: 25vh;
+   right: 30px;
    opacity: 0;
    transition: 0.5s ease-out;
    cursor:default;
@@ -929,7 +1380,7 @@ main{
 }
 
 .scroll-to-top-style.active-to-top img{
-   bottom: 35vh;
+   bottom: 25vh;
    opacity: 1;
    cursor: pointer;
 }
@@ -942,7 +1393,7 @@ main{
 
 /* TOP */
 .wrap-social{
-   background: black;
+   background: #000;
 }
 
 .social-media{
@@ -970,7 +1421,9 @@ main{
 /* MIDDLE */
 
 .footer-middle{
-   background: #05011e;
+   background-image: url(../images/background-blue-part.webp);
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .footer-middle-all{
@@ -1074,4 +1527,93 @@ main{
 
 .activated a{
    color: rgb(142, 144, 255);
+}
+
+.pop-up-event {
+   background-color: #ffffff;
+   max-width: 90%;
+   max-height: 80%;
+   width: 500px;
+   padding: 30px 40px;
+   position: fixed; 
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   border-radius: 25px;
+   z-index: 100;
+   display: none;
+}
+
+
+.pop-up-event h2{
+   text-align: center;
+   color: #1b09a7;
+   font-size: 2rem;
+}
+
+.pop-up-event button{
+   display: block;
+   margin: 0 0 1px auto;
+   background-color: transparent;
+   font-size: 30px;
+   color: #0e045a;
+   border: none;
+   outline: none;
+   z-index: 100;
+   cursor: pointer;
+   transition: 0.5s all;
+}
+
+.pop-up-event p{
+   font-size: 1.15rem;
+   text-align: justify;
+   margin: 20px 0;
+   z-index: 100;
+}
+
+.pop-up-event p span{
+   font-weight: 700;
+}
+
+.pop-up-event a{
+   display: block;
+   width: 200px;
+   position: relative;
+   text-align: center;
+   background-color: rgb(142, 144, 255);
+   color: #fff;
+   text-decoration: none;
+   padding: 20px 5px;
+   z-index: 100;
+   border-radius: 25px;
+   margin: 35px auto;
+   transition: all 0.5s;
+}
+
+.pop-up-event a:hover{
+   transform: scale(1.25);
+}
+
+#overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5); 
+   z-index: 99;
+   display: none;
+   cursor: pointer;
+}
+
+
+
+@keyframes lawnmoving {
+   0% {
+      left: 0%; 
+   }
+
+   100% {
+      left: calc(40% - 75px);
+   }
 }

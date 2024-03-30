@@ -16,19 +16,23 @@
       margin-right: 50px;
    }
 
+   .text-lawnmover{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+
    .photo-map-two img{
       margin-left: 50px;
       margin-right:  50px;
    }
 
-   .photo-map-two img:hover{
-      transform: skewY(-1deg) scale(1) rotateY(165deg); 
-      filter: grayscale(0);
-   }
-
    .our-airport-names{
       margin-left: 50px;
       margin-right:  50px;
+      margin-top: 50px;
    }
 
    .our-airport-photo{
@@ -37,10 +41,24 @@
       margin-right:  50px;
    }
 
+   .tractor-wrapper, .mountain-wrapper, .airfield-wrapper{
+      display: none;
+   }
+
+   .our-airport-z-in::before{
+      display: none;
+   }
+      
+
    #title-blue-part1{
       margin-left: 50px;
       margin-right:  50px;
       font-size: 3rem;
+   }
+
+   .odometer-rolling{
+      margin-left: 50px;
+      margin-right:  50px;
    }
 
    .photogallery-ind{
@@ -101,7 +119,38 @@
 
 }
 
+@media only screen and (max-width: 1350px){
+   .card__description {
+      font-size: 0.8rem;
+    }
+
+   .card__title {
+      font-size:1.75rem;
+   }
+}
+
 @media only screen and (max-width: 1200px){
+   .about-us-text:nth-child(2),
+   .about-us-text:nth-child(3){
+      display: none;
+   }
+
+   .about-us-text{
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+      padding-left: 50px;
+      margin-top: -5vh;
+   }
+
+   .about-us-text p{
+      font-size: 1.5rem;
+   }
+
+   .about-us-section{
+      padding-right: 50px;
+   }
+
    .weather{
       display: flex;
       flex-direction: column;
@@ -155,6 +204,12 @@
    
    .header-for-ind-pics{
       padding-top: 5vh; 
+   }
+
+   .footer-three{
+      display: flex;
+      justify-content: right;
+      align-items: center;
    }
 
 }
@@ -224,6 +279,47 @@
       font-weight: 700;
    }
 
+   .odometer-wrapper{
+      max-width: 300px;
+      max-height: 450px;
+   }
+
+   .odometers .odometer-wrapper:nth-child(1),
+   .odometers .odometer-wrapper:nth-child(3){
+      max-height: 300px;
+      padding: 30px;
+      max-width: 200px;
+   }
+
+   .subs-odometer{
+      font-size: 7rem;
+      font-weight: 700;
+      letter-spacing: 0px;
+   }
+
+   .subs-odometer.odometer1,
+   .subs-odometer.odometer3{
+      font-size: 3.5rem;
+   }
+
+   #filler-one,
+   #filler-two{
+      font-weight: 200;
+   }
+
+   .profile-wrapper{
+      display: flex;
+      flex-direction: column;
+   }
+
+   .profile:not(:first-child){
+      margin-top: -40px;
+   }
+
+   .profile img{
+      max-width: 50%;
+   }
+
 
 }
 
@@ -241,37 +337,27 @@
       display: flex;
       justify-content: flex-start;
       margin-left: 25px;
-      
    }
 
    .navigation-manual{
       display: none;
    }
 
-   .manual-btn{
-      border: 2px solid #1b09a7;
-      padding: 0.5rem;
-   }
-
-   .about-us{
-      flex-direction: column;
-   }
-
-   .about-us-text:nth-child(1){
-      min-height: 25vh;
-      text-align: center;
+   .about-us-text{
       display: flex;
-      align-items: center;
+      margin-top: -5vh;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      padding: 25px;
    }
 
-
-   .about-us-text:nth-child(2),
-   .about-us-text:nth-child(3){
-      display: none;
+   .about-us-text p{
+      font-size: 1rem;
    }
-   
-   .our-airport-names{
-      display: none;
+
+   .about-us-section{
+      padding-right: 0px;
    }
 
    .our-airport-photo{
@@ -279,6 +365,10 @@
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
+   }
+
+   .our-airport-names p{
+      font-size: 1.5rem;
    }
 
    .photo-map-one{
@@ -297,11 +387,6 @@
       column-gap: 0px;
    }
 
-   #filler-one,
-   #filler-two{
-   text-align: center;
-   }
-
    .photogallery-ind{
       display: flex;
       flex-direction: column;
@@ -311,6 +396,21 @@
    .card{
       width: 80%;
    }
+
+   .card__title {
+      margin: 0;
+      font-size:2.5rem;
+      color: #1b09a7;
+      font-weight: 700;
+      text-align: center;
+    }
+    
+    .card__description {
+      margin: 10px 0 0;
+      font-size: 1.25rem;
+      color: #777;
+      text-align: center;
+    }
 
    .filler-text p{
       text-align: center;
@@ -360,6 +460,7 @@
       flex-direction: column;
       align-items: center;
    }
+
    
    .footer-middle-all{
       display: flex;
@@ -370,10 +471,10 @@
 
    .footer-two{
       text-align: center;
-      background-image: url(../images/background-blue-part.jpg);
-      background-attachment:fixed;
-      width: 100vw;
+      width: 100%;
       padding: 50px;
+      background-color: #0e045a;
+      border-radius: 25px;
    }
 
    .contact-small-one p,
@@ -401,21 +502,231 @@
    }
 
    #filler-one,
-   #filler-two{
+   #filler-two,
+   #filler-three{
    text-align: center;
    }
+
+   #filler-one,
+   #filler-two{
+      font-size: 1.25rem;
+   }
+
+   #filler-three{
+      font-size: 1.5rem;
+      font-weight: 300;
+   }
+
+   .text-lawnmover p{
+      color: #1b09a7;
+      font-size: 1.25rem;
+      font-weight: 300;
+      text-align:center;
+   }
+
+   #our-airport-text,
+   #our-airport-text3{
+      font-size: 1.25rem;
+      font-weight: 300;
+   }
+
+   .weather p{
+      font-weight: 400;
+   }
+
+   .our-airport-names p{
+      font-size: 1.25rem;
+      font-weight: 400;
+   }
+
+   .odometer-rolling{
+      margin-bottom: 5vh;
+   }
+
+   .odometers .odometer-wrapper:nth-child(1),
+   .odometers .odometer-wrapper:nth-child(3){
+      max-height: 200px;
+      padding: 0px;
+      max-width: 500px;
+   }
+
+   .odometers{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items:center;
+   }
+
+   .odometer-wrapper{
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      max-width: 525px;
+      max-height: 200px;
+      width: 350px;
+      color: #1b09a7;
+      border-radius: 25px;
+      background-color: rgb(205,205,205);
+      padding: 0px;
+      text-align: center;
+      margin-bottom: 5%;
+      z-index: 2;
+      box-shadow:  3px 3px 30px #0000009f;
+   }
+
+   .more-odometer-and-more{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   .odometer-text{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 20px;
+   }
+
+   .odometer-inside{
+      display: flex;
+      flex-direction: row;
+      max-width: 150px;
+   }
+
+   .odometer-details{
+      width: 300px;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .subs-odometer{
+      font-size: 4rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+   }
+
+   .odometer-icon{
+      flex: 1;
+      width: 100px;
+      padding-top: 0%;
+      z-index: 10;
+   }
+   
+   .odometer-icon img{
+      width: 40%;
+   }
+
+   #white-part-contact{
+      font-size: 1.25rem;
+      font-weight: 300;
+   }
+
+   .profile-wrapper{
+      margin: 20vh 0 25vh 0;
+      display: flex;
+      flex-direction: column;
+   }
+
+   .profile:not(:first-child){
+      margin-top: 15px;
+   }
+
+   .profile img{
+      max-width: 50%;
+   }
+
+   .profile:hover {
+      transform: translateY(35px);
+      filter: grayscale(0%);
+   }
+
+   .profile:nth-child(1):hover{
+      transform: translateY(-25px);
+   }
+
+   .profile .name {
+      position: absolute;
+      background-color: #1b09a7;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 20px;
+      top: -20%;
+      left: 32%;
+      white-space: nowrap;
+      transform: translate(0%, 0px);
+      letter-spacing: 1px;
+      font-size: 1rem;
+      font-weight: 600;
+      opacity: 0;
+      transition: all 0.3s;
+      text-align: center;
+   }
+   
+   .profile.profile-reversed .name{
+      position: absolute;
+      background-color: #1b09a7;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 20px;
+      top: 138%;
+      left: 29%;
+      font-weight: 600;
+      white-space: nowrap;
+      transform: translate(0%, 0px);
+      letter-spacing: 1px;
+      font-size: 1rem;
+      opacity: 0;
+      transition: all 0.3s;
+      text-align: center;
+   }
+
+   .profile .name::before {
+      content: "";
+      position: absolute;
+      width: 15px; height: 15px;
+      background-color: rgb(142, 144, 255);
+      top: 100%; 
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+   }
+   
+   .profile.profile-reversed .name::before{
+      content: "";
+      position: absolute;
+      width: 15px; height: 15px;
+      background-color: rgb(142, 144, 255);
+      top: 0%; 
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(45deg);
+   }
+
+   .profile img:hover + .name {
+      opacity: 1;
+      transform: translateY(-75%);
+      box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+   }
+   
+
+
+
 }
 
 @media only screen and (max-width: 700px){
    .photo-map-one{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      min-height: 300px;
+      display: none;
+   }
+
+   .threed-model, .connection{
+      display: none;
    }
 
    .form-area{
       width: 350px;
+   }
+
+   .form-text{
+      display: none;
    }
 
    #input-text:focus,
@@ -448,25 +759,157 @@
    #map iframe{
       height: 300px;
    }
-}
 
-
-@media only screen and (max-width: 550px){
-   .photo-map-one{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      min-height: 250px;
+   .odometers .odometer-wrapper:nth-child(1),
+   .odometers .odometer-wrapper:nth-child(3){
+      max-height: 200px;
+      padding: 0px;
+      max-width: 500px;
    }
+
+   .odometers{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items:center;
+   }
+
+   .odometer-wrapper{
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      position: relative;
+      max-width: 525px;
+      max-height: 200px;
+      width: 350px;
+      color: #1b09a7;
+      border-radius: 25px;
+      background-color: rgb(205,205,205);
+      padding: 0px;
+      text-align: center;
+      margin-bottom: 5%;
+      z-index: 2;
+      box-shadow:  3px 3px 30px #0000009f;
+   }
+
+   .more-odometer-and-more{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+
+   .odometer-text{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 20px;
+   }
+
+   .odometer-text p{
+      font-size: 1rem;
+      font-weight: 500;
+   }
+
+   .odometer-inside{
+      display: flex;
+      flex-direction: row;
+      max-width: 150px;
+   }
+
+   .odometer-details{
+      width: 300px;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .subs-odometer{
+      font-size: 3rem;
+      font-weight: 800;
+      letter-spacing: 1px;
+   }
+
+   .subs-odometer.odometer1,
+   .subs-odometer.odometer3{
+      font-size: 3rem;
+   }
+
+   .odometer-icon{
+      display: none;
+   }
+   
+   .odometer-icon img{
+      width: 40%;
+   }
+
+   .pop-up-event {
+      background-color: #fff;
+      max-width: 90%;
+      max-height: 80%;
+      width: 500px;
+      padding: 30px 40px;
+      position: fixed; 
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 25px;
+      z-index: 100;
+      display: none;
+   }
+   
+   
+   .pop-up-event h2{
+      text-align: center;
+      color: #1b09a7;
+      font-size: 1.25rem;
+   }
+   
+   .pop-up-event button{
+      display: block;
+      margin: 0 0 1px auto;
+      background-color: transparent;
+      font-size: 40px;
+      color: #0e045a;
+      border: none;
+      outline: none;
+      z-index: 100;
+      cursor: pointer;
+      transition: 0.5s all;
+   }
+   
+   .pop-up-event p{
+      font-size: 1rem;
+      text-align: justify;
+      margin: 20px 0;
+      z-index: 100;
+   }
+   
+   .pop-up-event p span{
+      font-weight: 700;
+   }
+   
+   .pop-up-event a{
+      display: block;
+      width: 200px;
+      position: relative;
+      text-align: center;
+      background-color: rgb(142, 144, 255);
+      color: #fff;
+      text-decoration: none;
+      padding: 20px 5px;
+      z-index: 100;
+      border-radius: 25px;
+      margin: 35px auto;
+      transition: all 0.5s;
+   }
+   
+   .pop-up-event a:hover{
+      transform: scale(1.25);
+   }
+   
+
 }
 
 @media only screen and (max-width: 500px){
-   .photo-map-one{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      min-height: 200px;
-   }
 
    #map iframe{
       height: 250px;
@@ -478,6 +921,9 @@
       padding-bottom: 0vh;
       justify-content: center;
       align-items: center;
+      margin-bottom: 5vh;
+      margin-left: 25px;
+      margin-right: 25px;
    }
 
    .about-us-text{
@@ -490,11 +936,12 @@
    #title-blue-part1{
       margin-left: 25px;
       margin-right: 25px;
-      font-size: 3rem;
+      font-size: 2.5rem;
    }
    
    #title-blue-part3{
       padding-bottom: 0vh;
+      margin-bottom: -2vh;
    }
 
    #title-blue-part1{
@@ -508,27 +955,67 @@
    }
 
 
-   #our-airport-text,
-   #filler-one, #filler-two,
-   #white-part-contact{
-      font-size: 1.25rem;
-      width: 90vw;
+   #our-airport-text,#our-airport-text3{
+      font-size: 1rem;
+      width: 80vw;
       text-align: justify;
    }
 
-   /* #our-airport-text{
-      width: 90vw;
-   } */
+   .filler-text{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .text-lawnmover-wrap p{
+      font-size: 1rem;
+      text-align: justify;
+      font-weight: 300;
+      width: 80vw;
+   }
+   
+   .filler-text-three-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+
+   #filler-three{
+      font-size: 1rem;
+      text-align: justify;
+      font-weight: 300;
+      width: 80vw;
+   }
+
+   #filler-one, #filler-two{
+      font-size: 1.15rem;
+      text-align: center;
+      font-weight: 400;
+      width: 80vw;
+   }
 
    .contact{
       display: flex;
       justify-content: center;
    }
 
+   #white-part-contact{
+      font-size: 1rem;
+      width: 80vw;
+      justify-content: center;
+      align-items: center;
+      text-align: justify;
+   }
+
    .about-club{
       width: 90vw;
       justify-content: center;
       align-items: center;
+   }
+
+   .weather{
+      margin-bottom: 5px;
    }
 
    .weather-card{
@@ -553,6 +1040,8 @@
    .coordination{
       max-width: 300px;
       font-size: 1.5rem;
+      margin-bottom: 3vh;
+      margin-top: 5vh;
    }
 
    .operating-rules{
@@ -560,20 +1049,20 @@
       font-size: 1.5rem;
    }
 
+   .operating-rules-wrapper{
+      margin-bottom: 8vh;
+   }
+
    .our-airport-photo{
-      margin-bottom: 0.5vh;
+      margin-bottom: 0vh;
    }
 
    .photo-map-two{
-      margin: 3rem 0 9rem 0; 
+      margin: 3rem 0 4rem 0; 
    }
 
    .photo-map-two img{
       width: 80vw;
-   }
-
-   .photo-map-one{
-      display: none;
    }
 
    .photogallery-ind{
@@ -583,13 +1072,27 @@
    .card {
       width: 80vw;
    }
-   
 
+   .card__title {
+      margin: 0;
+      font-size:2rem;
+      color: #1b09a7;
+      font-weight: 700;
+      text-align: center;
+   }
+
+   .card__description {
+      margin: 10px 0 0;
+      font-size: 1rem;
+      color: #777;
+      text-align: center;
+    }
+   
    .scroll-to-top-style.active-to-top img{
       bottom: 25vh;
       right: 30px;
-      width: 60px;
-      height: 60px;
+      width: 40px;
+      height: 40px;
    }
 
    .back-button{
@@ -689,4 +1192,13 @@
       height: 85px;
    }
 
+   .footer-middle-all p{
+      font-size: 1rem;
+   }
+
+   .footer-two p{
+      font-size: 1rem;
+      text-align: left;
+   }
+   
 }

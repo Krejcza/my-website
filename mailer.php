@@ -6,12 +6,12 @@
     $message = trim($_POST["message"]);
 
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: https://www.#.cz/index.php?success=-1#form");
+        header("Location: https://www.modelparkpodhradem.cz/index.php?success=-1#form");
         exit;
     }
 
     // Nastavení emailu - odeslání
-    $recipient = "modelarinemcice@seznam.cz";
+    $recipient = "krejci-lukas@seznam.cz";
 
     // Předmět emailu
     $subject = "Máte novou zprávu od: $name";
@@ -28,6 +28,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     // Přesměrování na stránku, pokud bylo vše OK
-    header("Location:https://www.#.cz/index.php?success=1#form");
+    header("Location:https://www.modelparkpodhradem.cz/index.php?success=1#form");
 
 ?>
