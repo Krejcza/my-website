@@ -3,13 +3,16 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="Největší modelářská akce roku 2024! Aviatcká pouť v Modelparku pod Hradem. 22.6.2024 od 11:00.">
    <link rel="shortcut icon" href="../images/favicon.png" type="image/png">
    <link rel="stylesheet" href="../Styles/photogallery-style.css">
    <link rel="stylesheet" href="../Styles/style.css">
    <link rel="stylesheet" href="../Styles/calendar-style.css">
    <link rel="stylesheet" href="../Styles/photo-img-indiv.css">
    <link rel="stylesheet" href="../Styles/query.css">
-   <title>Fotogalerie | Modelpark pod hradem</title>
+   <link rel="stylesheet" href="../Styles/event.css">
+   <script src="https://kit.fontawesome.com/04daac4ce0.js" crossorigin="anonymous"></script>
+   <title>Modelářská aviatická pouť | Modelpark pod hradem</title>
 </head>
 
 <body>
@@ -37,12 +40,17 @@
             </button>
          </div>
       </div>
+      <div class="mobile-nav-other-side-anim"></div>
       <nav class="mobile-nav">
-         <a href="../index.html#our-airport-click">Naše letiště</a>
-         <a href="../index.html#klub-mph-click">Klub MPH</a>
-         <a href="Calendar.html">Kalendář akcí</a>
-         <a href="Photogallery.html">Fotogalerie</a>
-         <a href="../index.html#kontakt-click">Kontakt</a>
+         <a href="../index.html#our-airport-click"><i class="fa-solid fa-plane"></i>Naše letiště</a>
+         <a href="../index.html#klub-mph-click"><i class="fa-solid fa-people-group"></i>Klub MPH</a>
+         <a href="Calendar.html"><i class="fa-solid fa-calendar"></i>Kalendář akcí</a>
+         <a href="Photogallery.html"><i class="fa-solid fa-photo-film"></i>Fotogalerie</a>
+         <a href="../index.html#kontakt-click"><i class="fa-solid fa-address-book"></i>Kontakt</a>
+         <div class="mobile-nav-text">
+            <p>Modelpark pod Hradem z.s.</p>
+            <p><i class="fa-solid fa-envelope"></i>modelarinemcice@seznam.cz</p>
+         </div>
       </nav>
    </header>
 
@@ -52,8 +60,54 @@
             <a href="../index.html">&#8682; Zpět na hlavní stránku</a>
          </div>
       </section>
+   <section class="events-main-text row">
+      <div class="main-text event-aviatic">
+         <p class="header-for-ind-pics">Modelářská aviatická pouť 2024!</p>
+      </div>
 
-      
+   </section>
+      <section class="time-countdown row">
+         <div id="time">
+
+            <div class="circle" style="--clr:#0e045a;">
+               <div class="dots day_dot"></div> 
+               <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70" id="dd"></circle>
+               </svg> 
+               <div id="days">00<br><span>dní</span></div>
+            </div>
+
+            <div class="circle" style="--clr:#1b09a7;">
+               <div class="dots hr_dot"></div> 
+               <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70" id="hh"></circle>
+               </svg> 
+               <div id="hours">00</div>
+            </div>
+
+            <div class="circle" style="--clr:rgb(142,144,255);">
+               <div class="dots min_dot"></div> 
+               <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70" id="mm"></circle>
+               </svg> 
+               <div id="minutes">00</div>
+            </div>
+
+            <div class="circle" style="--clr:#ffffff;">
+               <div class="dots sec_dot"></div> 
+               <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle cx="70" cy="70" r="70" id="ss"></circle>
+               </svg> 
+               <div id="seconds">00</div>
+            </div>
+
+         </div>
+      </section>
+
 
 
 
@@ -122,6 +176,7 @@
       </section>
 
    </footer>
+<script src="../Scripts/countdown-timer.js"></script>
 <script src="../Scripts/script-scrolling.js"></script>
 </body>
 </html>
