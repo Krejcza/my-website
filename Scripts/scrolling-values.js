@@ -15,5 +15,5 @@ ScrollReveal().reveal('.photogallery-ind .card', {delay:100, origin:'left',dista
 ScrollReveal().reveal('.details-area input, .message-area', {delay:50, origin:'bottom', distance:'50px', interval:100});
 ScrollReveal().reveal('.social-media p', {delay:100, origin:'top', distance:'50px'});
 ScrollReveal().reveal('.social-media a', {delay:100, origin:'top', distance:'50px'});
-ScrollReveal().reveal('.subs-odometer', {delay:100, origin:'top',});
+ScrollReveal().reveal('.subs-odometer', {delay:100, origin:'bottom', distance:'50px'});
 

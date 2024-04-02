@@ -14,8 +14,6 @@ let hr_dot = document.querySelector('.hr_dot')
 let min_dot = document.querySelector('.min_dot')
 let sec_dot = document.querySelector('.sec_dot')
 
-console.log(day_dot)
-
 let endDate = '06/22/2024 00:00:00'
  
 let x = setInterval(function(){

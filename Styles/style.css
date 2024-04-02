@@ -326,6 +326,16 @@ main{
    font-weight: 700;
 }
 
+.fa-circle-arrow-right{
+   margin-right: 20px;
+   margin-top: 20px;
+}
+
+.fa-circle-arrow-left{
+   margin-left: 20px;
+   margin-top: 20px;
+}
+
 .about-us-text a, .about-us-text iframe{
    z-index: 2;
 }
@@ -1468,20 +1478,26 @@ main{
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   margin-top: 1vh;
+   z-index: 5;
 }
 
-.form-result p{
+.form-result{
    color: #f2f2f2;
 }
 
+.form-result i{
+   margin-right: 20px;
+}
+
 .success{
-   background-color: rgb(7, 85, 7);
+   background-color: rgb(118, 170, 105);
    border-radius: 5px;
    padding: 5px;
 }
 
 .error{
-   background-color: rgb(174, 0, 0);
+   background-color: rgb(148, 78, 78);
    border-radius: 5px;
    padding: 5px;
 }
