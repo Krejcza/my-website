@@ -1,7 +1,7 @@
-let indexForm = document.querySelector('.form-area')
+let Form = document.querySelector('.form-area')
 let eventForm = document.querySelector('.event-form')
 
-indexForm.addEventListener('submit', function(e){
+Form.addEventListener('submit', function(e){
    e.preventDefault()
 } )
 

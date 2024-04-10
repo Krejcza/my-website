@@ -122,6 +122,36 @@
       margin-right: 50px;
    }
 
+   .biggest-show-of-year{
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+
+   .photos-and-videos{
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+
+   .for-pilots-text{
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+
+   .bye-bye-text{
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+
+   .small-nav-wrapper{
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+
+   .event-form{
+      margin-left: 50px;
+      margin-right: 50px;
+   }
+
 }
 
 @media only screen and (max-width: 1350px){
@@ -131,6 +161,12 @@
 
    .card__title {
       font-size:1.75rem;
+   }
+}
+
+@media only screen and (max-width:1250px){
+   .biggest-show-of-year p i{
+      display: none;
    }
 }
 
@@ -380,7 +416,7 @@
       display: flex;
       justify-content: center;
       width: 100%;
-      min-height: 500px;
+      /* min-height: 500px; */
    }
 
    .photo-map-two{
@@ -493,6 +529,34 @@
 @media only screen and (max-width: 800px){
    #map iframe{
       height: 400px;
+   }
+
+   
+   .small-nav .one-piece-of-nav.active .content-of-nav{
+   padding: 1rem;
+   }
+
+   .main-program{
+      font-size: 1rem;
+   }
+
+   .small-nav .one-piece-of-nav .content-of-nav p{
+      color: #fff;
+      font-size: 0.75rem;
+   }
+   
+   .small-nav .one-piece-of-nav .content-of-nav p span{
+      font-weight: 600;
+      font-size: 0.85rem;
+   }
+   
+   .small-nav .one-piece-of-nav .content-of-nav p i{
+      margin-right: 10px;
+   }
+
+   .small-nav .one-piece-of-nav .label-of-nav{
+      font-size: 0.75rem;
+
    }
 }
 
@@ -708,9 +772,26 @@
       transform: translateY(-75%);
       box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
    }
-   
 
+   .about-event-bckgrd p{
+      font-size: 1rem;
+      font-weight: 300;
+   }
 
+   .biggest-show-of-year p{
+      font-size: 1rem;
+      font-weight: 300;
+   }
+
+   .for-pilots-text p{
+      font-size: 1rem;
+      font-weight: 300;
+   }
+
+   .bye-bye-text p{
+      font-size: 2rem;
+      font-weight: 600;
+   }
 
 }
 
@@ -755,6 +836,29 @@
       width: 275px;
       height: 150px
    }
+}
+
+@media only screen and (max-width:650px){
+   .event-aviatic{
+      margin-bottom: 10%;
+   }
+
+   .biggest-show-of-year{
+      margin-bottom: 10%;
+   }
+
+   .biggest-show-of-year p{
+      text-align: center;
+   }
+
+   .about-event-bckgrd p:nth-child(1){
+      padding-top: 10%;
+   }
+
+   .about-event-bckgrd p:nth-child(2){
+      padding-bottom: 10%;
+   }
+
 }
 
 @media only screen and (max-width:600px){
@@ -844,7 +948,7 @@
    }
 
    .pop-up-event {
-      background-color: #fff;
+      background-color: #cdcdcd;
       max-width: 90%;
       max-height: 80%;
       width: 500px;
@@ -880,7 +984,7 @@
    
    .pop-up-event p{
       font-size: 1rem;
-      text-align: justify;
+      text-align: center;
       margin: 20px 0;
       z-index: 100;
    }
@@ -930,16 +1034,63 @@
    .card__titleh3 {
       font-size: 1.25rem;
       font-weight: 600;
-      color: #1b09a7;
+      color: #fff;
       margin-bottom: 0.75rem;
    }
 
+   .video-ytb iframe{
+      height: 300px;
+      width:400px;
+   }
+
+   .picture-ytb img{
+      height: 300px;
+      width:400px;
+   }
+
+   .event-form{
+      margin-left: 25px;
+      margin-right: 25px;
+   }
+
+   .pilot-details input[type=text], .pilot-details input[type=email], .pilot-details .about-pilot textarea{
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 1rem;
+   }
+
+   .pilot-details input[type=submit]{
+      font-size: 0.5rem;
+   }
+
+
+}
+
+@media only screen and (max-width: 550px){
+   .card__data{
+      padding: 0.5rem 1.5rem;
+   }
+
+   .card__titleh3{
+      margin-bottom: 0.25rem;
+   }
+   
 }
 
 @media only screen and (max-width: 500px){
 
    #map iframe{
       height: 250px;
+   }
+
+   .video-ytb iframe{
+      height: 250px;
+      width:325px;
+   }
+
+   .picture-ytb img{
+      height: 250px;
+      width:325px;
    }
 
 }
@@ -1239,6 +1390,30 @@
 
    .footer-two h2{
       text-align: left;
+   }
+
+   .small-nav-wrapper{
+      margin-left: 0px;
+      margin-right: 0px;
+   }
+
+   .small-nav{
+      box-shadow:  15px 15px 25px #adacac,
+               -15px -15px 25px #f3f3f3;
+   }
+
+   .card__titleh3 {
+      font-size: 1rem;
+   }
+
+   .card__data{
+      width: 90%;
+   }
+
+   .card__descr {
+      display: block;
+      font-size: 0.75rem;
+      margin-bottom: 0.25rem;
    }
    
 }

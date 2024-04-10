@@ -4,13 +4,44 @@
    box-sizing: border-box;
 }
 
+.biggest-show-of-year{
+   display: flex;
+   justify-content: center;
+}
+
+.biggest-show-of-year p{
+   margin-top: 2.5%;
+   color: #0d0450;
+   font-size: 1.25rem;
+   font-weight: 500;
+}
+
+.biggest-show-of-year p i:nth-child(3){
+   margin-right: 20px;
+}
+
+.biggest-show-of-year p i:nth-child(4){
+   margin-left: 20px;
+}
+
 .about-event-text-wrapper{
    position: relative;
    background-repeat: no-repeat;
    background-size: cover;
    background-color: rgb(144, 142, 255);
-   margin-top: 2%;
-   margin-bottom: 2%;
+}
+
+
+
+.free-entrance{
+   background-color: #fff;
+   margin-top: 2.5%;
+   background-image: url(../images/vstupne-zadarmo.jpg);
+   background-size: 25%;
+   background-repeat: repeat-x;
+   background-position: center;
+   height: 50px;
+   opacity: 0.75;
 }
 
 .about-event-text-wrapper::before{
@@ -34,6 +65,12 @@
    margin-top: 2%;
    margin-bottom: 2%;
    color: #fff;
+   font-size: 1.25rem;
+}
+
+.about-event-bckgrd p span{
+   font-weight: 600;
+   font-size: 1.5rem;
 }
 
 .countdown-text{
@@ -43,14 +80,34 @@
 }
 
 .countdown-text p{
+   padding-top: 5%;
    font-weight: 800;
    font-size: 1.5rem;
    color: #1b09a7;
+   z-index: 2;
+}
+
+.time-countdown{
+  background-color: rgb(205,205,205);
+  position: relative;
+}
+
+.time-countdown::before{
+   content: '';
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-image: url(../images/kisspng-brand-graphic-design-text-pattern-lines-png-transparent-image-5a71f2c7cf2468.2920433315174171598485.png);
+   background-size: cover;
+   opacity: 0.25;
+   z-index: 1;
 }
 
 #time{
-   margin-top: 5vh;
-   margin-bottom: 7.5vh;
+   padding-top: 5vh;
+   padding-bottom: 7.5vh;
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
@@ -65,6 +122,7 @@
    display: flex;
    justify-content: center;
    align-items: center;
+   z-index: 1;
 }
 
 #time .circle svg{
@@ -94,7 +152,7 @@
    position: absolute;
    text-align: center;
    font-weight: 500;
-   color: #fff;
+   color: #1b09a7;
    font-size: 2rem;
 }
 
@@ -173,6 +231,8 @@
 
 .video-ytb iframe{
    border-radius: 25px;
+   box-shadow:  5px 5px 20px #0d0450,
+               -5px -5px 20px rgb(78, 75, 106);
 }
 
 .picture-ytb{
@@ -182,9 +242,11 @@
 }
 
 .picture-ytb img{
-   width: 500px;
-   height: 350px;
+   max-width: 500px;
+   max-height: 350px;
    border-radius: 25px;
+   box-shadow: 5px 5px 20px #0d0450,
+               -5px -5px 20px rgb(78, 75, 106);
 }
 
 .picture-ytb p{
@@ -204,7 +266,21 @@
    max-width: 80%;
    margin-top: 5vh;
    border-radius: 25px;
+   box-shadow: 5px 5px 20px #0d04507a,
+               -5px -5px 20px rgba(78, 75, 106, 0.501);
 }
+
+.what-about-event{
+   margin:5vh 0 5vh 0;
+}
+
+.what-about-text h3{
+   color: #1b09a7;
+   font-size: 2rem;
+   font-weight: 600;
+   text-align: center;
+}
+
 
 .small-nav-wrapper{
    display: flex;
@@ -252,7 +328,7 @@
 .small-nav .one-piece-of-nav .label-of-nav{
    position: relative;
    padding: 10px;
-   background: rgb(205,205,205);;
+   background: rgb(205,205,205);
    color: #1b09a7;
    cursor: pointer;
    border-radius: 15px;
@@ -340,7 +416,7 @@
 }
 
 .for-pilots-text h3{
-   margin:3vh 0 3vh 0;
+   margin:5vh 0 5vh 0;
    color: #1b09a7;
    font-size: 2rem;
    font-weight: 600;
@@ -348,7 +424,7 @@
 
 .for-pilots-text p{
    text-align: left;
-   font-size: 1.5rem;
+   font-size: 1.25rem;
    font-weight: 400;
    color: #1b09a7;
 }
@@ -371,7 +447,8 @@
    background-color: #1b09a7;
    padding: 20px;
    border-radius: 25px;
-   width: 55%;
+   width: 100%;
+   max-width: 500px;
    height: auto;
    box-shadow:  25px 25px 40px #adacac,
                -25px -25px 40px #f3f3f3;
@@ -472,10 +549,11 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   font-size: 3rem;
-   font-weight: 700;
 }
 
 .bye-bye-text p{
    color: #1b09a7;
+   text-align: center;
+   font-size: 3rem;
+   font-weight: 700;
 }

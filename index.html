@@ -57,9 +57,12 @@
 
       <div class="pop-up-event-wrapper row">
          <div class="pop-up-event">
-            <button id="close-pop">&times;</button>
+               <button id="close-pop">&times;</button>
                <h2>III. Aviatická modelářská pouť je tady!</h2>
             <p>Přijďte se podívat na největší akci letošního roku! Již <span>3. ročník</span> pořádáme velkou aviatickou pouť, kterou si užijí jak děti tak dospělí.</p>
+            <div class="event-free-wrap">
+               <p id="free-invite"><i class="fa-solid fa-jet-fighter-up"></i>VSTUPNÉ ZDARMA<i class="fa-solid fa-jet-fighter-up"></i></p>
+            </div>
             <p class="second-part-event"> <span>22.6.2024</span> - To je datum které tě zajímá, tak určitě doraž! Budeme se na tebe těšit!</p>
             <a href="Main-pages/event.html">Kouknu se na to!</a>
          </div>
@@ -249,16 +252,16 @@
             </div>
             <div class="our-airport-photo row">
                <div class="photo-map-one">
-                  <iframe title="Norinco QSZ-92G 9mm Handgun" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9552035434514828b7f57b6738f5fb7a/embed" loading="lazy"></iframe>
+                  <iframe src="https://lumalabs.ai/embed/efec6e7f-cbf5-462c-8c57-05a5e2597cc0?mode=sparkles&background=%23516624&color=%23301f21&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="300" height="auto" frameborder="0" title="luma embed" style="border: none;"></iframe>
                </div>
-               <div class="photo-map-two row">
+               <div class="photo-map-two">
                   <div class="photo-card-airport">
                      <div class="card__airport">
                         <article class="card__article">
                            <img src="images/model-aerodrome-with-orange-barrier.jpg" alt="" loading="lazy" class="card__image">
                            <div class="card__data">
                               <h3 class="card__titleh3">Přistávací plocha</h3>
-                              <span class="card__descr">Naše přistávací plocha je nově vybavená. bla bla bla</span>           
+                              <span class="card__descr">S rozlehlou travnatou plochou máme ideální podmínky pro bezproblémové přistání a vzlety.</span>           
                            </div>
                         </article>
                      </div>
@@ -316,7 +319,7 @@
                 </div>
             </div> 
             
-            <div class="odometer-wrapper" data-value="500">
+            <div class="odometer-wrapper" data-value="200">
                 <div class="odometer-details">
                      <div class="more-odometer-and-more">
                         <div class="more-odometer">přes</div>
@@ -530,41 +533,32 @@
 </script>
 
 <script>
-   let timeout;
+   function checkVisibility() {
+      const odometerSections = document.querySelectorAll('.odometer-wrapper');
+      const windowHeight = window.innerHeight || document.documentElement.clientHeight;
 
-function debounce(func, delay) {
-   clearTimeout(timeout);
-   timeout = setTimeout(func, delay);
-}
+      odometerSections.forEach(function(section) {
+         const rect = section.getBoundingClientRect();
+         if (rect.top <= windowHeight * 0.8 && !section.classList.contains('initialized')) {
+            initializeOdometer(section);
+            section.classList.add('initialized');
+         }
+      });
+   }
 
-function checkVisibility() {
-   const odometerSections = document.querySelectorAll('.odometer-wrapper');
-   const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+   function initializeOdometer(section) {
+      const subsOdometer = section.querySelector('.subs-odometer');
+      const value = parseInt(section.getAttribute('data-value'));
 
-   odometerSections.forEach(function(section) {
-      const rect = section.getBoundingClientRect();
-      if (rect.top <= windowHeight * 0.95 && !section.classList.contains('initialized')) {
-         initializeOdometer(section);
-         section.classList.add('initialized');
-      }
-   });
-}
+      const odometer = new Odometer({
+         el: subsOdometer,
+         duration: 500
+      });
 
-function initializeOdometer(section) {
-   const subsOdometer = section.querySelector('.subs-odometer');
-   const value = parseInt(section.getAttribute('data-value'));
+      odometer.update(value); 
+   }
 
-   const odometer = new Odometer({
-      el: subsOdometer,
-      duration: 500
-   });
-
-   odometer.update(value); 
-}
-
-window.addEventListener('scroll', function() {
-   debounce(checkVisibility, 100); 
-});
+   window.addEventListener('scroll', checkVisibility);
 
 </script>
 
@@ -585,6 +579,6 @@ document.getElementById('tractorImg').addEventListener('click', function() {
 });
 
 </script>
-<script src="Scripts/reset forms.js"></script>
+<script src="Scripts/reset-forms.js"></script>
 </body>
 </html>
