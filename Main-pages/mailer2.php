@@ -8,7 +8,7 @@
 
     
     if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: https://www.modelparkpodhradem.cz/index.php?success=-1#form");
+        header("Location: https://www.modelparkpodhradem.cz/Main-pages/event.php?success=-1#form");
         exit;
     }
 
@@ -31,6 +31,6 @@
     mail($recipient, $subject, $email_content, $email_headers);
     
     
-    header("Location:https://www.modelparkpodhradem.cz/index.php?success=1#form");
+    header("Location:https://www.modelparkpodhradem.cz/Main-pages/event.php?success=1#form");
 
 ?>

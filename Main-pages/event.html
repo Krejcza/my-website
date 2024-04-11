@@ -243,14 +243,14 @@
                <div class="success-or-error">
 
                   <!-- <?php
-                  if ($_GET['success'] == 1) {
-                     echo "<div class=\"form-result success\"><i class="fa-solid fa-circle-check"></i>Odeslání proběhlo v pořádku.</div>";
-                  }
-            
-                  if ($_GET['success'] == -1) {
-                     echo "<div class=\"form-result error\"><i class="fa-solid fa-circle-xmark"></i>Chyba při odeslání. Zkuste znovu.</div>";
-               }
-                  ?> -->
+        if (isset($_GET['success'])) {
+            if ($_GET['success'] == 1) {
+                echo "<div class=\"form-result success\"><i class=\"fa-solid fa-circle-check\"></i>Odeslání proběhlo v pořádku.</div>";
+            } elseif ($_GET['success'] == -1) {
+                echo "<div class=\"form-result error\"><i class=\"fa-solid fa-circle-xmark\"></i>Chyba při odeslání. Zkuste znovu.</div>";
+            }
+        }
+        ?> -->
 
                </div>
             </form> 

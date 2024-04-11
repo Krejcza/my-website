@@ -24,7 +24,7 @@
    position: absolute;
    border-radius: 25px;
    opacity: 0.4;
-   background-image: url(../images/pngwing.com\ \(30\).png);
+   background-image: url(../images/background-img-second-ed.webp);
    z-index: 2;
 }
 
@@ -36,4 +36,8 @@
 main{
    padding-bottom: 15vh;
    padding-top: 5vh;
+}
+
+#gps-of-airport{
+   text-align: center;
 }

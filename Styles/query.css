@@ -416,7 +416,11 @@
       display: flex;
       justify-content: center;
       width: 100%;
-      /* min-height: 500px; */
+      
+   }
+
+   .photo-map-one iframe{
+      height: 450px;
    }
 
    .photo-map-two{
@@ -491,7 +495,7 @@
       display: flex;
       justify-content: center;
       width: 100%;
-      min-height: 400px;
+      
    }
 
    .footer-one{
@@ -524,6 +528,7 @@
    .contact-small-two h3{
       text-align:center;
    }
+
 }
 
 @media only screen and (max-width: 800px){
@@ -791,6 +796,12 @@
    .bye-bye-text p{
       font-size: 2rem;
       font-weight: 600;
+   }
+
+   .photo-map-one{
+      display: flex;
+      justify-content: center;
+      width: 100%;
    }
 
 }
@@ -1414,6 +1425,10 @@
       display: block;
       font-size: 0.75rem;
       margin-bottom: 0.25rem;
+   }
+
+   .for-pilots-text p{
+      text-align: justify;
    }
    
 }

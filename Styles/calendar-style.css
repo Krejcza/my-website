@@ -90,6 +90,12 @@ main{
    font-size: 1.15rem;
 }
 
+.name-of-action a{
+   text-decoration: none;
+   font-weight: 700;
+   color: #1b09a7;
+}
+
 
 .done-for{
    background: #1b09a7;

@@ -24,7 +24,7 @@
 
 
       <div class="logo row">
-         <a href='#' id="myLogo"><img src="images/logo-of-modelpark-blue-small.png" alt=""></a>
+         <a href='' id="myLogo"><img src="images/logo-of-modelpark-blue-small.png" alt=""></a>
       </div>
 
       <div class="navbar-wrap">
@@ -252,7 +252,7 @@
             </div>
             <div class="our-airport-photo row">
                <div class="photo-map-one">
-                  <iframe src="https://lumalabs.ai/embed/efec6e7f-cbf5-462c-8c57-05a5e2597cc0?mode=sparkles&background=%23516624&color=%23301f21&showTitle=true&loadBg=true&logoPosition=bottom-left&infoPosition=bottom-right&cinematicVideo=undefined&showMenu=false" width="300" height="auto" frameborder="0" title="luma embed" style="border: none;"></iframe>
+                  <iframe src="https://lumalabs.ai/embed/efec6e7f-cbf5-462c-8c57-05a5e2597cc0?mode=sparkles&background=%23516624&color=%23301f21&showTitle=false&loadBg=true&logoPosition=bottom-left&infoPosition=top-right&cinematicVideo=undefined&showMenu=false" width="300" height="auto" frameborder="0" title="luma embed" style="border: none;"></iframe>
                </div>
                <div class="photo-map-two">
                   <div class="photo-card-airport">
@@ -432,15 +432,15 @@
                
                <div class="success-or-error">
 
-               <!-- <?php
-                  if ($_GET['success'] == 1) {
-                     echo "<div class=\"form-result success\"><i class="fa-solid fa-circle-check"></i>Odeslání proběhlo v pořádku.</div>";
-                  }
-            
-                  if ($_GET['success'] == -1) {
-                     echo "<div class=\"form-result error\"><i class="fa-solid fa-circle-xmark"></i>Chyba při odeslání. Zkuste znovu.</div>";
-               }
-                  ?> -->
+                  <!-- <?php
+                  if (isset($_GET['success'])) {
+                     if ($_GET['success'] == 1) {
+                         echo "<div class=\"form-result success\"><i class=\"fa-solid fa-circle-check\"></i>Odeslání proběhlo v pořádku.</div>";
+                     } elseif ($_GET['success'] == -1) {
+                         echo "<div class=\"form-result error\"><i class=\"fa-solid fa-circle-xmark\"></i>Chyba při odeslání. Zkuste znovu.</div>";
+                     }
+                 }
+                 ?> -->
                
                </div>
             </form>
