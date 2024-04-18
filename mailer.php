@@ -11,7 +11,7 @@
     }
 
     // Nastavení emailu - odeslání
-    $recipient = "krejci-lukas@seznam.cz";
+    $recipient = "modelarinemcice@seznam.cz";
 
     // Předmět emailu
     $subject = "Máte novou zprávu od: $name";

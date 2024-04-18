@@ -1184,6 +1184,7 @@ main{
 }
 
 .profile {
+   position: relative;
    transition: all 0.3s;
    display: flex;
    flex-direction: column;
@@ -1198,8 +1199,8 @@ main{
   font-weight: 400; 
   font-size: 20px;
   position: absolute;
-  bottom: 25%;
-  right: 25%;
+  bottom: 10%;
+  right: 47.5%;
   opacity: 0.5;
   color: #fff; 
 }

@@ -354,7 +354,16 @@
    }
 
    .profile:not(:first-child){
-      margin-top: -40px;
+      margin-top: 15px;
+   }
+
+   .profile:hover {
+      transform: translateY(35px);
+      filter: grayscale(0%);
+   }
+
+   .profile:nth-child(1):hover{
+      transform: translateY(-25px);
    }
 
    .profile img{
@@ -1011,7 +1020,7 @@
       text-align: center;
       color: #fff;
       text-decoration: none;
-      padding: 20px 5px;
+      padding: 5px 5px;
       z-index: 100;
       border-radius: 25px;
       margin: 35px auto;
@@ -1020,6 +1029,11 @@
    
    .pop-up-event a:hover{
       transform: scale(1.25);
+   }
+
+   #free-invite{
+      font-size: 0.9rem;
+      font-weight: 700;
    }
    
    .card__description {

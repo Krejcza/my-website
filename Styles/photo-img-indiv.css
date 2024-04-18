@@ -54,7 +54,6 @@ main{
    width: 250px;
    height: 150px;
    object-fit:cover; 
-   transform: scale(1.15);
    transition: 0.5s ease;
    transform: scale(2);
    filter:grayscale(50%);
@@ -66,6 +65,45 @@ main{
    filter:brightness(100%)
 }
 
+.ind-jpg.viddmp4 img{
+   width: 250px;
+   height: 150px;
+   object-fit:cover; 
+   transform: scale(1.1);
+   transition: 0.5s ease;
+   filter:grayscale(50%);
+}
+
+.ind-jpg.viddmp4 img:hover{
+   transform: scale(1.25);
+   filter:brightness(100%)
+}
+
 .header-for-ind-pics{
    padding-top: 5vh;
+}
+
+.photo-wrapper p{
+   text-align: center;
+   color: #1b09a7;
+   font-weight: 600;
+   margin-top: 10%;
+   font-size: 1rem;
+}
+
+.ind-jpg.viddmp4{
+   position: relative;
+}
+
+.ind-jpg.viddmp4 i{
+   position: absolute;
+   top: 40%;
+   left: 44%;
+   font-size: 2rem;
+   color: #1b09a7;
+   transition: color 0.5s;
+}
+
+.ind-jpg.viddmp4 i:hover{
+   color: rgb(142, 144, 255);
 }

@@ -13,10 +13,10 @@
     }
 
     
-    $recipient = "krejci-lukas@seznam.cz";
+    $recipient = "modelarinemcice@seznam.cz";
 
     
-    $subject = "Máte nový kontakt od: $name";
+    $subject = "III. Modelářská aviatická pouť - zájemce: $name";
 
    
     $email_content = "Jméno: $name\n";
